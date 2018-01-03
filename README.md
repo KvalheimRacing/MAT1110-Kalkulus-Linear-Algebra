@@ -5,14 +5,13 @@
  Samlingen er tiltenkt for å hjelpe studenter med å spare tid/få oversikt over tidligere plenumsregninger og oppgaver som er regnet i kurset.
 
  Annet relevant innhold;
- - En samling av alle (tilgjengelige) [_Eksamener_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Line-r-Algebra/tree/master/Eksamener) med løsningsforslag siden 2003
- - Alle [_Obliger_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Line-r-Algebra/tree/master/Obliger) med løsningsforslag som er gitt siden rundt 2003
- - Pensumboken "Flervariabel analyse med lineær algebra", i mappen [_Pensum_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Line-r-Algebra/tree/master/FVLA)
+ - En samling av alle (tilgjengelige) [_Eksamener_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Eksamener) med løsningsforslag siden 2003
+ - Alle [_Obliger_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Obliger) med løsningsforslag som er gitt siden rundt 2003
+ - Pensumboken "Flervariabel analyse med lineær algebra", i mappen [_Pensum_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Pensum)
  - Ressurser fra _Grublegruppene_
- - En mappe med [_Repetisjon_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Line-r-Algebra/tree/master/Repetisjon) av pensum og/eller eksamensøving
- - [_Formelsamling_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Line-r-Algebra/tree/master/Formelsamlinger) fra UiO, UiA ++
- - Alle tilgjengelige _Forelesningsnotater_
- - Relevante ressurser fra [_Forkurset_](https://github.com/KvalheimRacing/MAT1100---Kalkulus/tree/master/Forkurs)  [_MAT0011_](http://www.uio.no/studier/emner/matnat/math/MAT0011/index.html)
+ - En mappe med [_Repetisjon_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Repetisjon) av pensum og/eller eksamensøving
+ - [_Formelsamling_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Formelsamlinger) fra UiO, UiA ++
+ - _Forelesningsnotater_
 
 Man kan finne de orginale filene [her](http://www.uio.no/studier/emner/matnat/math/MAT1110/).
  ___
