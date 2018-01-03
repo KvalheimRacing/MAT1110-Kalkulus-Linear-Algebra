@@ -1,1 +1,1 @@
-![](https://media.giphy.com/media/NnjXlsvmXTpM4/giphy.gif)
+![](https://github.com/KvalheimRacing/MAT1110-kalkulus-linear-algebra/blob/master/img/john_snow.gif)
