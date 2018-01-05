@@ -1,4 +1,4 @@
-# Oppgaver i MAT1110 - Kalkulus og Lineær Algebra ved UiO
+﻿# Oppgaver i MAT1110 - Kalkulus og Lineær Algebra ved UiO
 ![](img/calculus.jpg)
 >Dette er en samling av plenumsregninger og oppgaver regnet av nåværende eller tildigere faglærere i MAT1110 ved Universitetet i Oslo. Plenumsregningene er fra 2010 til 2017 så mange av oppgavene vil være de samme. Der plenumsregningene har dekket flere kapitler, er filene splittet opp slik at kun kapittel 4 oppgaver ligger under kapittel 4 osv.
 
@@ -11,7 +11,8 @@
  - Ressurser fra _Grublegruppene_
  - En mappe med [_Repetisjon_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Repetisjon) av pensum og/eller eksamensøving
  - [_Formelsamling_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Formelsamlinger) fra UiO, UiA ++
- - _Forelesningsnotater_
+ - Alle _Forelesningsnotater_ siden 2010
+ - En mappe med [_Forberedelser_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Forberedelser) for kurset
 
 Man kan finne de orginale filene [her](http://www.uio.no/studier/emner/matnat/math/MAT1110/).
  ___
