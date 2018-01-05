@@ -1,0 +1,84 @@
+\subsection{Oppgave 6.2.1}
+
+\subsubsection{a)}
+\begin{eqnarray*}
+  \lefteqn{\int\int_R x^2ydxdy} \\
+  &=& \int_0^2 \left[\int_0^x x^2y dy\right]dx = \int_0^2 \left[ \frac{1}{2}x^2y^2 \right]_0^x dx = \int_0^2 \frac{1}{2} x^4 dx
+      = \left[ \frac{1}{10} x^5 \right]_0^2 = \frac{16}{5}.
+\end{eqnarray*}
+
+\subsubsection{b)}
+\begin{eqnarray*}
+  \int\int_R (x+2xy)dxdy &=& \int_0^3 \left[\int_x^{2x+1} (x+2xy)dy\right]dx \\
+                         &=& \int_0^3 \left[ xy+xy^2 \right]_x^{2x+1} dx \\
+                         &=& \int_0^3 \left( x(2x+1) + x(2x+1)^2 - x^2 - x^3 \right) dx \\
+                         &=& \int_0^3 \left( 2x^2 + x + 4x^3 + 4x^2 + x - x^2 - x^3 \right) dx \\
+                         &=& \int_0^3 \left( 3x^3 + 5x^2 + 2x \right) dx \\
+                         &=& \left[ \frac{3}{4}x^4 + \frac{5}{3}x^3+ x^2 \right]_0^3 = \frac{243}{4} + 45 + 9 = \frac{459}{4}.
+\end{eqnarray*}
+
+\subsubsection{c)}
+\begin{eqnarray*}
+  \lefteqn{\int\int_R ydxdy} \\ 
+  &=& \int_1^2 \left[\int_y^{y^2} y dx\right]dy = \int_1^2 \left[ xy \right]_y^{y^2} dx = \int_1^2 \left( y^3-y^2 \right) dx \\
+  &=& \left[ \frac{1}{4} y^4 - \frac{1}{3} y^3 \right]_1^2 
+      = \frac{16}{4} - \frac{8}{3} - \frac{1}{4} + \frac{1}{3} = \frac{15}{4} - \frac{7}{3} = \frac{45-28}{12} = \frac{17}{12}.
+\end{eqnarray*}
+
+\subsubsection{d)}
+\begin{eqnarray*}
+  \int\int_R x\cos y dxdy &=& \int_0^{\pi/2} \left[\int_0^{\sin y} x\cos y dx\right]dy \\
+                          &=& \int_0^{\pi/2} \left[ \frac{1}{2}x^2\cos y \right]_0^{\sin y} dy = \int_0^{\pi/2} \frac{1}{2} \sin^2 y \cos y dy \\
+                          &=& \left[ \frac{1}{6} \sin^3 y \right]_0^{\pi/2} = \frac{1}{6}.
+\end{eqnarray*}
+
+\subsubsection{f)}
+Skjæringspunktene mellom $y=x^2$ $y=\sqrt{x}$ er $(0,0)$ og $(1,1)$. For $0\leq x\leq 1$ er $x^2\leq \sqrt{x}$, 
+som vist i Figur~\ref{fig060201f}. 
+\begin{figure}
+  \begin{center}
+    \epsfig{figure=06/02/060201f.eps,width=0.5\columnwidth}
+  \end{center}
+  \caption{Integrasjonsområdet i Oppgave 6.2.1f).} \label{fig060201f}
+\end{figure}
+Derfor får vi
+\begin{eqnarray*}
+  \int\int_R x^2ydxdy &=& \int_0^1 \left[\int_{x^2}^{\sqrt{x}} x^2y dy\right]dx \\
+                      &=& \int_0^1 \left[ \frac{1}{2}x^2y^2 \right]_{x^2}^{\sqrt{x}} dx = \int_0^1 \left( \frac{1}{2} x^3 - \frac{1}{2}x^6 \right) dx \\
+                      &=& \left[ \frac{1}{8} x^4 - \frac{1}{14} x^7 \right]_0^1 = \frac{1}{8}-\frac{1}{14} = \frac{7-4}{56} = \frac{3}{56}.
+\end{eqnarray*}
+
+\subsubsection{h)}
+Her kan vi bruke at $(\arcsin y)' = \frac{1}{\sqrt{1-y^2}}$ fra formelsamlingen. 
+Vi kan også gjøre substitusjonen $u=\arcsin y$, eller $y =\sin u$: 
+Vi ser da at $\frac{1}{\sqrt{1-y^2}} = \frac{1}{|\cos u|} = \frac{1}{\cos u}$, der vi kunne fjerne absoluttverditegnet på grunn av de spesielle integralgrensene her. 
+Videre er $dy = \cos u du$, slik at
+\begin{eqnarray*}
+  \lefteqn{\int\int_R \frac{1}{\sqrt{1-y^2}} dxdy} \\
+  &=& \int_0^{\pi/2} \left[\int_0^{\sin x} \frac{1}{\sqrt{1-y^2}} dy\right]dx = \int_0^{\pi/2} \left[\int_0^x \frac{\cos u}{\cos u} du\right] dx = \int_0^{\pi/2} x dx \\
+  &=& \left[ \frac{1}{2} x^2 \right]_0^{\pi/2} = \frac{\pi^2}{8}.
+\end{eqnarray*}
+
+\subsubsection{i)}
+I denne oppgaven er ikke integralgrensene gitt, slik at vi må finne disse ved regning først.
+Kurvene $y=\ln x$ og $y=\frac{x-1}{e-1}$ skjærer hverandre i $x=1$ og $x=e$, 
+og det er klart at for $1\leq x\leq e$ så ligger kurven $y=\ln x$ øverst, siden denne er konkav (den vender den hule siden ned, siden $f''(x)<0)$). 
+Dette er også tegnet i Figur~\ref{fig060201i}. 
+\begin{figure}
+  \begin{center}
+    \epsfig{figure=06/02/060201i.eps,width=0.9\columnwidth}
+  \end{center}
+  \caption{Integrasjonsområdet i Oppgave 6.2.1i).} \label{fig060201i}
+\end{figure}
+Integralet blir derfor
+\begin{eqnarray*}
+  \int\int_R xdxdy &=& \int_1^e\left[\int_{\frac{x-1}{e-1}}^{\ln x} xdy\right]dx = \int_1^e \left( x\ln x - \frac{x(x-1)}{e-1} \right) dx \\
+                   &=& \int_1^e x\ln xdx - \frac{1}{e-1} \int_1^e \left( x^2-x \right)dx \\
+                   &=& \left[ \frac{1}{2}x^2\ln x - \frac{x^2}{4} \right]_1^e - \frac{1}{e-1} \left[ \frac{1}{3}x^3 - \frac{1}{2}x^2 \right]_1^e \\
+                   &=& \frac{1}{2}e^2 - \frac{1}{4}e^2 + \frac{1}{4} - \frac{1}{e-1}\left( \frac{1}{3}e^3  - \frac{1}{2}e^2 - \frac{1}{3} + \frac{1}{2} \right) \\
+                   &=& \frac{1}{4}e^2 + \frac{1}{4} - \frac{1}{e-1} \left( \frac{1}{3}e^3  - \frac{1}{2}e^2 + \frac{1}{6} \right) \\
+                   &=& \frac{1}{4}e^2 + \frac{1}{4} - \frac{2e^3-3e^2+1}{6(e-1)} \\
+                   &=& \frac{1}{4}e^2 + \frac{1}{4} - \frac{2e^3-2e^2  - e^2+1}{6(e-1)} \\
+                   &=& \frac{1}{4}e^2 + \frac{1}{4} - \frac{1}{3}e^2 + \frac{1}{6}(e+1) \\
+                   &=& \left( \frac{1}{4} - \frac{1}{3} \right) e^2 + \frac{1}{6} e + \frac{1}{6} + \frac{1}{4} = -\frac{1}{12}e^2 + \frac{1}{6}e + \frac{5}{12}.
+\end{eqnarray*}

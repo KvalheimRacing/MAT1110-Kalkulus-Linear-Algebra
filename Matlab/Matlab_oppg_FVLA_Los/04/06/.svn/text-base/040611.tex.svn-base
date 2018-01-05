@@ -1,0 +1,67 @@
+\subsection{Oppgave 4.6.11}
+
+\subsubsection{a)} 
+Det er fort gjort å sjekke at de to vektorene er lineært uavhengige. Resultatet følger av at enhver lineært uavhengig mengde med to elementer i $\R^2$ danner en 
+basis for $\R^2$. 
+
+\subsubsection{b)}
+Vi radreduserer:
+\begin{eqnarray*}
+\left(
+\begin{array}{rrrr}
+  1 & 1 & 1 & 0 \\
+  1 &-1 & 0 & 1
+\end{array}
+\right)
+&\sim&
+\left(
+\begin{array}{rrrr}
+  1 & 1 & 1 & 0 \\
+  0 &-2 &-1 & 1
+\end{array}
+\right) \\
+&\sim&
+\left(
+\begin{array}{rrrr}
+  1 & 1 & 1 & 0 \\
+  0 & 1 & \frac{1}{2} & -\frac{1}{2}
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrrr}
+  1 & 0 & \frac{1}{2} &  \frac{1}{2} \\
+  0 & 1 & \frac{1}{2} & -\frac{1}{2}
+\end{array}
+\right)
+\end{eqnarray*}
+Vi har derfor
+\begin{eqnarray*}
+  {\bf e}_1 &=& \frac{1}{2} {\bf v}_1 + \frac{1}{2} {\bf v}_2 \\
+  {\bf e}_2 &=& \frac{1}{2} {\bf v}_1 - \frac{1}{2} {\bf v}_2.
+\end{eqnarray*}
+
+\subsubsection{c)} 
+Dette følger fra Setning 4.6.12, og at ${\bf v}_1,{\bf v}_2$ er en basis for $\R^2$. 
+
+\subsubsection{d)}
+Kolonnene i $A$ er $T({\bf e}_1)$ og $T({\bf e}_2)$. Vi har 
+\begin{eqnarray*}
+  T({\bf e}_1) &=& T(\frac{1}{2} {\bf v}_1 + \frac{1}{2} {\bf v}_2) = \frac{1}{2} T({\bf v}_1) + \frac{1}{2} T({\bf v}_2) \\
+               &=& \frac{1}{2} 2{\bf v}_1 - \frac{1}{2} {\bf v}_2 = {\bf v}_1 - \frac{1}{2} {\bf v}_2 \\
+               &=& \left( \begin{array}{r} 1 \\ 1\end{array} \right) - \frac{1}{2} \left( \begin{array}{r} 1 \\-1\end{array} \right) = \left( \begin{array}{r} \frac{1}{2} \\ \frac{3}{2} \end{array} \right) \\
+  T({\bf e}_2) &=& T(\frac{1}{2} {\bf v}_1 - \frac{1}{2} {\bf v}_2) = \frac{1}{2} T({\bf v}_1) - \frac{1}{2} T({\bf v}_2) \\
+               &=& \frac{1}{2} 2{\bf v}_1 + \frac{1}{2} {\bf v}_2 = {\bf v}_1 + \frac{1}{2} {\bf v}_2 \\
+               &=& \left( \begin{array}{r} 1 \\ 1\end{array} \right) + \frac{1}{2} \left( \begin{array}{r} 1 \\-1\end{array} \right) = \left( \begin{array}{r} \frac{3}{2} \\ \frac{1}{2} \end{array} \right).
+\end{eqnarray*}
+Vi får derfor 
+\[
+A
+=
+\left(
+\begin{array}{rr}
+  \frac{1}{2} & \frac{3}{2} \\
+  \frac{3}{2} & \frac{1}{2}
+\end{array}
+\right).
+\]

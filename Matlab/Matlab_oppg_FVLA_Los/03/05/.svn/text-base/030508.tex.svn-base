@@ -1,0 +1,28 @@
+\subsection{Oppgave 3.5.8}
+Vi har vektorfeltet ${\bf F}(x,y) = (\cos(xy)-xy\sin(xy),-x^2\sin(xy))$, og kurven ${\cal C}$ parametrisert ved
+\[
+  {\bf r}(t) = (-t\cos t,\sin t - \cos t) \mbox{, } 0\leq t\leq \pi.
+\]
+Vi regner ut 
+\begin{eqnarray*}
+  \frac{\partial F_2}{\partial x} &=& -2x\sin(xy)-x^2y\cos(xy) \\
+  \frac{\partial F_1}{\partial y} &=& -x\sin(xy)-x\sin(xy)-x^2y\cos(xy) \\
+                                  &=& -2x\sin(xy)-x^2y\cos(xy),
+\end{eqnarray*}
+som viser at feltet er konservativt. For å finne en potensialfunksjon må vi løse
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y) = \cos(xy)-xy\sin(xy) \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y) = -x^2\sin(xy).
+\end{eqnarray*}
+Den siste er enklest, og gir oss at $\phi(x,y) = x\cos(xy) + C(x)$. 
+Den første løser vi slik:
+\begin{eqnarray*}
+  \phi(x,y) &=& \frac{1}{y}\sin(xy) - y\int x\sin(xy)dx \\
+            &=& \frac{1}{y}\sin(xy)  + x\cos(xy) -\int \cos(xy)dx \\
+            &=& \frac{1}{y}\sin(xy)  + x\cos(xy) - \frac{1}{y}\sin(xy) + C(y) \\
+            &=&  x\cos(xy) + C(y).
+\end{eqnarray*}
+Vi ser derfor at $\phi(x,y) = x\cos(xy)$ er en potensialfunksjon. Vi har derfor
+\[
+  \int_{\cal C} {\bf F}\cdot d{\bf r} = \int_{\cal C} \bigtriangledown\phi d{\bf r} = \phi({\bf b}) - \phi({\bf a}) = \phi(\pi,1)-\phi(0,-1) = -\pi.
+\]

@@ -1,0 +1,29 @@
+% c
+x1=linspace(0,2,100);
+x2=linspace(2,1,100);
+x3=linspace(1,0,100);
+x4=linspace(0.1,2,100);
+
+plot(x1,x1,'k-');
+hold on
+plot(x2,2./x2,'k-');
+plot(x3,2*x3,'k-');
+plot(x4,1./x4,'k-');
+
+plot( linspace(0,2,100) , zeros(1,100) , 'k-' );
+plot( zeros(1,100) , linspace(0,2,100) , 'k-' );
+
+for xs=0.75:0.05:1
+  plot(xs*ones(1,100),linspace(1/xs,2*xs,100),'k-')
+end
+
+for xs=1:0.05:1.4
+  plot(xs*ones(1,100),linspace(xs,2/xs,100),'k-')
+end
+
+axis([-0.2 2 -0.2 2])
+axis equal
+set(gca,'FontSize',24);
+xlabel('x')
+ylabel('y')
+print -deps 060703c.eps

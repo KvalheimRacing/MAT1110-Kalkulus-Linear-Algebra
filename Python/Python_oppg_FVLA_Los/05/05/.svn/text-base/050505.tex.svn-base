@@ -1,0 +1,29 @@
+\subsection{Oppgave 5.5.5}
+
+\subsubsection{a)}
+Dette følger ved induksjon: hvis vi har vist at ${\bf x}$ er et fikspunkt for $F^{\circ (k-1)}$ (dette vet vi allerede holder for $k=2$), så er 
+\[ F^{\circ k}({\bf x}) = F(F^{\circ (k-1)}({\bf x})) = F({\bf x})={\bf x},\]
+slik at ${\bf x}$ også er et fikspunkt for $F^{\circ k}$.
+
+\subsubsection{b)}
+Anta ${\bf x}$ er et fikspunkt for $F^{\circ k}$. Da er 
+${\bf F}^{\circ k}({\bf F}({\bf x})) = {\bf F}({\bf F}^{\circ k}({\bf x})) = {\bf F}({\bf x})$, 
+slik at ${\bf F}({\bf x})$ også er et fikspunkt for ${\bf F}^{\circ k}$. Siden fikspunktet er unikt følger det at ${\bf F}({\bf x})={\bf x}$, 
+slik at ${\bf x}$ også er et fikspunkt for ${\bf F}$. 
+
+\subsubsection{c)}
+At ${\bf F}(x,y)=(2y+1,\frac{x}{3}+1)$ ikke er en kontraksjon følger av at ${\bf F}(0,1)=(3,1)$. 
+Vi har og at 
+\begin{eqnarray*}
+  {\bf F}^{\circ 2}(x,y) &=& \left(2(\frac{x}{3}+1)+1,\frac{2y+1}{3}+1\right) \\
+                         &=& \left( \frac{2x}{3} + 3, \frac{2}{3}y + \frac{4}{3}\right) = \frac{2}{3}\left(x,y\right) + \left(3,\frac{4}{3}\right).
+\end{eqnarray*}
+Vi har dermed at 
+\[ {\bf F}^{\circ 2}(x_1,y_1)-{\bf F}^{\circ 2}(x_2,y_2) = \frac{2}{3}((x_1,x_2)-(x_2,y_2)) , \]
+og det er da klart at ${\bf F}^{\circ 2}$ er en kontraksjon, med kontraksjonsfaktor $\frac{2}{3}$. Fikspunktet finner vi ved å løse likningene
+\begin{eqnarray*}
+  x &=& \frac{2}{3}x+3 \\
+  y &=& \frac{2}{3}y+\frac{4}{3},
+\end{eqnarray*}
+som gir at $x=9,y=4$. 
+  

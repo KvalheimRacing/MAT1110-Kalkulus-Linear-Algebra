@@ -1,0 +1,29 @@
+\subsection{Oppgave 3.5.11}
+Vi setter ${\bf F}(x,y,z)=(ze^{xz+y},e^{xz+y}+2z,xe^{xz+y}+2y)$, og lar ${\cal C}$ være skjæringskurven mellom kulen $x^2+y^2+z^2=25$ og planet 
+$x-2y+3z=1$, der kurven blir gitt positiv orientering sett ovenfra. Vi regner ut
+\begin{eqnarray*}
+  \frac{\partial F_2}{\partial x} &=& ze^{xz+y}\\
+  \frac{\partial F_1}{\partial y} &=& ze^{xz+y}\\
+  \frac{\partial F_3}{\partial x} &=& e^{xz+y}+zxe^{xz+y}\\
+  \frac{\partial F_1}{\partial z} &=& e^{xz+y}+xze^{xz+y}\\
+  \frac{\partial F_2}{\partial z} &=& xe^{xz+y}+2\\
+  \frac{\partial F_3}{\partial y} &=& xe^{xz+y}+2,
+\end{eqnarray*}
+som viser at feltet er konservativt. For å finne en potensialfunksjon må vi løse
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y,z) = ze^{xz+y} \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y,z) = e^{xz+y}+2z \\
+  \frac{\partial \phi}{\partial z} &=& F_3(x,y,z) = xe^{xz+y}+2y.
+\end{eqnarray*}
+Disse tre gir
+\begin{eqnarray*}
+  \phi(x,y,z) &=& e^{xz+y} + C(y,z) \\
+  \phi(x,y,z) &=& e^{xz+y} + 2yz + C(x,z) \\
+  \phi(x,y,z) &=& e^{xz+y} + 2zy + C(x,y).
+\end{eqnarray*}
+Vi ser derfor at $\phi(x,y,z) = e^{xz+y} + 2yz$ er en potensialfunksjon. Vi har derfor
+\[
+  \int_{\cal C} {\bf F}\cdot d{\bf r} = \int_{\cal C} \bigtriangledown\phi d{\bf r} = \phi({\bf b}) - \phi({\bf a}),
+\]
+der ${\bf a}$ og ${\bf b}$ er start- og sluttpunkt på kurven, respektive. Siden kurven er lukket kan vi sette ${\bf a}={\bf b}$, og svaret vårt blir dermed 
+$\phi({\bf b}) - \phi({\bf a})=0$.

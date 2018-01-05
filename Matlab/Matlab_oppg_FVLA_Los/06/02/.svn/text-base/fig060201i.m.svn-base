@@ -1,0 +1,21 @@
+% Oppgave 6.2.1i)
+x=0.5:0.01:(exp(1)+0.5);
+plot(x,(x-1)./(exp(1)-1),'k-')
+hold on
+xs=-0.2:0.1:3.5;
+plot(xs,zeros(1,length(xs)),'k-')
+ys=-0.2:0.1:1.2;
+plot(zeros(1,length(ys)),ys,'k-')
+plot(x,log(x),'k-')
+for xval=1.25:0.25:2.5
+  yvals=((xval-1)/(exp(1)-1)):0.01:log(xval);
+  plot(xval*ones(1,length(yvals)),yvals,'k-')
+end
+set(gca,'FontSize',12);
+set(gca,'XTick',0:1)
+set(gca,'YTick',0:1)
+xlabel('x')
+ylabel('y')
+axis equal
+axis([-0.2 3.5 -0.2 1.2])
+print -deps 060201i.eps

@@ -1,0 +1,8 @@
+\subsection{Oppgave 4.10.7}
+Anta $\lambda$ er en egenverdi for $A$. Da er 
+\[
+  0 = \det(\lambda I - A)=\det((\lambda I - A)^T) = \det(\lambda I - A^T).
+\]
+Fra dette følger det at $\lambda$ er en egenverdi for $A^T$ også, slik at de to matrisene har de samme egenverdiene. 
+Det er ingen grunn til at de to matrisene skulle ha de samme egenvektorene: Egenvektorene finner vi ved å løse likningssystemene til matrisene 
+$\lambda I -A$ og $\lambda I - A^T$, og dette er to vidt forskjellige systemer. 

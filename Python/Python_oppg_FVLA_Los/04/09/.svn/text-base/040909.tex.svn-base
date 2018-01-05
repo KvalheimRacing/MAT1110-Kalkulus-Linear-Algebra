@@ -1,0 +1,16 @@
+\subsection{Oppgave 4.9.9}
+Anta at radene til $A$ er lineært uavhengige. Kall radene for ${\bf a}_1,...,{\bf a}_n$. 
+Det finnes da en relasjon
+\[
+x_1{\bf a}_1 + \cdots x_n{\bf a}_n = {\bf 0},
+\]
+der ikke alle $x$'ene er null. Anta at $x_i\neq0$. Deler vi med $x_i$ i likningen over får vi en likning på formen
+\[
+y_1{\bf a}_1 + \cdots + y_{i-1}{\bf a}_{i-1} + {\bf a}_i + y_{i+1}{\bf a}_{i+1} + \cdots + y_n{\bf a}_n = {\bf 0},
+\]
+der $y_j = \frac{x_j}{x_i}$. I $A$ legger vi derfor $y_1$ ganger rad 1 til rad $i$, $y_2$ ganger rad 2 til rad $i$, osv. 
+På grunn av likningen over vil da rad $i$ bli ${\bf 0}$, og da blir også determinanten $0$.
+
+Dette følger også fra Teorem 4.9.10 og Korollar 4.9.16 slik: 
+radene i $A$ svarer til kolonnene i $A^T$. Siden $\det(A)=\det(A^T)$ så holder det å vise resultatet når kolonnene i matrisen er lineært avhengige. 
+I så fall er ikke alle søyler pivot-søyler, og dermed er ikke matrisen inverterbar. Da gir Teorem 4.9.10 at $\det(A)=0$. 

@@ -1,0 +1,75 @@
+\subsection{Oppgave 4.9.3}
+
+\subsubsection{a)}
+Ekspander langs andre rad:
+\begin{eqnarray*}
+  \left| \begin{array}{rrr} 1 & 2 & 4 \\ 0 & 0 & -1 \\ 3 & 7 & 2 \end{array} \right| 
+  &=& (-1)\times(-1)^{3+2} \times\left| \begin{array}{rr} 1 & 2 \\ 3 & 7 \end{array} \right| \\
+  &=& 7-6 = 1.
+\end{eqnarray*}
+
+\subsubsection{b)}
+Ekspander langs andre søyle:
+\begin{eqnarray*}
+  \left| \begin{array}{rrr} 1 & 0 & 3 \\ 2 & -3 & 1 \\ 4 & 0 & 2 \end{array} \right| 
+  &=& (-3)\times(-1)^{2+2} \times\left| \begin{array}{rr} 1 & 3 \\ 4 & 2 \end{array} \right| \\
+  &=& -3(2-12) = 30.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Vi ekspanderer langs den raden/kolonnen som har flest nuller. Her er dette rad 3:
+\begin{eqnarray*}
+\left| 
+\begin{array}{rrrr}
+3 & 1 & 0 & 4 \\
+2 & 1 & 2 & 0 \\
+0 & 0 & 1 & -2 \\
+1 & 2 & 1 & 2
+\end{array}
+\right|
+&=&
+(-1)^{3+3}\times 1\times
+\left| 
+\begin{array}{rrr}
+3 & 1 & 4 \\
+2 & 1 & 0 \\
+1 & 2 & 2
+\end{array}
+\right|
++(-1)^{3+4}\times(-2)\times
+\left| 
+\begin{array}{rrrr}
+3 & 1 & 0 \\
+2 & 1 & 2 \\
+1 & 2 & 1
+\end{array}
+\right| \\
+&=& 
+\left| 
+\begin{array}{rrr}
+3 & 1 & 4 \\
+2 & 1 & 0 \\
+1 & 2 & 2
+\end{array}
+\right|
++2\times
+\left| 
+\begin{array}{rrrr}
+3 & 1 & 0 \\
+2 & 1 & 2 \\
+1 & 2 & 1
+\end{array}
+\right|.
+\end{eqnarray*}
+Begge underdeterminantene ekspanderer vi nå langs tredje søyle (her finner vi en null i begge tilfellene):
+\begin{eqnarray*}
+  &=& (-1)^{1+3}\times 4\times 
+  \left| \begin{array}{rr} 2 & 1 \\ 1 & 2 \end{array} \right| 
+  + (-1)^{3+3}\times 2\times
+  \left| \begin{array}{rr} 3 & 1 \\ 2 & 1 \end{array} \right| \\
+  & & + 2\left( (-1)^{2+3}\times 2\times
+  \left| \begin{array}{rr} 3 & 1 \\ 1 & 2 \end{array} \right|
+  + (-1)^{3+3}\times 1\times
+  \left| \begin{array}{rr} 3 & 1 \\ 2 & 1 \end{array} \right| \right)\\
+  &=& 4(4-1) + 2(3-2) + 2\left( - 2(6-1) + (3-2)\right) = 12+2-20+2 = -4.
+\end{eqnarray*}

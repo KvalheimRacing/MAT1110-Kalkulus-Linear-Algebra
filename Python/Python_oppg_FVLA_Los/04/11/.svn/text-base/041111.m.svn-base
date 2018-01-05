@@ -1,0 +1,40 @@
+% Oppgave 4.11.11 c)
+C=bysykler(100,100,100,100);
+plot(C(1,:));
+hold on
+plot(C(2,:),'r')
+plot(C(3,:),'g')
+plot(C(4,:),'y')
+
+% Oppgave 4.11.11 d)
+powers = 1.0071.^[0:49];
+D(1,:)=C(1,:)./powers;
+D(2,:)=C(2,:)./powers;
+D(3,:)=C(3,:)./powers;
+D(4,:)=C(4,:)./powers;
+plot(D(1,:));
+hold on
+plot(D(2,:),'r')
+plot(D(3,:),'g')
+plot(D(4,:),'y')
+
+% Oppgave 4.11.11 e)
+C=bysykler(200,0,0,200);
+% Kjør c) og d) som før ellers
+
+% Oppgave 4.11.11 g)
+A=[0.46 0.115 0.115 0.345; ...
+   0.23 0.46 0.23 0.23; ...
+   0.23 0.23 0.2875 0.23; ...
+   0.115 0.23 0.2875 0.23];
+[U,V]=eig(A)
+
+U(1,:)=-U(1,:); % Gjør at egenvektoren for egenverdien 
+                % med størst absoluttverdi får positive tall.
+
+% Oppgave 4.11.11  h)
+rref(U)
+
+% Oppgave 4.11.11  i)
+rref([U [100;100;100;100]])
+    

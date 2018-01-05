@@ -1,0 +1,84 @@
+\subsection{Oppgave 3.5.12}
+
+\subsubsection{a)}
+Med $\phi_1(x,y)=\arctan\frac{y}{x}+C$ får vi
+\[ \bigtriangledown\phi_1(x,y) 
+   = 
+   \frac{-\frac{y}{x^2}}{1+\left(\frac{y}{x}\right)^2}{\bf i} + 
+   \frac{\frac{1}{x}}{1+\left(\frac{y}{x}\right)^2}{\bf j} 
+   = 
+   -\frac{y}{x^2+y^2}{\bf i} + 
+   \frac{x}{x^2+y^2}{\bf j} 
+   =
+   {\bf F}(x,y).
+\]
+
+\subsubsection{b)}
+Siden ${\bf F}$ har potensialfunksjonen $\phi_1$, og denne er definert til høyre for $y$-aksen, så har vi at 
+\begin{eqnarray*}
+\int_{\cal C} {\bf F}\cdot d{\bf r} &=& \phi_1(3,3)-\phi_1(1,-1) =\arctan(1)-\arctan(-1) \\
+                                    &=& \frac{\pi}{4}-\left(-\frac{\pi}{4}\right) = \frac{\pi}{2}.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Med $\phi_2(x,y)=-\arctan\frac{x}{y}+C$ får vi 
+\[ \bigtriangledown\phi_2(x,y) 
+   = 
+   -\frac{\frac{1}{y}}{1+\left(\frac{x}{y}\right)^2}{\bf i} + 
+   -\frac{-\frac{x}{y^2}}{1+\left(\frac{x}{y}\right)^2}{\bf j} 
+   = 
+   -\frac{y}{x^2+y^2}{\bf i} + 
+   \frac{x}{x^2+y^2}{\bf j} 
+   =
+   {\bf F}(x,y).
+\]
+
+\lstinputlisting[frame=single]{03/05/o030512.m}
+
+\subsubsection{e)}
+Funksjonene $\phi_1$ og $\phi_2$ er begge kontinuerlige når $x,y\neq 0$. Spesielt er de kontinuerlige i hver 
+kvadrant, og siden de har de samme partielle deriverte, så skiller de seg fra hverander med en konstant i hver 
+kvadrant. Men som vi skal se, konstanten er forskjellig fra kvadrant til kvadrant: 
+
+I likningen $\phi_1(x,y)=\phi_2(x,y)+C$ setter vi inn punktet $(1,1)$ fra første kvadrant, og får 
+$\arctan(1)=-\arctan(1)+C$, som gir $C=\frac{\pi}{2}$. Setter vi inn punktet $(-1,-1)$ fra tredje kvadrant 
+får vi samme verdi for $C$. 
+
+Setter vi så inn punktet $(-1,1)$ fra andre kvadrant får vi at $\arctan(-1)=-\arctan(-1)+C$, som gir 
+$C=-\frac{\pi}{2}$. Setter vi inn punktet $(1,-1)$ fra fjerde kvadrant får vi samme verdi for $C$. 
+
+Setter vi inn for $\phi_1$ og $\phi_2$ får vi dermed at
+\begin{eqnarray*}
+  \arctan\frac{y}{x} &=& -\arctan\frac{x}{y} + \frac{\pi}{2} \text{ i første og tredje kvadrant, eller når $xy>0$,} \\
+  \arctan\frac{y}{x} &=& -\arctan\frac{x}{y} - \frac{\pi}{2} \text{ i andre og fjerde kvadrant, eller når $xy<0$.}
+\end{eqnarray*} 
+
+\subsubsection{f)}
+Vi vet at $\phi_1(x,y)=\arctan\frac{y}{x}+ C$ er en potensialfunksjon for $x\neq 0$, uansett verdi av $C$. 
+For $y>0$ har vi at 
+\begin{eqnarray*}
+  \lim_{x\to 0^+} \phi_1(x,y) &=& \frac{\pi}{2}+C \\
+  \lim_{x\to 0^-} \phi_1(x,y) &=& -\frac{\pi}{2}+C.
+\end{eqnarray*}
+Velger vi derfor potensialfunksjonen $\psi_1(x,y)=\arctan\frac{y}{x}+ C$ for $x>0$ og 
+potensialfunksjonen $\psi_2(x,y)=\arctan\frac{y}{x}+C+\pi$ for $x<0$ får vi at, for $y>0$ 
+\begin{eqnarray*}
+  \lim_{x\to 0^+} \psi_1(x,y) &=& \frac{\pi}{2}+C\\
+  \lim_{x\to 0^-} \psi_2(x,y) &=& -\frac{\pi}{2}+C + \pi = \frac{\pi}{2}+C,
+\end{eqnarray*}
+slik at vi har en potensialfunksjon for ${\bf F}$, $\psi$, definert ved 
+\begin{eqnarray*}
+  \psi(x,y) &=& \arctan\frac{y}{x}+C \text{ for $x>0$, } \\
+  \psi(x,y) &=& \frac{\pi}{2}+C \text{ for $x=0,y>0$, } \\
+  \psi(x,y) &=& \arctan\frac{y}{x}+C+\pi \text{ for $x<0$,}
+\end{eqnarray*}
+som er kontinuerlig utenom den negative $y$-aksen. Gitt en verdi for $C$, 
+så er det klart at dette er den eneste måten å kontinuerlig utvide $\phi_1$ til planet utenom 
+den negative $y$-aksen. For å se at det er umulig å utvide $\phi_1$ til den negative $y$-aksen, 
+regner vi ut, for $y<0$,
+\begin{eqnarray*}
+  \lim_{x\to 0^+} \psi(x,y) &=& \lim_{x\to 0^+} \arctan\frac{y}{x}+C = -\frac{\pi}{2} + C \\
+  \lim_{x\to 0^-} \psi(x,y) &=& \lim_{x\to 0^-} \arctan\frac{y}{x}+C+\pi = \frac{\pi}{2} +C+\pi=\frac{3\pi}{2} + C.
+\end{eqnarray*}
+Derfor blir ikke utvidelsen vi har gjort kontinuerlig også på den negative $y$-aksen, slik at det er umulig 
+å lage en kontinuerlig utvidelse til hele $\R^2$. 

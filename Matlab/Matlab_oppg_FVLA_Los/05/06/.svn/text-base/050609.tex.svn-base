@@ -1,0 +1,22 @@
+\subsection{Oppgave 5.6.9}
+
+\subsubsection{a)}
+Newtons metode sier 
+\begin{eqnarray*}
+  {\bf x}_{n+1} &=& {\bf x}_n - ({\bf G}'({\bf x}_n))^{-1}{\bf G}({\bf x}_n) \\
+                &=& {\bf x}_n - ({\bf F}'({\bf x}_n)-I_n)^{-1}({\bf F}({\bf x}_n)-{\bf x}_n) \\
+                &=& ({\bf F}'({\bf x}_n)-I_n)^{-1}({\bf F}'({\bf x}_n)-I_n){\bf x}_n - ({\bf F}'({\bf x}_n)-I_n)^{-1}({\bf F}({\bf x}_n)-{\bf x}_n) \\               
+                &=& ({\bf F}'({\bf x}_n)-I_n)^{-1}( {\bf F}'({\bf x}_n){\bf x}_n - {\bf x}_n - {\bf F}({\bf x}_n) + {\bf x}_n ) \\
+                &=& ({\bf F}'({\bf x}_n)-I_n)^{-1}( {\bf F}'({\bf x}_n){\bf x}_n - {\bf F}({\bf x}_n)),
+\end{eqnarray*}
+som var det vi skulle vise.
+
+\subsubsection{b)}
+Vi ser på funksjonen $f(x)=x^3+3x+1$. Vi setter 
+\[ g(x)=f(x)-x=x^3+2x+1=0.\] 
+Vi har at $g'(x)=3x^2+2$, som alltid er større enn 0. 
+Siden funksjonen er strengt voksende og går fra $-\infty$ til $\infty$, så følger det fra skjæringssetningen at $g$ bare har ett nullpunkt, og dermed har $f$ 
+bare ett fikspunkt. Videre siden $g(-1)=-2<0<1=g(0)$, så følger det at fikspunktet må ligge mellom $-1$ og $0$. 
+
+\lstinputlisting[frame=single]{05/06/o050609.m}
+

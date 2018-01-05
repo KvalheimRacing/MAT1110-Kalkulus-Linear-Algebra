@@ -1,0 +1,4 @@
+\subsection{Oppgave 4.10.11}
+Hvis ${\bf v}$ er en egenvektor for $A$ med egenverdi $\lambda$ så har vi at $A{\bf v}=\lambda{\bf v}$. 
+Ganger vi med $A^{-1}$ på begge sider får vi at ${\bf v}=\lambda A^{-1}{\bf v}$, som også kan skrives $A^{-1}{\bf v}=\lambda^{-1}{\bf v}$.
+Dette viser at $\lambda^{-1}$ er en egenverdi for $A^{-1}$ med ${\bf v}$ som tilhørende egenvektor. 

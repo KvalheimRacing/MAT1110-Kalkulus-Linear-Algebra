@@ -1,0 +1,30 @@
+\subsection{Oppgave 3.5.10}
+Vi har vektorfeltet ${\bf F}(x,y,z)=(y^2z+2xy,2xyz+x^2,xy^2+1)$, og kurven ${\cal C}$ parametrisert ved
+\[
+  {\bf r}(t) = \left( t,t^2,t\sin\left( \frac{\pi t}{2}\right)\right) \mbox{, } 0\leq t\leq 1.
+\]
+Vi regner ut
+\begin{eqnarray*}
+  \frac{\partial F_2}{\partial x} &=& 2yz+2x\\
+  \frac{\partial F_1}{\partial y} &=& 2yz+2x\\
+  \frac{\partial F_3}{\partial x} &=& y^2\\
+  \frac{\partial F_1}{\partial z} &=& y^2\\
+  \frac{\partial F_2}{\partial z} &=& 2xy\\
+  \frac{\partial F_3}{\partial y} &=& 2xy,
+\end{eqnarray*}
+som viser at feltet er konservativt. For å finne en potensialfunksjon må vi løse
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y,z) = y^2z+2xy \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y,z) = 2xyz+x^2\\
+  \frac{\partial \phi}{\partial z} &=& F_3(x,y,z) = xy^2+1.
+\end{eqnarray*}
+Disse tre gir
+\begin{eqnarray*}
+  \phi(x,y,z) &=& y^2zx +x^2y + C(y,z) \\
+  \phi(x,y,z) &=& xy^2z +x^2y + C(x,z) \\
+  \phi(x,y,z) &=& xy^2z + z + C(x,y).
+\end{eqnarray*}
+Vi ser derfor at $\phi(x,y,z) = xy^2z + x^2y + z$ er en potensialfunksjon. Vi har derfor
+\[
+  \int_{\cal C} {\bf F}\cdot d{\bf r} = \int_{\cal C} \bigtriangledown\phi d{\bf r} = \phi({\bf b}) - \phi({\bf a}) = \phi(1,1,1)-\phi(0,0,0) = 3.
+\]

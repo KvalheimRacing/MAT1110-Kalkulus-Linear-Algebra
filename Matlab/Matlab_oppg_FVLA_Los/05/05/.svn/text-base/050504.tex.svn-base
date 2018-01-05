@@ -1,0 +1,5 @@
+\subsection{Oppgave 5.5.4}
+La $A$ være mengden av punkter i terrenget. 
+Se på avbildningen ${\bf F}$ definert ved at et punkt i terrenget blir sendt på punktet i terrenget som det tilsvarende punktet på kartet er plassert over. 
+Da er ${\bf F}$ en kontraksjon (siden kartets målestokk er større enn $1$), og den er en avbildning fra $A$ til $A$. 
+Men da har ${\bf F}$ et unikt fikspunkt, og i dette fikspunktet ligger punktet på kartet direkte over det tilsvarende punktet i terrenget.

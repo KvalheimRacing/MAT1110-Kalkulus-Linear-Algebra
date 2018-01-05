@@ -1,0 +1,43 @@
+\subsection{Oppgave 6.7.8}
+
+\subsubsection{a)}
+Vi kan begrense oss til verdier $u>0$, $0\leq v\leq 2\pi$. 
+\begin{itemize}
+  \item Første kvadrant av $xy$-planet svarer til at $0\leq v\leq \frac{\pi}{2}$. 
+  \item $y=2x$ svarer til at $2u\sin v = 2u\cos v$, slik at $v=\frac{\pi}{4}$ eller $v=\frac{5\pi}{4}$. Her er det bare den første vi er interessert i.  
+  \item Ellipsen $x^2+\frac{y^2}{4}=1$ svarer til at $u^2\cos^2 v + \frac{4u^2\sin^2 v}{4}=u^2=1$, slik at $u=1$ eller $u=-1$. 
+    Området innenfor ellipsen ser vi derfor er beskrevet ved at $0\leq u\leq 1$. 
+\end{itemize}
+Vi ser at området vårt, $D$,  er beskrevet ved at $0\leq u\leq 1$, $0\leq v\leq \frac{\pi}{4}$.
+La så ${\bf T}(u,v)= (u\cos v,2u\sin v)$. Vi har at 
+\begin{eqnarray*}
+  {\bf T}'(u,v) &=& \left( \begin{array}{rr} \cos v & -u\sin v \\ 2\sin v & 2u\cos v \end{array} \right) \\
+  |\det {\bf T}'(u,v)| &=& |2u\cos^2 v +2u\sin^2 v | = 2u.
+\end{eqnarray*}
+Arealet blir derfor
+\begin{eqnarray*}
+  \int\int_R dxdy                  &=& \int\int_{{\bf T}(D)} dxdy \\
+                                   & & \int\int_D |\det {\bf T}'(u,v)| dudv = \int_0^{\frac{\pi}{4}}\left[\int_0^1 |\det {\bf T}'(u,v)| du\right]dv \\
+                                   &=& \int_0^{\frac{\pi}{4}}\left[\int_0^1 2u du\right]dv = \int_0^{\frac{\pi}{4}} \left[ u^2 \right]_0^1 dv \\
+                                   &=& \int_0^{\frac{\pi}{4}}dv = \frac{\pi}{4}. 
+\end{eqnarray*}
+
+
+\subsubsection{b)}
+Flaten $z=x^2+\frac{y^2}{2}=u^2\cos^2 v + 2u^2\sin^2v=u^2(1+\sin^2 v)$ kan parametriseres ved hjelp av $u$ og $v$ ved
+\[
+  {\bf r}(u,v) = (u\cos v,2u\sin v,u^2(1+\sin^2 v))
+\]
+Vi får da
+\begin{eqnarray*}
+  \frac{\partial r}{\partial u} &=& (\cos v  ,2\sin v , 2u(1+\sin^2 v)) \\
+  \frac{\partial r}{\partial v} &=& (-u\sin v,2u\cos v, 2u^2\sin v\cos v) \\
+  \frac{\partial r}{\partial u} \times \frac{\partial r}{\partial v} &=& (- 4u^2\cos v  ,   -4u^2\sin v   ,2u) \\
+  \left| \frac{\partial r}{\partial u} \times \frac{\partial r}{\partial v} \right| &=& \sqrt{16u^4 + 4u^2} = 2u\sqrt{4u^2+1}.
+\end{eqnarray*}
+Arealet av flaten er gitt ved 
+\begin{eqnarray*}
+  \lefteqn{\int\int_D   \left| \frac{\partial r}{\partial u} \times \frac{\partial r}{\partial v} \right| dudv} \\
+  &=& \int_0^{\frac{\pi}{4}}\left[ \int_0^1 2u\sqrt{4u^2+1} du\right]dv = \int_0^{\frac{\pi}{4}} \left[  \frac{1}{6}(4u^2+1)^{3/2}  \right]_0^1 dv \\
+  &=& \frac{1}{6} \int_0^{\frac{\pi}{4}} (5^{3/2}-1)dv = \frac{1}{6} \frac{\pi}{4} (5\sqrt{5}-1) = \frac{\pi(5\sqrt{5}-1)}{24}. 
+\end{eqnarray*}

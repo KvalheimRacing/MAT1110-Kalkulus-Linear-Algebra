@@ -1,0 +1,40 @@
+\subsection{Oppgave 4.11.2}
+Vi gjør som i Eksempel 2. 
+Likningssystemet kan skrives
+\[
+\left( \begin{array}{r} x'(t) \\ y'(t) \end{array} \right) 
+= 
+\left( \begin{array}{rr} 1 & 8 \\ 2 & 1 \end{array} \right) 
+\left( \begin{array}{r} x(t) \\ y(t) \end{array} \right).
+\]
+Vi ser fort at 
+\begin{itemize}
+  \item Egenverdiene til $\left( \begin{array}{rr} 1 & 8 \\ 2 & 1 \end{array} \right)$ er $\lambda_1=-3$, $\lambda_2=5$,
+  \item ${\bf v}_1 = \left( \begin{array}{r} -2 \\ 1 \end{array} \right)$ er en egenvektor for $\lambda_1=-3$, 
+  \item ${\bf v}_2 = \left( \begin{array}{r} 2 \\ 1 \end{array} \right)$ er en egenvektor for $\lambda_2=5$. 
+\end{itemize}
+Den generelle løsningen av systemet er derfor 
+\[
+\left( \begin{array}{r} x(t) \\ y(t) \end{array} \right)
+=
+Ae^{-3t}\left( \begin{array}{r} -2 \\ 1 \end{array} \right) +Be^{5t}\left( \begin{array}{r} 2 \\ 1 \end{array} \right).
+\]
+Setter vi inn $t=0$ får vi likningssystemet 
+\begin{eqnarray*}
+-2A +2B &=& 1 \\
+A + B   &=& 6.
+\end{eqnarray*}
+Løser vi dette får vi $A=\frac{11}{4},B=\frac{13}{4}$.
+Den spesielle løsningen blir dermed 
+\[
+\left( \begin{array}{r} x(t) \\ y(t) \end{array} \right)
+=
+\frac{11}{4}e^{-3t}\left( \begin{array}{r} -2 \\ 1 \end{array} \right) +\frac{13}{4}e^{5t}\left( \begin{array}{r} 2 \\ 1 \end{array} \right)
+=
+\left(
+\begin{array}{r}
+-\frac{11}{2}e^{-3t} +\frac{13}{2}e^{5t}\\
+\frac{11}{4}e^{-3t} +\frac{13}{4}e^{5t}
+\end{array}
+\right).
+\]

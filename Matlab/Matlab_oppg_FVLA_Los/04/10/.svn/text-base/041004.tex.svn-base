@@ -1,0 +1,189 @@
+\subsection{Oppgave 4.10.4}
+
+\subsubsection{a)}
+Det karakteristiske polynomet til $A$ er 
+\[
+  (\lambda-2)(\lambda+1) - 4 = \lambda^2-\lambda-6=(\lambda+2)(\lambda-3).
+\]
+Egenverdiene er derfor $\lambda_1=-2$, $\lambda_2=3$. 
+
+\begin{itemize}
+  \item Egenvektor for $\lambda_1=-2$:
+\[
+  -2I-A = \left( \begin{array}{rr} -4 & -2 \\ -2 & -1 \end{array} \right)
+          \sim \left( \begin{array}{rr} 1 & \frac{1}{2} \\ 0 & 0 \end{array} \right).
+\]
+Vi ser derfor at ${\bf v}_1 = \left( \begin{array}{r} 1 \\ -2 \end{array} \right)$ er en egenvektor. 
+  \item Egenvektor for $\lambda_2=3$:
+\[
+  3I-A = \left( \begin{array}{rr} 1 & -2 \\ -2 & 4 \end{array} \right)
+         \sim \left( \begin{array}{rr} 1 & -2 \\ 0 & 0 \end{array} \right).
+\]
+Vi ser derfor at ${\bf v}_2 = \left( \begin{array}{r} 2 \\ 1 \end{array} \right)$ er en egenvektor. 
+\end{itemize}
+For å skrive den gitte vektoren som en lineær kombinasjon av egenvektorer må vi radredusere
+\[
+  \left( \begin{array}{rrr} 1 & 2 & -1 \\ -2 & 1 & 5 \end{array} \right)
+  \sim \left( \begin{array}{rrr} 1 & 2 & -1 \\ 0 & 5 & 3 \end{array} \right)
+  \sim \left( \begin{array}{rrr} 1 & 2 & -1 \\ 0 & 1 & \frac{3}{5} \end{array} \right)
+  \sim \left( \begin{array}{rrr} 1 & 0 & -\frac{11}{5} \\ 0 & 1 & \frac{3}{5} \end{array} \right).
+\]
+Vi ser derfor at vi kan skrive
+\[
+  {\bf x} = -\frac{11}{5}{\bf v}_1 + \frac{3}{5}{\bf v}_2.
+\]
+
+\subsubsection{c)}
+Vi regner ut 
+\begin{eqnarray*}
+  \det(\lambda I - A) &=&
+  \left| 
+  \begin{array}{rrr}
+  \lambda + \frac{1}{2} & \frac{4}{3} & -\frac{3}{2} \\
+  0                     & \lambda+1   & 0 \\
+  -\frac{3}{2}          & \frac{2}{3}           & \lambda + \frac{1}{2}
+  \end{array}
+  \right| \\
+  &=& (\lambda+1)(   (\lambda + \frac{1}{2})(\lambda + \frac{1}{2}) - \frac{9}{4} ) \\
+  &=& (\lambda+1)(\lambda^2+\lambda-2) \\
+  &=& (\lambda+1)(\lambda+2)(\lambda-1).
+\end{eqnarray*}
+hvor vi har brukt formelen for løsningen av andregradslikningen. 
+Vi ser at $\lambda_1=-2$, $\lambda_2=-1$, $\lambda_3=1$.
+
+\begin{itemize}
+  \item Egenvektor for $\lambda_1=-2$: 
+Matrisen til likningssystemet $(-2I-A){\bf v}_1={\bf 0}$ er 
+\[
+  \left(
+  \begin{array}{rrr}
+  -\frac{3}{2} & \frac{4}{3} & -\frac{3}{2} \\
+  0            & -1           & 0 \\
+  -\frac{3}{2} & \frac{2}{3}  & -\frac{3}{2}
+  \end{array}
+  \right) 
+  \sim
+ \left(
+  \begin{array}{rrr}
+  -9 & 8 & -9 \\
+  0  & 1 & 0 \\
+  -9 & 4 & -9
+  \end{array}
+  \right)
+  \sim
+ \left(
+  \begin{array}{rrr}
+  1  & 0 & 1 \\
+  0  & 1 & 0 \\
+  0  & 0 & 0 
+  \end{array}
+  \right)
+\]
+Vi ser at $z$ kan velges fritt og at den generelle egenvektoren har formen $\left( \begin{array}{r} -z \\ 0 \\ z \end{array} \right)$. 
+Velger vi $z=1$ får vi egenvektoren ${\bf v}_1=\left( \begin{array}{r} -1 \\ 0 \\ 1 \end{array} \right)$. 
+  \item Egenvektor for $\lambda_2=-1$: 
+Matrisen til likningssystemet $(-I-A){\bf v}_2={\bf 0}$ er 
+\begin{eqnarray*}
+  \left(
+  \begin{array}{rrr}
+  -\frac{1}{2} & \frac{4}{3} & -\frac{3}{2} \\
+  0            & 0           & 0 \\
+  -\frac{3}{2} & \frac{2}{3}  & -\frac{1}{2}
+  \end{array}
+  \right) 
+  &\sim&
+  \left(
+  \begin{array}{rrr}
+  3 & -8 & 9 \\
+  0  & 0 & 0 \\
+  -9 & 4  & -3
+  \end{array}
+  \right)
+  \sim
+  \left(
+  \begin{array}{rrr}
+  1 & -\frac{8}{3}  & 3 \\
+  0 & 0   & 0 \\
+  0 & -20 & 24
+  \end{array}
+  \right) \\
+  &\sim&
+  \left(
+  \begin{array}{rrr}
+  1 & 0   & -\frac{1}{5} \\
+  0 & 1   & -\frac{6}{5} \\
+  0 & 0   & 0
+  \end{array}
+  \right) 
+\end{eqnarray*}
+Vi ser at $z$ kan velges fritt, og at den generelle egenvektoren har formen $\left( \begin{array}{r} \frac{1}{5}z \\ \frac{6}{5}z\\ z \end{array} \right)$. 
+Velger vi $z=5$ får vi egenvektoren ${\bf v}_2=\left( \begin{array}{r} 1 \\ 6\\ 5 \end{array} \right)$.
+  \item Egenvektor for $\lambda_3=1$: 
+Matrisen til likningssystemet $(I-A){\bf v}_3={\bf 0}$ er 
+\begin{eqnarray*}
+  \left(
+  \begin{array}{rrr}
+  \frac{3}{2} & \frac{4}{3} & -\frac{3}{2} \\
+  0            & 2           & 0 \\
+  -\frac{3}{2} & \frac{2}{3}  & \frac{3}{2}
+  \end{array}
+  \right) 
+  &\sim&
+  \left(
+  \begin{array}{rrr}
+  3  & 4 & -3 \\
+  0  & 1 & 0 \\
+  -3 & 2 & 3
+  \end{array}
+  \right)
+  \sim
+  \left(
+  \begin{array}{rrr}
+  1  & 0 & -1 \\
+  0  & 1 & 0 \\
+  0  & 0 & 0
+  \end{array}
+  \right)
+\end{eqnarray*}
+Vi ser at $z$ kan velges fritt, og at den generelle egenvektoren har formen $\left( \begin{array}{r} z \\ 0\\ z \end{array} \right)$. 
+Velger vi $z=1$ får vi egenvektoren ${\bf v}_3=\left( \begin{array}{r} 1 \\ 0\\ 1 \end{array} \right)$.
+\end{itemize}
+For å  skrive ${\bf x}$ som en lineær kombinasjon av egenvektorene må vi radredusere den utvidede matrisen:
+\begin{eqnarray*}
+\left(
+\begin{array}{rrrr}
+-1 & 1 & 1 & 1\\
+ 0 & 6 & 0 & 3\\
+ 1 & 5 & 1 & 1
+\end{array}
+\right)
+&\sim&
+\left(
+\begin{array}{rrrr}
+-1 & 1 & 1 & 1 \\
+ 0 & 1 & 0 & \frac{1}{2} \\
+ 0 & 6 & 2 & 2
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & -1 & -\frac{1}{2} \\
+ 0 & 1 & 0  & \frac{1}{2} \\
+ 0 & 0 & 2  & -1
+\end{array}
+\right) \\
+&\sim&
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 0 & -1 \\
+ 0 & 1 & 0 & \frac{1}{2} \\
+ 0 & 0 & 1 & -\frac{1}{2}
+\end{array}
+\right)
+\end{eqnarray*}
+Vi kan altså skrive
+\[
+  {\bf x}=-{\bf v}_1 + \frac{1}{2}{\bf v}_2 -\frac{1}{2}{\bf v}_3.
+\]
+

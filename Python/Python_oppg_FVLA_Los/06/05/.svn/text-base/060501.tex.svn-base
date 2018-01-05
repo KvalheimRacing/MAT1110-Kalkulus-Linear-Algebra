@@ -1,0 +1,22 @@
+\subsection{Oppgave 6.5.1}
+
+\subsubsection{a)}
+Vi skal regne ut $\int_{\cal C} (x^2+y)dx + x^2ydy$. 
+Vi regner ut 
+\[
+  \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 2xy - 1,
+\]
+og Greens teorem gir derfor
+\begin{eqnarray*}
+  \lefteqn{\int_{\cal C} (x^2+y)dx + x^2ydy} \\
+  &=& \int_0^2\left[\int_0^2 (2xy-1) dx\right]dy = \int_0^2 \left[ x^2y-x \right]_0^2 dy = \int_0^2 (4y-2)dy \\
+  &=& [ 2y^2-2y]_0^2 = 8-4=4.
+\end{eqnarray*}
+
+\subsubsection{b)}
+Vi skal regne ut $\int_{\cal C} (x^2y^3)dx + x^3y^2dy$. 
+Vi regner ut 
+\[
+  \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 3x^2y^2 - 3x^2y^2 = 0.
+\]
+Linjeintegralet må derfor bli $0$. 

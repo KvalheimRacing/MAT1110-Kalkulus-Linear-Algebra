@@ -1,0 +1,75 @@
+\subsection{Oppgave 4.11.7}
+
+\subsubsection{a)}
+Antall nyfødte biller oppfyller 
+\[
+  x_{n+1} = 3y_n + 4z_n,
+\]
+siden en voksen bille gir opphav til $3$ biller uken etter, en gammel bille gir opphav til $4$ biller uken etter.
+Antall voksne biller oppfyller
+\[
+  y_{n+1} = x_n,
+\]
+mens antall gamle biller oppfyller 
+\[
+  z_{n+1} = \frac{1}{2}y_n.
+\]
+Det er derfor klart at vi kan skrive 
+\[
+  \left( \begin{array}{r} x_{n+1} \\ y_{n+1} \end{array} \right)
+  =
+  \left( \begin{array}{rrr} 0 & 3 & 4 \\ 1 & 0 & 0 \\ 0 & \frac{1}{2} & 0 \end{array} \right)
+  \left( \begin{array}{r} x_n \\ y_n \end{array} \right),
+\]
+som gir oss matrisen $M$. 
+
+\subsubsection{b)}
+Den karakteristiske likningen blir
+\begin{eqnarray*}
+  \left| \begin{array}{rrr} \lambda & -3 & -4 \\ -1 & \lambda & 0 \\ 0 & -\frac{1}{2} & \lambda \end{array} \right|
+  &=& -\frac{1}{2}(-1)^{3+2} \left| \begin{array}{rr} \lambda & -4 \\ -1 & 0 \end{array} \right| 
+      +\lambda(-1)^{3+3} \left| \begin{array}{rr} \lambda & -3 \\ -1 & \lambda \end{array} \right| \\
+  &=& -2 + \lambda(\lambda^2-3) \\
+  &=& \lambda^3-3\lambda-2 \\
+  &=& (\lambda+1)(\lambda^2-\lambda-2) \\
+  &=& (\lambda+1)^2(\lambda-2)
+\end{eqnarray*}
+
+\begin{itemize}
+  \item
+Egenvektor for $\lambda_1=-1$: Vi radreduserer
+\begin{eqnarray*}
+  -I-M &=& \left( \begin{array}{rrr} -1 & -3 & -4 \\ -1 & -1 & 0 \\ 0 & -\frac{1}{2} & -1 \end{array} \right)
+           \sim \left( \begin{array}{rrr} 1 & 3 & 4 \\ 0 & 2 & 4 \\ 0 & -\frac{1}{2} & -1 \end{array} \right) \\
+       &\sim& \left( \begin{array}{rrr} 1 & 3 & 4 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right)
+           \sim \left( \begin{array}{rrr} 1 & 0 & -2 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right)
+\end{eqnarray*}
+Vi ser at ${\bf v}_1 = \left( \begin{array}{r} 2 \\ -2 \\ 1\end{array} \right)$ er en egenvektor.
+  \item
+Egenvektor for $\lambda_2=2$: Vi radreduserer
+\begin{eqnarray*}
+  2I-M &=& \left( \begin{array}{rrr} 2 & -3 & -4 \\ -1 & 2 & 0 \\ 0 & -\frac{1}{2} & 2 \end{array} \right)
+           \sim \left( \begin{array}{rrr} 1 & -2 & 0 \\ 2 & -3 & -4 \\ 0 & -\frac{1}{2} & 2 \end{array} \right) \\
+       &\sim& \left( \begin{array}{rrr} 1 & -2 & 0 \\ 0 & 1 & -4 \\ 0 & 0 & 0 \end{array} \right)
+           \sim \left( \begin{array}{rrr} 1 & 0 & -8 \\ 0 & 1 & -4 \\ 0 & 0 & 0 \end{array} \right)
+\end{eqnarray*}
+Vi ser at ${\bf v}_2 = \left( \begin{array}{r} 8 \\ 4 \\ 1\end{array} \right)$ er en egenvektor.
+\end{itemize}
+
+\subsubsection{c)}
+Starttilstanden vår er $\left( \begin{array}{r} 24 \\ 0 \\ 6 \end{array} \right)$. Vi starter med å skrive denne som en kombinasjon av egenvektorer:
+\begin{eqnarray*}
+  \left( \begin{array}{rrr} 2 & 8 & 24 \\ -2 & 4 & 0 \\ 1 & 1 & 6 \end{array} \right)
+      &\sim& \left( \begin{array}{rrr} 1 & 1 & 6 \\ 2 & 8 & 24 \\ -2 & 4 & 0 \end{array} \right)
+             \sim \left( \begin{array}{rrr} 1 & 1 & 6 \\ 0 & 6 & 12 \\ 0 & 6 & 12 \end{array} \right) \\
+      &\sim& \left( \begin{array}{rrr} 1 & 1 & 6 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right)
+             \sim \left( \begin{array}{rrr} 1 & 0 & 4 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{array} \right)
+\end{eqnarray*}
+Vi ser at starttilstanden kan skrives som $4{\bf v}_1+2{\bf v}_2$, og dermed vil tilstanden $n$ uker senere være
+\[
+  \left( \begin{array}{r} x_n\\ y_n \\ z_n \end{array} \right) 
+  = 4(-1)^n\left( \begin{array}{r} 2 \\ -2 \\ 1\end{array} \right) 
+    + 2\times 2^n\left( \begin{array}{r} 8 \\ 4 \\ 1\end{array} \right)
+  = 
+  \left( \begin{array}{r} 8(-1)^n+16\times 2^n \\ -8(-1)^n+8\times 2^n \\ 4(-1)^n + 2\times 2^n \end{array} \right).
+\]

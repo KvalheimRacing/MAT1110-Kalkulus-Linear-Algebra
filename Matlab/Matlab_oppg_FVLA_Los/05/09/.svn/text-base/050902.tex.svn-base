@@ -1,0 +1,63 @@
+\subsection{Oppgave 5.9.2}
+
+\subsubsection{a)}
+Vi ser at $\bigtriangledown f = (2x-2,2y+4)$. Vi ser at eneste stasjonære punkt er $x=1,y=-2$. 
+Hesse-matrisen er 
+\[
+  Hf(x,y) = 
+  \left(
+  \begin{array}{rr}
+  2 & 0 \\
+  0 & 2
+  \end{array}
+  \right).
+\]
+Egenverdiene til denne er begge lik $2$, siden egenverdiene alltid står på diagonalen i en diagonalmatrise. 
+Dermed sier annenderiverttesten at $(1,-2)$ er et lokalt minimum. 
+
+\subsubsection{b)}
+Vi ser at $\bigtriangledown f = (2xy^2-4y+6,2x^2y-4x-6)$. I et stasjonært punkt må vi ha at 
+\begin{eqnarray*}
+  2xy^2-4y &=& -6 \\
+  2x^2y-4x &=& 6
+\end{eqnarray*}
+som også kan skrives 
+\begin{eqnarray*}
+  2x^2y^2-4xy &=& -6x \\
+  2x^2y^2-4xy &=& 6y.
+\end{eqnarray*}
+Vi ser da at $y=-x$, slik at $2x^3+4x+6=0$. Det er lett å sjekke at $x=-1$ er en rot her, og det er raskt å sjekke at dette er eneste rot 
+(gjør feks. polynomdivisjon og bruk formelen for andregradslikningen). Eneste stasjonære punkt er altså $(-1,1)$. Vi har at 
+\begin{eqnarray*}
+  Hf(x,y) &=& 
+  \left(
+  \begin{array}{rr}
+  2y^2 & 4xy-4 \\
+  4xy-4 & 2x^2
+  \end{array}
+  \right) \\
+  Hf(-1,1) &=& 
+  \left(
+  \begin{array}{rr}
+  2  & -8 \\
+  -8 & 2
+  \end{array}
+  \right). 
+\end{eqnarray*}
+Vi finner raskt ut at determinanten er negativ. Dermed er $(-1,1)$ et sadelpunkt. 
+
+\subsubsection{c)}
+De partielle deriverte til $f(x,y)=e^{x^2+3y^2}$ er 
+\begin{eqnarray*}
+  \frac{\partial f}{\partial x} &=& 2xe^{x^2+3y^2} \\
+  \frac{\partial f}{\partial y} &=& 6ye^{x^2+3y^2}.
+\end{eqnarray*}
+Det er klart at disse er $0$ bare for $x=y=0$, slik at origo er eneste stasjonære punkt. 
+Andreordens partielle deriverte blir 
+\begin{eqnarray*}
+  \frac{\partial^2 f}{\partial x^2}         &=& (2+4x^2)e^{x^2+3y^2} \\
+  \frac{\partial^2 f}{\partial x\partial y} &=& 12xye^{x^2+3y^2} \\
+  \frac{\partial^2 f}{\partial y^2}         &=& (6+36y^2)e^{x^2+3y^2}.
+\end{eqnarray*}
+Hesse-matrisen i origo blir dermed $\left( \begin{array}{rr} 2 & 0 \\ 0 & 6 \end{array} \right)$. 
+Egenverdiene her er $2$ og $6$. Siden begge disse er positive så er punktet et minimum. 

@@ -1,0 +1,81 @@
+\subsection{Oppgave 6.1.1}
+
+\subsubsection{a)}
+\begin{eqnarray*}
+  {\int\int}_R xydxdy &=& \int_2^4 \left[\int_1^2 xy dx\right]dy = \int_2^4 \left[ \frac{1}{2}x^2y \right]_1^2 dy \\
+                      &=& \int_2^4 \left( 2y-\frac{1}{2}y\right) dy = \int_2^4 \frac{3}{2}y dy \\
+                      &=& \left[ \frac{3}{4} y^2 \right]_2^4 = 12 - 3 = 9.
+\end{eqnarray*}
+
+\subsubsection{b)}
+\begin{eqnarray*}
+  \lefteqn{{\int\int}_R (x+\sin y)dxdy }\\
+  &=& \int_0^{\pi} \left[\int_0^1 (x+\sin y)dx\right]dy = \int_0^{\pi} \left[ \frac{1}{2}x^2 + x\sin y \right]_0^1 dy \\
+  &=& \int_0^{\pi} \left( \frac{1}{2} + \sin y \right) dy = \left[ \frac{1}{2}y -\cos y \right]_0^{\pi} = \frac{\pi}{2} +1 +1 = 2+\frac{\pi}{2}.
+\end{eqnarray*}
+
+\subsubsection{d)}
+\begin{eqnarray*}
+  \lefteqn{{\int\int}_R x\cos(xy)dxdy} \\ 
+  &=& \int_1^2 \left[\int_{\pi}^{2\pi} x\cos(xy) dy\right]dx = \int_1^2 \left[ \sin(xy) \right]_{\pi}^{2\pi} dx \\
+  &=& \int_1^2 ( \sin(2\pi x) - \sin(\pi x) ) dx = \left[ -\frac{1}{2\pi} \cos(2\pi x) + \frac{1}{\pi} \cos(\pi x) \right]_1^2 \\
+  &=& -\frac{1}{2\pi} + \frac{1}{\pi} + \frac{1}{2\pi} + \frac{1}{\pi} = \frac{2}{\pi}.
+\end{eqnarray*}
+
+\subsubsection{e)}
+\begin{eqnarray*}
+  \lefteqn{{\int\int}_R xye^{x^2y}dxdy} \\
+  &=& \int_0^2 \left[\int_1^2 xye^{x^2y}dy\right]dx = \int_1^2 \left[\int_0^2 xye^{x^2y}dx\right]dy \\
+  &=& \int_1^2 \left[ \frac{1}{2}e^{x^2y} \right]_0^2 dy = \int_1^2 \left( \frac{1}{2}e^{4y} - \frac{1}{2} \right) dy = \left[ \frac{1}{8}e^{4y} - \frac{1}{2}y \right]_1^2 \\
+  &=& \frac{1}{8}e^8 - 1 - \frac{1}{8}e^4 + \frac{1}{2} = \frac{1}{8}e^8 - \frac{1}{8}e^4 - \frac{1}{2}.
+\end{eqnarray*}
+
+\subsubsection{f)}
+\begin{eqnarray*}
+  {\int\int}_R \ln(xy)dxdy &=& \int_1^e \left[\int_1^e \ln(xy) dx\right]dy \\
+                           &=& \int_1^e \left[\int_1^e \ln x + \ln y dx\right]dy \\
+                           &=& \int_1^e \left( \left[ x\ln x \right]_1^e - \int_1^e 1 dx + \left[ x\ln y \right]_1^e \right) dy \\
+                           &=& \int_1^e \left( e - e + 1 + (e-1)\ln y \right) dy \\
+                           &=& \int_1^e \left( 1 + (e-1)\ln y \right) dy \\
+                           &=& \left[ y \right]_1^e + (e-1)\left[ y\ln y\right]_1^e - (e-1)\int_1^e dy \\
+                           &=& e-1 +e(e-1) - (e-1)^2 \\
+                           &=& (e-1)(1+e-e+1) = 2(e-1).
+\end{eqnarray*}
+
+\subsubsection{g)}
+Setter vi først $u=x\sqrt{y}$ og $du=\sqrt{y}dx$ i det innerste integralet får vi 
+\[
+  \int \frac{1}{1+x^2y} dx = \int \frac{1}{\sqrt{y}(1+u^2)} du = y^{-1/2}\arctan u = y^{-1/2}\arctan(x\sqrt{y}).
+\]
+Dermed blir integralet
+\begin{eqnarray*}
+  {\int\int}_R \frac{1}{1+x^2y} dxdy &=& \int_0^1 \left[\int_1^{\sqrt{3}} \frac{1}{1+x^2y} dx\right]dy \\
+                                     &=& \int_0^1 \left[ y^{-1/2}\arctan(x\sqrt{y}) \right]_1^{\sqrt{3}} dy \\                
+                                     &=& \int_0^1 y^{-1/2}(\arctan(\sqrt{3y})-\arctan(\sqrt{y})) dy.
+\end{eqnarray*}
+Bruker vi her substitusjonen $u=\sqrt{y}$ får vi at $du=\frac{1}{2}y^{-1/2}dy$, og dermed 
+\[
+  \int_0^1 y^{-1/2}(\arctan(\sqrt{3y})-\arctan(\sqrt{y})) dy = 2\int_0^1 (\arctan(\sqrt{3}u)-\arctan u)du.
+\]
+Her kan vi fortsette med delvis integrasjon:
+\begin{eqnarray*}
+  \lefteqn{2\int_0^1 (\arctan(\sqrt{3}u)-\arctan u)du} \\
+                                             &=& 2\left[ u(\arctan(\sqrt{3}u)-\arctan u) \right]_0^1 
+                                                 - 2\int_0^1 \left( \frac{\sqrt{3}u}{1+3u^2} - \frac{u}{1+u^2} \right)du \\
+                                             &=& 2(\arctan\sqrt{3}-\arctan 1)
+                                                 - 2\left[ \frac{\sqrt{3}}{6}\ln(1+3u^2) - \frac{1}{2}\ln(1+u^2) \right]_0^1 \\
+                                             &=& 2(\frac{\pi}{3}-\frac{\pi}{4}) -  2\frac{\sqrt{3}}{6}\ln 4 + 2\frac{1}{2} \ln 2 \\
+                                             &=& \frac{\pi}{6} + \left(1-\frac{2\sqrt{3}}{3}\right)\ln 2.
+\end{eqnarray*}
+Integralet blir kanskje litt enklere hvis vi bytter om integrasjonsrekkefølgen (Teorem 6.1.7). Vi får da
+\begin{eqnarray*}
+  {\int\int}_R \frac{1}{1+x^2y} dxdy &=& \int_0^1 \left[\int_1^{\sqrt{3}} \frac{1}{1+x^2y} dx\right]dy
+                                         = \int_1^{\sqrt{3}} \left[\int_0^1 \frac{1}{1+x^2y} dy\right]dx \\                                     
+                                     &=& \int_1^{\sqrt{3}} \left[ \frac{\ln(1+x^2y)}{x^2} \right]_0^1 dx
+                                         = \int_1^{\sqrt{3}} \frac{\ln(1+x^2)}{x^2} dx \\
+                                     &=& \left[ -\frac{\ln(1+x^2)}{x} \right]_1^{\sqrt{3}}  + \int_1^{\sqrt{3}} \frac{2x}{(1+x^2)x} dx \\
+                                     &=& -\frac{\ln 4}{\sqrt{3}}+\ln 2     +   \left[ 2\arctan x   \right]_1^{\sqrt{3}}   \\
+                                     &=& -\frac{2\sqrt{3}\ln 2}{3} +\ln 2     +   \frac{2\pi}{3} -\frac{\pi}{2}    \\
+                                     &=& \left(1-\frac{2\sqrt{3}}{3}\right)\ln 2 +\frac{\pi}{6},
+\end{eqnarray*}
+der vi har brukt delvis integrasjon.

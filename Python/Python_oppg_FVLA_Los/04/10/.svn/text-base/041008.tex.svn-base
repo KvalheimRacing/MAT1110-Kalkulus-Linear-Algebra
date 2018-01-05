@@ -1,0 +1,7 @@
+\subsection{Oppgave 4.10.8}
+Hvis ${\bf v}$ er egenvektor for både $A$ og $B$ finnes det tall $\lambda_1,\lambda_2$ slik at 
+$A{\bf v}=\lambda_1{\bf v}, B{\bf v}=\lambda_2{\bf v}$. men da er 
+\[
+  (A+B){\bf v} = A{\bf v} + B{\bf v} = \lambda_1{\bf v} + \lambda_2{\bf v} = (\lambda_1+ \lambda_2){\bf v},
+\]
+slik at ${\bf v}$ også er en egenvektor for $A+B$, med tilhørende egenverdi $\lambda_1+ \lambda_2$.

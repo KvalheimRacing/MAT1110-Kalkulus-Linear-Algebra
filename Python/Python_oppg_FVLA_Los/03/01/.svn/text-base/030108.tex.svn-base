@@ -1,0 +1,11 @@
+\subsection{Oppgave 3.1.8}
+Vi har ${\bf r}(t) = (t^2,t^3)$, der $t\in [0,10]$. Vi har at 
+\begin{eqnarray*}
+  L(0,10) &=& \int_0^{10} \sqrt{x'(t)^2+y'(t)^2} dt \\
+          &=& \int_0^{10} \sqrt{4t^2+9t^4} dt = \int_0^{10} t\sqrt{9t^2+4} dt.
+\end{eqnarray*}
+Gjør vi her substitusjonen $u=9t^2+4$, som gir $du=18tdt$ så får vi videre
+\begin{eqnarray*}
+  \int_0^{10} t\sqrt{9t^2+4} dt &=& \frac{1}{18} \int_0^{10} 18t\sqrt{9t^2+4} dt = \frac{1}{18}\int_4^{904} \sqrt{u}du \\
+          &=& \frac{1}{18} \left[ \frac{2}{3}u^{3/2} \right]_4^{904} = \frac{1}{27} \left[ u^{3/2} \right]_4^{904} = \frac{904^{3/2}-8}{27}.
+\end{eqnarray*}

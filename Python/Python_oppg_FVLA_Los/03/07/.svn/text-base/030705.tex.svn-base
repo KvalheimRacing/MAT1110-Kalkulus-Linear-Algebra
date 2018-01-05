@@ -1,0 +1,25 @@
+\subsection{Oppgave 3.7.5}
+
+\subsubsection{a)}
+Vi har $f(x,y) = x^2y$, og skal finne tangentplanet i $(1,-2)$. Vi har at
+\begin{itemize}
+  \item $f(1,-2) = -2$, 
+  \item $\bigtriangledown f(1,-2) = (-4,1)$. 
+\end{itemize}
+Likningen for tangentplanet blir dermed 
+\begin{eqnarray*}
+  z &=& f(1,-2) + \frac{\partial f}{\partial x}(1,-2)(x-1) + \frac{\partial f}{\partial y}(1,-2)(y+2) \\
+    &=& -2 -4(x-1) + (y+2) \\
+    &=& -4x+y+4.
+\end{eqnarray*}
+
+\subsubsection{b)}
+Vi har $f(x,y) = xe^{-xy}$, og skal finne tangentplanet i $(1,0)$. Vi har at 
+\begin{itemize}
+  \item $f(1,0) = 1$, 
+  \item $\frac{\partial f}{\partial x} = (1-xy)e^{-xy}$, og $\frac{\partial f}{\partial y} = -x^2e^{-xy}$, 
+  \item $\bigtriangledown f(1,0) = (1,-1)$. 
+\end{itemize}
+Likningen for tangentplanet blir dermed $z = x - y + c$. 
+$c$ finner vi ved å sette inn punktet $(1,0,1)$: $1=1+c$, slik at $c=0$.\\
+Likningen for tangentplanet blir dermed $z = x - y$, som også kan skrives $-x+y+z=0$.

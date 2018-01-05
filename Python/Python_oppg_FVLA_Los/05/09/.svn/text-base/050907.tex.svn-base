@@ -1,0 +1,62 @@
+\subsection{Oppgave 5.9.7}
+De partielle deriverte til $f$ er 
+\begin{eqnarray*}
+  \frac{\partial f}{\partial x} &=& yz-2x \\
+  \frac{\partial f}{\partial y} &=& xz-2y \\
+  \frac{\partial f}{\partial z} &=& xy-2z.
+\end{eqnarray*}
+Det er dermed klart at $(x,y,z)=(0,0,0)$ er et stasjonært punkt. 
+Det er også klart at andre stasjonære punkter har $x,y,z\neq 0$. 
+Setter vi $yz-2x=0$ får vi at $x=\frac{yz}{2}$. Setter vi dette inn i den andre likningen får vi at $\frac{yz}{2}z=2y$, eller at $z^2=4$. 
+På samme måte gjelder at $x^2=y^2=4$, og vi har derfor at $x=\pm 2, y = \pm 2, z = \pm 2$. 
+Ved å prøve alle muligheter her ser vi at det bare er $(x,y,z)=(2,2,2),(2,-2,-2),(-2,2,-2),(-2,-2,2)$ som gir stasjonære punkter. 
+
+Andreordens partielle deriverte blir
+\begin{eqnarray*}
+  \frac{\partial^2 f}{\partial x^2} &=& \frac{\partial^2 f}{\partial y^2} = \frac{\partial^2 f}{\partial z^2} =-2\\
+  \frac{\partial^2 f}{\partial x\partial y} &=& z\\
+  \frac{\partial^2 f}{\partial y\partial z} &=& x\\
+  \frac{\partial^2 f}{\partial x\partial z} &=& y.
+\end{eqnarray*}
+Hesse-matrisen blir altså
+\[
+Hf(x,y,z)=\left( \begin{array}{rrr} -2 & z & y \\ z & -2 & x \\ y & x & -2 \end{array} \right).
+\]
+$Hf(0,0,0)$ blir diagonalmatrisen med bare $-2$ på diagonalen. Alle egenverdiene er dermed $-2$, slik at $(0,0,0)$ er et maksimum. 
+For punktet $(2,2,2)$ får vi Hesse-matrisen
+\[
+Hf(2,2,2)=\left( \begin{array}{rrr} -2 & 2 & 2 \\ 2 & -2 & 2 \\ 2 & 2 & -2 \end{array} \right).
+\]
+Den karakteristiske likningen her er 
+\begin{eqnarray*}
+\lefteqn{\left| \begin{array}{ccc} \lambda+2 & -2 & -2 \\ -2 & \lambda+2 & -2 \\ -2 & -2 & \lambda+2 \end{array}\right|} \\
+&=& (\lambda+2)\left| \begin{array}{rr} \lambda+2 & -2 \\ -2 & \lambda+2 \end{array} \right|
+    +2 \left| \begin{array}{rr} -2 & -2 \\ -2 & \lambda+2 \end{array} \right|
+    -2 \left| \begin{array}{rr} -2 & \lambda+2 \\ -2 & -2 \end{array} \right| \\
+&=& (\lambda+2)^3 -4(\lambda+2) + 2( -2(\lambda+2) - 4) - 2(4+2(\lambda+2)) \\
+&=& (\lambda+2)^3 -12(\lambda+2) - 16 \\
+&=& \lambda^3+6\lambda^2-32
+\end{eqnarray*}
+Det er fort gjort å sjekke at $\lambda=-4$ er en rot her. Polynomdivisjon gir
+$\lambda^3+6\lambda^2-32=(\lambda+4)(\lambda^2+2\lambda-8)$. Og formelen for løsningen av andregradslikningen gir
+$\lambda^3+6\lambda^2-32=(\lambda+4)^2(\lambda-2)$. 
+Egenverdiene er altså $2$ og $-4$, og derfor er punktet et sadelpunkt. 
+
+Strengt talt må vi gjøre som over for Hesse-matrisene i de andre stasjonære punktene også, men vi kan gjøre et par småtricks for å redusere utregningene: 
+Vi finner først fort at 
+\[
+  \lambda I_3 - Hf(2,-2,-2) 
+  =
+  \left( \begin{array}{ccc} \lambda+2 & 2 & 2 \\ 2 & \lambda+2 & -2 \\ 2 & -2 & \lambda+2 \end{array} \right).
+\]
+Sammenligner vi med $\lambda I_3 - Hf(2,2,2)$ ser vi at vi kan få denne 
+fra $\lambda I_3 - Hf(2,2,2)$ ved å gange første søyle med $-1$, 
+og deretter gange første rad med $-1$. Effekten av disse operasjonene til sammen forandrer ikke determinanten, slik at $Hf(2,-2,-2)$ 
+får de samme egenverdiene, slik at $(2,-2,-2)$ også er et sadelpunkt.
+De siste $2$ punktene blir også sadelpunkter med samme begrunnelse, siden
+\begin{itemize}
+  \item $\lambda I_3 - Hf(-2,-2,2)$ kan fås fra $\lambda I_3 - Hf(2,2,2)$ ved å gange tredje søyle med $-1$, 
+    og deretter gange tredje rad med $-1$. 
+  \item $\lambda I_3 - Hf(-2,2,-2)$ kan fås fra $\lambda I_3 - Hf(2,2,2)$ ved å gange andre søyle med $-1$, 
+    og deretter gange andre rad med $-1$.
+\end{itemize}

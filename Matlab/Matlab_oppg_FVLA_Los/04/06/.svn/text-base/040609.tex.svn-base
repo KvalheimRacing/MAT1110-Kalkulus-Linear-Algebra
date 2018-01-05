@@ -1,0 +1,39 @@
+\subsection{Oppgave 4.6.9}
+
+\subsubsection{a)} 
+Tre vektorer i $\R^2$ kan ikke være lineært uavhengige på grunn av Korollar 4.6.7. De tre vekotrene er derfor ikke en basis.
+
+\subsubsection{b)}
+En basis for $\R^3$ har nøyaktig tre elementer, så de to vektorene danner ikke en basis.
+
+\subsubsection{c)}
+Vi ser fort at de to vektorene er lineært uavhengige. Da følger det fra Setning 4.6.10 at de danner en basis.
+
+\subsubsection{d)} 
+Her må vi gjøre radreduksjon:
+\[
+\left(
+\begin{array}{rrr}
+-1 & 2 &-1 \\
+ 3 & 0 & 3 \\
+-2 & 1 & 2
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+ 1 &-2 & 1 \\
+ 0 & 6 & 0 \\
+ 0 &-3 & 4
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+ 1 &-2 & 1 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1
+\end{array}
+\right)
+\]
+Alle søyler er pivotsøyler, slik at vektorene er lineært uavhengige. 

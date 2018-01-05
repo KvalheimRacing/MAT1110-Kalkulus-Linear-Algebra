@@ -1,0 +1,29 @@
+\subsection{Oppgave 5.9.12}
+
+\subsubsection{a)}
+Vi har at $z=\frac{500}{xy}$. Uttrykket for $L(x,y)$ blir 
+\[
+  L(x,y) = 4x+2y+\frac{1000}{xy}.
+\]
+\begin{eqnarray*}
+  \frac{\partial L}{\partial x} &=& 4-\frac{1000}{x^2y}\\
+  \frac{\partial L}{\partial y} &=& 2-\frac{1000}{xy^2}.
+\end{eqnarray*}
+
+\subsubsection{b)}
+Skal begge de partielle deriverte være $0$ må 
+\begin{eqnarray*}
+  \frac{1000}{x^2y} &=& 4 \\
+  \frac{1000}{xy^2} &=& 2,
+\end{eqnarray*}
+som også kan skrives
+\begin{eqnarray*}
+  x^2y^2 &=& 250y \\
+  x^2y^2 &=& 500x.
+\end{eqnarray*}
+Dermed er $y=2x$. Setter vi dette inn i den første likningen får vi at $\frac{500}{x^3}=4$, eller $x=5$. 
+Videre er $y=2x=10$. 
+For $z$ får vi 
+\[
+  z = \frac{500}{xy} = 10.
+\]

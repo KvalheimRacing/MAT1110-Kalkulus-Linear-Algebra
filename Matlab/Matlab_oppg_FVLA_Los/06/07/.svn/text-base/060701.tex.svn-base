@@ -1,0 +1,67 @@
+\subsection{Oppgave 6.7.1}
+
+\subsubsection{a)}
+Området bestemt ved ulikhetene $x\leq y\leq x+1$ og $-x\leq y\leq -x+2$ er tegnet opp i Figur~\ref{fig060701}. 
+\begin{figure}
+  \begin{center}
+    \epsfig{figure=06/07/060701.eps,width=0.5\columnwidth}
+  \end{center}
+  \caption{Området i Oppgave 6.7.1a).} \label{fig060701}
+\end{figure}
+Ulikhetene kan skrives om til $0\leq y-x\leq 1$, og $0\leq y+x\leq 2$, som gir at $0\leq u\leq 1$, og $0\leq v\leq 2$ etter variabelskiftet 
+$u=y-x$, $v=y+x$. Vi regner raskt ut at
+\[
+  \frac{\partial(u,v)}{\partial(x,y)} = \left| \begin{array}{rr} -1 & 1 \\ 1 & 1 \end{array} \right| = -2.
+\]
+Vi har da at $\frac{\partial(x,y)}{\partial(u,v)} = -\frac{1}{2}$, og $\left|\frac{\partial(x,y)}{\partial(u,v)}\right| = \frac{1}{2}$. 
+Integralet blir derfor 
+\begin{eqnarray*}
+  \lefteqn{\int\int_A x^2dxdy} \\
+  &=& \int_0^2 \left[\int_0^1 \frac{1}{2}x^2 du\right]dv = \int_0^2 \left[\int_0^1 \frac{(v-u)^2}{8} du\right]dv \\
+  &=& \frac{1}{8} \int_0^2 \left[\int_0^1 \left( v^2 -2uv + u^2 \right) du\right]dv = \frac{1}{8} \int_0^2 \left[ uv^2 - u^2v + \frac{1}{3}u^3 \right]_0^1 dv \\
+  &=& \frac{1}{8} \int_0^2 \left( v^2 - v + \frac{1}{3} \right) dv = \frac{1}{8} \left[ \frac{v^3}{3} - \frac{1}{2}v^2 + \frac{1}{3}v \right]_0^2
+      = \frac{1}{8} \left( \frac{8}{3} - 2 + \frac{2}{3} \right) = \frac{1}{6}.
+\end{eqnarray*}
+For å regne ut integralet med Matlab må vi først finne skjæringen mellom de fire linjene som definerer området:
+\begin{itemize}
+  \item Skjæring mellom $y=x$ og $y=-x$: $(x,y)=(0,0)$.
+  \item Skjæring mellom $y=x$ og $y=-x+2$: $(x,y)=(1,1)$.
+  \item Skjæring mellom $y=x+1$ og $y=-x$: $(x,y)=\left(-\frac{1}{2},\frac{1}{2}\right)$.
+  \item Skjæring mellom $y=x+1$ og $y=-x+2$: $(x,y)=\left(\frac{1}{2},\frac{3}{2}\right)$.
+\end{itemize}
+Integrasjonsområdet ligger derfor innenfor rektanglet $-\frac{1}{2}\leq x \leq 1$, $0\leq y\leq \frac{3}{2}$, som 
+angir integralgrensene som er brukt i kallet på {\tt dblquad} i Matlab. 
+
+\subsubsection{b)}
+Tegner vi opp området ser vi at det er bestemt ved at $0\leq y\leq 1$, og $y\leq x\leq y+3$. 
+Disse ulikhetene kan skrives om til $0\leq y\leq 1$, og $0\leq x-y\leq 3$, som gir at $0\leq v\leq 1$, og $0\leq u\leq 3$ etter variabelskiftet 
+$u=x-y$, $v=y$. Vi regner raskt ut at
+\[
+  \frac{\partial(u,v)}{\partial(x,y)} = \left| \begin{array}{rr} 1 & -1 \\ 0 & 1 \end{array} \right| = 1.
+\]
+Integralet blir derfor
+\begin{eqnarray*}
+  \lefteqn{\int\int_A xdxdy} \\
+  &=& \int_0^1 \left[\int_0^3 x du\right]dv = \int_0^1 \left[\int_0^3 (u+v) du\right]dv \\
+  &=& \int_0^1 \left[ \frac{1}{2}u^2 + uv \right]_0^3 dv = \int_0^1 (\frac{9}{2} + 3v) dv
+      = \left[ \frac{9}{2}v + \frac{3}{2}v^2 \right]_0^1 = \frac{9}{2} + \frac{3}{2} = 6.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Tegner vi opp området ser vi at det er bestemt ved at $\frac{x}{2}\leq y\leq \frac{x}{2}+2$, og $2x-2\leq y\leq 2x$. 
+Disse ulikhetene kan skrives om til $0\leq y-\frac{x}{2}\leq 2$, og $-2\leq y-2x\leq 0$, som gir at $0\leq u\leq 2$, og $-2\leq v\leq 0$ etter variabelskiftet 
+$u=y-\frac{x}{2}$, $v=y-2x$. Vi regner raskt ut at
+\[
+  \left| \frac{\partial(u,v)}{\partial(x,y)} \right| = \left| \begin{array}{rr} -\frac{1}{2} & 1 \\ -2 & 1 \end{array} \right| = \frac{3}{2}.
+\]
+Integralet blir derfor
+\begin{eqnarray*}
+  \lefteqn{\int\int_A xydxdy} \\
+  &=& \int_{-2}^0 \left[\int_0^2 xy \left|\left| \frac{\partial(x,y)}{\partial(u,v)} \right|\right| du\right]dv
+      = \int_{-2}^0 \left[\int_0^2 \frac{2}{3}(u-v)\frac{1}{3}(4u-v)\frac{2}{3} du\right]dv\\
+  &=& \frac{4}{27} \int_{-2}^0 \left[\int_0^2 (4u^2-5uv+v^2) du\right]dv
+      =\frac{4}{27} \int_{-2}^0 \left[ \frac{4}{3}u^3 - \frac{5}{2}u^2v + v^2u \right]_0^2 dv \\
+  &=& \frac{4}{27} \int_{-2}^0 \left( \frac{32}{3} - 10v + 2v^2 \right) dv
+      =\frac{4}{27} \left[ \frac{32}{3}v - 5v^2 + \frac{2}{3}v^3 \right]_{-2}^0 \\
+  &=& \frac{4}{27} \left( \frac{64}{3} + 20 + \frac{16}{3} \right) = \frac{4}{27}\frac{140}{3} = \frac{560}{81}.
+\end{eqnarray*}

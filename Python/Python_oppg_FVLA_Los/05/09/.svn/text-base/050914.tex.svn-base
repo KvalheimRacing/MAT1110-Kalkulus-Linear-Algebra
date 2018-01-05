@@ -1,0 +1,34 @@
+\subsection{Oppgave 5.9.14}
+Uttrykket 
+\[
+  f(l,h)=100\left( 13lh+\frac{30000}{l}+\frac{25000}{h}\right)
+\]
+får vi fra følgende bidrag:
+\begin{itemize}
+  \item Bunn: $l\times\frac{5000}{lh}\times 500$.
+  \item Front: $hl\times 1000$.
+  \item Sider: $hl\times 300 + 2h\frac{5000}{lh}\times 300$.
+\end{itemize}
+Partiellderiverer vi får vi 
+\begin{eqnarray*}
+  \frac{\partial f}{\partial l} &=& 100\left( 13h - \frac{30000}{l^2} \right) \\
+  \frac{\partial f}{\partial h} &=& 100\left( 13l - \frac{25000}{h^2} \right).
+\end{eqnarray*}
+Setter vi dette lik $0$ og ganger opp får vi likningene
+\begin{eqnarray*}
+  13hl^2 &=& 30000 \\
+  13lh^2 &=& 25000
+\end{eqnarray*}
+Sammen sier disse at $30000h=25000l$, eller $h=\frac{5}{6}l$. Satt inn i den første likningen gir dette
+$13\times\frac{5}{6}l^3=30000$, som kan skrives om til 
+\[
+  l^3=\frac{180}{65}\times 1000 = \frac{36}{13}\times 1000 = \frac{216\times 1000}{78}.
+\]
+Tar vi tredjerøtter får vi $l=\frac{60}{78^{1/3}}$.
+
+Setter vi inn $l=\frac{6}{5}h$ i den andre likningen får vi 
+$13\times\frac{6}{5}h^3=25000$, som kan skrives om til 
+\[
+  h^3 = \frac{125\times 1000}{78},
+\]
+som gir at $h=\frac{50}{(78)^{1/3}}$. 

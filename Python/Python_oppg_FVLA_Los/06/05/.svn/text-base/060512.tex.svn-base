@@ -1,0 +1,40 @@
+\subsection{Oppgave 6.5.12}
+
+\subsubsection{a)}
+Vi fullfører kvadratene og får 
+\begin{eqnarray*}
+  9x^2+4y^2-18x+16y &=& 11\\
+  9(x^2-2x+1)-9 + 4(y^2+4y+4)-16 &=& 11\\
+  9(x-1)^2+4(y+2)^2 &=& 36 \\
+  \frac{(x-1)^2}{2^2} + \frac{(y+2)^2}{3^2} &=& 1.
+\end{eqnarray*}
+Vi ser derfor at ellipsen har sentrum $(1,-2)$, store halvakse $3$ og lille halvakse $2$. 
+
+\subsubsection{b)} 
+Vi regner ut 
+\begin{eqnarray*}
+  \frac{(x-1)^2}{2^2} + \frac{(y+2)^2}{3^2} &=& \frac{(1+2\cos t-1)^2}{2^2} + \frac{(-2+3\sin t+2)^2}{3^2} \\
+                                            &=& \frac{(2\cos t)^2}{2^2} + \frac{(3\sin t)^2}{3^2} \\
+                                            &=& \cos^2t+\sin^2t = 1,
+\end{eqnarray*}
+som viser at ${\bf r}(t)$ ligger på ellipsen. Det er også klart at ${\bf r}(t)$ må dekke hele ellipsen, 
+siden ${\bf r}(t)$ vil bevege seg et helt omløp mot klokka når $t$ går fra $0$ til $2\pi$. Vi har at
+\begin{eqnarray*}
+  \int_{\cal C} {\bf F}\cdot dr &=& \int_0^{2\pi} {\bf F}({\bf r}(t)) \cdot {\bf r}'(t) dt \\
+                                &=& \int_0^{2\pi} ((-2+3\sin t)^2(-2\sin t) + (1+2\cos t)(3\cos t))dt \\
+                                &=& \int_0^{2\pi} (-18\sin^3t +24\sin^2t -8\sin t + 3\cos t + 6\cos^2t)dt \\
+                                &=& \int_0^{2\pi} (24\sin^2t + 6\cos^2t)dt = \int_0^{2\pi} (6+18\sin^2t)dt \\
+                                &=& \int_0^{2\pi} (6 + 9(1-\cos(2t)))dt = \int_0^{2\pi} (15-9\cos(2t))dt \\
+                                &=& 30\pi.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Vi ser at 
+\[
+  \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} = 1-2y.
+\]
+Vi har derfor at 
+\begin{eqnarray*}
+  \int\int_R (1-2y)dxdy &=& 30\pi
+\end{eqnarray*}
+på grunn av Greens teorem og utregningen i b). 

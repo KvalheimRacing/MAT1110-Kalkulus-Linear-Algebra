@@ -1,0 +1,86 @@
+\subsection{Oppgave 4.11.8}
+
+\subsubsection{a)}
+Kjøpere av avis $A$ etter $5(n+1)$ år er ut fra opplysningene
+\[
+  x_{n+1} = 0.1x_n + 0.1y_n + 0.9x_n = x_n + 0.1y_n.
+\]
+På samme måte ser vi at 
+\begin{eqnarray*}
+  y_{n+1} &=& 0.1x_n + 0.1z_n + 0.8y_n + 0.2y_n = 0.1x_n + y_n + 0.1z_n \\
+  z_{n+1} &=& 0.1z_n + 0.1y_n + 0.9z_n = 0.1y_n + z_n
+\end{eqnarray*}
+Vi ser derfor at 
+\[
+  \left( \begin{array}{rrr} 1 & 0.1 & 0 \\ 0.1 & 1 & 0.1 \\ 0 & 0.1 & 1 \end{array} \right),
+\]
+som gir oss matrisen $M$. 
+
+\subsubsection{b)}
+Den karakteristiske likningen blir
+\begin{eqnarray*}
+  \left| \begin{array}{rrr} \lambda-1 & -0.1 & 0 \\ -0.1 & \lambda-1 & -0.1 \\ 0 & -0.1 & \lambda-1 \end{array}\right|
+  &=& (\lambda-1) \left| \begin{array}{rr} \lambda-1 & -0.1 \\ -0.1 & \lambda-1 \end{array}\right|
+      + 0.1 \left| \begin{array}{rr} -0.1 & -0.1 \\ 0 & \lambda-1 \end{array}\right| \\
+  &=& (\lambda-1) ( (\lambda-1)^2 - 0.01 ) + 0.1 (-0.1(\lambda-1)) \\
+  &=& (\lambda-1)^3 - 0.02(\lambda-1) \\
+  &=& (\lambda-1)((\lambda-1)^2-0.02) \\
+  &=& (\lambda-1)(\lambda^2-2\lambda+0.98) \\
+  &=& (\lambda-1)(\lambda-1-\frac{\sqrt{2}}{10})(\lambda-1+\frac{\sqrt{2}}{10}).
+\end{eqnarray*}
+Vi ser at egenverdiene er $\lambda_1=1$, $\lambda_2=1+\frac{\sqrt{2}}{10}$, $\lambda_3=1-\frac{\sqrt{2}}{10}$. 
+
+\begin{itemize}
+  \item
+Egenvektor for $\lambda_1=1$: Vi radreduserer
+\[
+  I-A = \left( \begin{array}{rrr} 0 & -0.1 & 0 \\ -0.1 & 0 & -0.1 \\ 0 & -0.1 & 0 \end{array} \right)
+        \sim \left( \begin{array}{rrr} 1 & 0 & 1 \\ 0 & 1 & 0 \\ 0 & 0 & 0 \end{array} \right).
+\]
+Vi ser derfor at ${\bf v}_1 = \left( \begin{array}{r} 1 \\ 0 \\ -1 \end{array} \right)$ er en egenvektor. 
+  \item
+Egenvektor for $\lambda_2=1+\frac{\sqrt{2}}{10}$: Vi radreduserer
+\begin{eqnarray*}
+  (1+\frac{\sqrt{2}}{10})I-A &=& \left( \begin{array}{ccc} \frac{\sqrt{2}}{10} & -0.1 & 0 \\ -0.1 & \frac{\sqrt{2}}{10} & -0.1 \\ 0 & -0.1 & \frac{\sqrt{2}}{10} \end{array} \right)
+        \sim \left( \begin{array}{ccc} \sqrt{2} & -1 & 0 \\ 1 & -\sqrt{2} & 1 \\ 0 & 1 & -\sqrt{2} \end{array} \right) \\
+      &\sim& \left( \begin{array}{ccc} 1 & -\sqrt{2} & 1 \\ 0 & 1 & -\sqrt{2} \\ 0 & 0 & 0 \end{array} \right)
+        \sim \left( \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & -\sqrt{2} \\ 0 & 0 & 0 \end{array} \right)
+\end{eqnarray*}
+Vi ser derfor at ${\bf v}_2 = \left( \begin{array}{r} 1 \\ \sqrt{2} \\ 1 \end{array} \right)$ er en egenvektor. 
+  \item
+Egenvektor for $\lambda_3=1-\frac{\sqrt{2}}{10}$: Vi radreduserer
+\begin{eqnarray*}
+  (1-\frac{\sqrt{2}}{10})I-A &=& \left( \begin{array}{ccc} -\frac{\sqrt{2}}{10} & -0.1 & 0 \\ -0.1 & -\frac{\sqrt{2}}{10} & -0.1 \\ 0 & -0.1 & -\frac{\sqrt{2}}{10} \end{array} \right)
+        \sim \left( \begin{array}{ccc} -\sqrt{2} & -1 & 0 \\ 1 & \sqrt{2} & 1 \\ 0 & 1 & \sqrt{2} \end{array} \right) \\
+      &\sim& \left( \begin{array}{ccc} 1 & \sqrt{2} & 1 \\ 0 & 1 & \sqrt{2} \\ 0 & 0 & 0 \end{array} \right)
+        \sim \left( \begin{array}{ccc} 1 & 0 & -1 \\ 0 & 1 & \sqrt{2} \\ 0 & 0 & 0 \end{array} \right)
+\end{eqnarray*}
+Vi ser derfor at ${\bf v}_3 = \left( \begin{array}{r} 1 \\ -\sqrt{2} \\ 1 \end{array} \right)$ er en egenvektor. 
+\end{itemize}
+
+\subsubsection{c)}
+Vi uttrykker startvektoren ved hjelp av egenvektoren ved å radredusere:
+\begin{eqnarray*}
+  \left( \begin{array}{cccc} 1 & 1 & 1 & x_0 \\ 0 & \sqrt{2} & -\sqrt{2} & y_0 \\ -1 & 1 & 1 & z_0 \end{array} \right)
+  &\sim& \left( \begin{array}{cccc} 1 & 1 & 1 & x_0 \\ 0 & 1 & -1 & \frac{y_0}{\sqrt{2}} \\ 0 & 2 & 2 & x_0+z_0 \end{array} \right) \\
+  &\sim& \left( \begin{array}{cccc} 1 & 1 & 1 & x_0 \\ 0 & 1 & -1 & \frac{y_0}{\sqrt{2}} \\ 0 & 0 & 4 & x_0-\sqrt{2}y_0+z_0 \end{array} \right) \\
+  &\sim& \left( \begin{array}{cccc} 1 & 1 & 1 & \frac{1}{2}(x_0-z_0) \\ 0 & 1 & 0 & \frac{1}{4}(x_0+\sqrt{2}y_0+z_0) \\ 0 & 0 & 1 & \frac{1}{4}(x_0-\sqrt{2}y_0+z_0) \end{array} \right).
+\end{eqnarray*}
+Vi kan derfor skrive starttilstanden som 
+\[
+  \frac{1}{2}(x_0-z_0){\bf v}_1 + \frac{1}{4}(x_0+\sqrt{2}y_0+z_0) {\bf v}_2 + \frac{1}{4}(x_0-\sqrt{2}y_0+z_0) {\bf v}_3.
+\]
+Vi får dermed
+\begin{eqnarray*}
+  \left( \begin{array}{r} x_n \\ y_n \\ z_n \end{array} \right) 
+  &=&
+  \frac{1}{2}(x_0-z_0)\left( \begin{array}{r} 1 \\ 0 \\ -1 \end{array} \right) \\
+  & & + \frac{1}{4}(x_0+\sqrt{2}y_0+z_0) (1+\frac{\sqrt{2}}{10})^n \left( \begin{array}{r} 1 \\ \sqrt{2} \\ 1 \end{array} \right) \\
+  & & + \frac{1}{4}(x_0-\sqrt{2}y_0+z_0) (1-\frac{\sqrt{2}}{10})^n \left( \begin{array}{r} 1 \\ -\sqrt{2} \\ 1 \end{array} \right).
+\end{eqnarray*}
+Forholdet mellom salgstallene i det lange løp blir her bestemt av den andre vektoren, siden komponentene her går raskest mot uendelig. 
+Det er klart at forholdet mellom salgstallene nærmer seg forholdet mellom elementene i denne vektoren. Derfor får vi
+\begin{eqnarray*}
+  k_1 = \lim_{n\rightarrow\infty} \frac{x_n}{y_n} = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2} \\
+  k_2 = \lim_{n\rightarrow\infty} \frac{y_n}{z_n} = \frac{\sqrt{2}}{1} = \sqrt{2}.
+\end{eqnarray*}

@@ -1,0 +1,31 @@
+\subsection{Oppgave 6.5.8}
+
+\subsubsection{a)} 
+Kurven ${\cal C}$ er sammensatt av kurvene ${\cal C}_1$ og ${\cal C}_2$, der ${\cal C}_1$ følger parabelen, ${\cal C}_2$ følger langs $x$-aksen. 
+Vi parametriserer ${\cal C}_1$ med ${\bf r}_1(x) = (x,1-x^2)$, der $x$ går fra $1$ til $-1$. Vi får da
+\begin{eqnarray*}
+  \lefteqn{\int_{{\cal C}_1} -ydx+x^2dy} \\
+  &=& \int_1^{-1} (-(1-x^2) + x^2(-2x))dx = \int_1^{-1} (-2x^3+x^2-1)dx \\
+  &=& \left[ -\frac{1}{2}x^4 + \frac{1}{3}x^3 - x \right]_1^{-1} = -\frac{1}{3} -\frac{1}{3}+1+1=\frac{4}{3}.
+\end{eqnarray*}
+Vi parametriserer ${\cal C}_2$ med ${\bf r}_2(x)=(x,0)$, der $x$ går fra $-1$ til $1$. Vi får da
+\[
+  \int_{{\cal C}_2} -ydx+x^2dy = \int_{-1}^1 (0 + x^2\times 0)dx = 0.
+\]
+Vi får derfor 
+\begin{eqnarray*}
+  \int_{{\cal C}} -ydx+x^2dy &=& \int_{{\cal C}_1} -ydx+x^2dy + \int_{{\cal C}_2} -ydx+x^2dy \\
+                             &=& \frac{4}{3} + 0 = \frac{4}{3}. 
+\end{eqnarray*}
+
+\subsubsection{b)}
+Med $P(x,y)=-y$ og $Q(x,y)=x^2$ får vi at 
+$\frac{\partial Q}{\partial x} = 2x$, og $\frac{\partial P}{\partial y} = -1$. 
+Parabelen $y=1-x^2$ skjærer $x$-aksen for $x=-1$ og $x=1$.
+Vi får dermed
+\begin{eqnarray*}
+  \lefteqn{\int_{\cal C} -ydx+x^2dy} \\ 
+  &=& \int\int_R \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dxdy = \int_{-1}^1 \left[\int_0^{1-x^2} (2x+1) dy\right]dx \\
+  &=& \int_{-1}^1 (2x+1)(1-x^2)dx = \int_{-1}^1 (2x-2x^3+1-x^2)dx \\
+  &=& \left[ x^2 -\frac{1}{2}x^4 + x - \frac{1}{3}x^3 \right]_{-1}^1 = 1+1-\frac{1}{3}-\frac{1}{3} = \frac{4}{3}.
+\end{eqnarray*}

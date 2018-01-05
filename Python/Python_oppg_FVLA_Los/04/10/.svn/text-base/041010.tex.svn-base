@@ -1,0 +1,11 @@
+\subsection{Oppgave 4.10.10}
+Anta at $\lambda$ er en egenvektor for $B$ med tilhørende egenvektor ${\bf v}$. Da er
+\[
+  B {\bf v} = P^{-1}AP{\bf v}=\lambda{\bf v}.
+\]
+Ganger vi med $P$ på begge sider får vi at $AP{\bf v}=\lambda P{\bf v}$. 
+Dette viser at $\lambda$ er en egenverdi for $A$ også, med tilhørende egenvektor $P{\bf v}$. 
+På samme måte kan vi vise at hvis $\lambda$ er en egenverdi for $A$ med tilhørende egenvektor ${\bf v}$, 
+så er $\lambda$ en egenverdi for $B$ med tilhørende egenvektor $P^{-1}{\bf v}$ ($P$ og $P^{-1}$ bytter plass i beviset). 
+Dette viser at $A$ og $B$ har de samme egenverdiene, og at multiplikasjon med $P$ transformerer egenvektorene til 
+$B$ til egenvektorene til $A$. 

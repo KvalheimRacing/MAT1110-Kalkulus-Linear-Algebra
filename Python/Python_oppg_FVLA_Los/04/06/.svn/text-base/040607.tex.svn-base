@@ -1,0 +1,52 @@
+\subsection{Oppgave 4.6.7}
+I disse oppgavene trenger vi bare å bruke radreduksjon, samt Setning 4.6.6: 
+vektorene er lineært uavhengige hvis og bare hvis alle søylene er pivotsøyler.
+
+\subsubsection{a)}
+Vi radreduserer og får 
+\[
+\left(\begin{array}{rr} 1 & 3 \\ 1 & 4 \end{array}\right) 
+\sim
+\left(\begin{array}{rr} 1 & 3 \\ 0 & 1 \end{array}\right)
+\]
+Det er klart at alle søylene er pivotsøyler, slik at vektorene er lineært uavhengige.
+
+\subsubsection{c)}
+Vi radreduserer og får 
+\[
+\left(\begin{array}{rrr} 1 & 0 & 2 \\ -2 & 1 & -3 \\ 3 & 3 & 9 \end{array}\right) 
+\sim
+\left(\begin{array}{rrr} 1 & 0 & 2 \\ 0 & 1 & 1 \\ 0 & 3 & 3 \end{array}\right) 
+\sim
+\left(\begin{array}{rrr} 1 & 0 & 2 \\ 0 & 1 & 1 \\ 0 & 0 & 0 \end{array}\right) 
+\]
+Det er klart at tredje søyle ikke er en pivotsøyle, slik at vektorene ikke er lineært uavhengige. 
+
+\subsubsection{d)}
+Vi radreduserer og får 
+\[
+\left(
+\begin{array}{rrr}
+1 & 2 & -1 \\
+0 &-1 &  2 \\
+1 & 3 &  5
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+1 & 2 & -1 \\
+0 &-1 &  2 \\
+0 & 1 &  6
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+1 & 2 & -1 \\
+0 & 1 & -2 \\
+0 & 0 &  1
+\end{array}
+\right)
+\]
+Vektorene er lineært uavhengige, siden alle søyler er pivotsøyler. 

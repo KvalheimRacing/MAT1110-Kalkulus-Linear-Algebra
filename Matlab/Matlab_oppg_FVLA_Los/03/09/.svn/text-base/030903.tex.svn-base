@@ -1,0 +1,7 @@
+\subsection{Oppgave 3.9.3}
+Vi ser på den delen av sylinderflaten $z=x^2+y^2$ med $0\leq z\leq 1$. 
+Siden $x = r\cos\theta = \cos\theta$, $y = r\sin\theta = \sin\theta$, så blir en parametrisering
+\[
+  {\bf r}(\theta , z) = \cos\theta{\bf i} + \sin\theta{\bf j} + z{\bf k},
+\]
+der $0\leq \theta\leq 2\pi$, $0\leq z\leq 1$.

@@ -1,0 +1,12 @@
+\subsection{Oppgave 6.3.4}
+Setter vi inn grensene for integrasjonsområdet blir arealet lik
+\[ 
+  |A| = \int_{\alpha}^{\beta} \int_0^{r(\theta)} 1 rdrd\theta = \int_{\alpha}^{\beta} \left[ \frac{1}{2}r^2 \right]_0^{r(\theta)} d\theta
+      = \int_{\alpha}^{\beta} \frac{1}{2} r(\theta)^2 d\theta,
+\]
+der vi har regnet ut det innerste integralet. Hvis $r(\theta) = \sin(2\theta)$ får vi 
+\begin{eqnarray*}
+  \lefteqn{\int_0^{\pi/2} \frac{1}{2} \sin(2\theta)^2 d\theta} \\
+  &=& \int_0^{\pi/2} \frac{1}{4} (1-\cos(4\theta))d\theta = \frac{1}{4} \left[ \theta - \frac{1}{4}\sin(4\theta) \right]_0^{\pi/2}
+      = \frac{1}{4} ( \pi/2 ) = \frac{\pi}{8}.
+\end{eqnarray*}

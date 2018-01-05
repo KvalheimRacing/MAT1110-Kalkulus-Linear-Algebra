@@ -1,0 +1,44 @@
+% Oppgave 3.7.3 a)
+u=-0.5:0.03:0.5;
+v=-0.5:0.03:0.5;
+[x,y]=meshgrid(u,v);
+z=1./sqrt(x.^2 + y.^2);
+mesh(x,y,z);
+title('Oppgave 3.7.3a')
+
+% Oppgave 3.7.3 b)
+u=-0.5:0.03:0.5;
+v=-0.5:0.03:0.5;
+[x,y]=meshgrid(u,v);
+z=x./(x.^2 + y.^2)
+figure(2)
+mesh(x,y,z)
+title('Oppgave 3.7.3b')
+
+% Oppgave 3.7.3 c)
+u=-0.5:0.03:0.5;
+v=-0.5:0.03:0.5;
+[x,y]=meshgrid(u,v);
+z=y./x;
+figure(3)
+mesh(x,y,z)
+title('Oppgave 3.7.3c')
+
+% Oppgave 3.7.3 d)
+u=-1:0.05:1;
+v=-1:0.05:1;
+[x,y]=meshgrid(u,v);
+figure(4)
+z=x.^2-4*y.^2
+mesh(x,y,z)
+title('Oppgave 3.7.3d')
+
+% Oppgave 3.7.3 e)
+u=-1:0.05:1;
+v=-1:0.05:1;
+[x,y]=meshgrid(u,v);
+figure(5)
+z=exp(x.*y)
+mesh(x,y,z)
+title('Oppgave 3.7.3e')
+

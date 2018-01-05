@@ -1,0 +1,53 @@
+\subsection{Oppgave 6.2.3}
+Når man skriver om et område fra type I til type II eller omvendt, er det viktigste at man først lager en god tegning av området. 
+Skal man skrive om til et type II-integral bør du velge en vilkårlig $y$ innenfor integrasjonsområdet, og tegne en horisontal strek med $y$ lik denne verdien. 
+Nedre integralgrense finner du da ved å lese av skjæringen med integrasjonsområdet som er lengst til venstre (minst $x$-verdi), 
+øvre integralgrense ved å lese av skjæringen med integrasjonsområdet som er lengst til høyre (størst $x$-verdi).
+Både nedre og øvre integralgrense blir funksjoner i $y$, siden den horisontale streken ble valgt vilkårlig.
+
+\subsubsection{a)}
+Området vi integrerer over, $R=\{ (x,y): 0\leq y\leq 1 \mbox{ og } y\leq x\leq 1\}$, er av type II. 
+Ved opptegningen av området i Figur~\ref{fig060203}
+ser vi fort at det også er av type I, og at det kan skrives på formen $R=\{ (x,y): 0\leq x\leq 1 \mbox{ og } 0\leq y\leq x\}$. 
+\begin{figure}
+  \subfigure[Området tegnet som type II]{\epsfig{figure=06/02/060203a1.eps,width=0.49\columnwidth}}
+  \subfigure[Området tegnet som type I]{\epsfig{figure=06/02/060203a2.eps,width=0.49\columnwidth}}
+  \caption{Integrasjonsområdet i Oppgave 6.2.3a).} \label{fig060203}
+\end{figure}
+Vi får derfor
+\begin{eqnarray*}
+  \int_0^1 \left[ \int_y^1 e^{x^2} dx \right] dy &=& \int_0^1 \left[ \int_0^x e^{x^2} dy \right] dx \\
+                                                 &=& \int_0^1 xe^{x^2} dx = \left[ \frac{1}{2} e^{x^2} \right]_0^1 = \frac{1}{2}e-\frac{1}{2} = \frac{1}{2}(e-1).
+\end{eqnarray*}
+Skal man skrive om til et type I-integral bør du velge en vilkårlig $x$ innenfor integrasjonsområdet, og tegne en vertikal strek med $x$ lik denne verdien. 
+Nedre integralgrense finner du da ved å lese av den nederste skjæringen med integrasjonsområdet (minst $y$-verdi), 
+øvre integralgrense ved å lese av den øverste skjæringen med integrasjonsområdet (størst $y$-verdi).
+Både nedre og øvre integralgrense blir funksjoner i $x$, siden den vertikale streken ble valgt vilkårlig.
+
+\subsubsection{b)}
+Området vi integrerer over, $R=\{ (x,y): 0\leq x\leq\frac{\pi}{2} \mbox{ og } x\leq y\leq \frac{\pi}{2}\}$, er av type I. 
+Ved opptegning av området ser vi fort at det også er av type II, da det kan skrives på formen $R=\{ (x,y): 0\leq y\leq \frac{\pi}{2} \mbox{ og } 0\leq x\leq y\}$.
+\begin{eqnarray*}
+  \lefteqn{\int_0^{\pi/2} \left[ \int_x^{\pi/2} \frac{\sin y}{y} dy \right] dx} \\
+  &=& \int_0^{\pi/2} \left[ \int_0^y \frac{\sin y}{y} dx \right] dy = \int_0^{\pi/2} \left[ x\frac{\sin y}{y} \right]_0^y dy
+      = \int_0^{\pi/2} \sin y dy \\
+  &=& \left[ -\cos y \right]_0^{\pi/2} = 1.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Området vi integrerer over, $R=\{ (x,y): 0\leq x\leq 1 \mbox{ og } \sqrt{x}\leq y\leq 1\}$, er av type I. 
+Ved opptegning av området ser vi fort at det også er av type II, da det kan skrives på formen $R=\{ (x,y): 0\leq y\leq 1 \mbox{ og } 0\leq x\leq y^2\}$ 
+(har her brukt at $y=\sqrt{x}$ svarer til at $x=y^2$).
+Vi har tegnet opp området som type II i Figur~\ref{fig060203c}.
+\begin{figure}
+  \begin{center}
+    \epsfig{figure=06/02/060203c.eps,width=0.49\columnwidth}
+  \end{center}
+  \caption{Integrasjonsområdet i Oppgave 6.2.3c).} \label{fig060203c}
+\end{figure}
+Vi får derfor
+\begin{eqnarray*}
+  \lefteqn{\int_0^1 \left[ \int_{\sqrt{x}}^1 e^{\frac{x}{y^2}} dy \right] dx} \\
+  &=& \int_0^1 \left[ \int_0^{y^2} e^{\frac{x}{y^2}} dx \right] dy = \int_0^1 \left[ y^2 e^{\frac{x}{y^2}} \right]_0^{y^2} dy \\
+  &=& \int_0^1 \left( y^2 e - y^2 \right) dy = \int_0^1 (e-1)y^2 dy = \left[ \frac{1}{3}(e-1)y^3 \right]_0^1 = \frac{e-1}{3}.
+\end{eqnarray*}

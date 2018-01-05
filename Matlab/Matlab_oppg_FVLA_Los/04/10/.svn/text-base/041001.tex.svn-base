@@ -1,0 +1,128 @@
+\subsection{Oppgave 4.10.1}
+
+\subsubsection{a)}
+\[
+  \det(\lambda I_2 - A) 
+  = 
+  \left| 
+  \begin{array}{rr}
+    \lambda - 2 & -1 \\
+    -1          & \lambda - 2
+  \end{array}
+  \right|
+  = 
+  (\lambda-2)^2-1 = \lambda^2 - 4\lambda + 3 = 0.
+\]
+Bruker vi andregradsformelen får vi at $\lambda = \frac{4\pm\sqrt{16-12}}{2} = \frac{4\pm 2}{2} = 2\pm 1$.
+Egenverdiene er derfor $\lambda_1 = 1$, $\lambda_2=3$. 
+
+\begin{itemize}
+  \item Egenvektoren ${\bf v}_1$ for $\lambda_1=1$:
+    Vi må løse $A{\bf v}_1={\bf v}_1$, eller $(I_2-A){\bf v}_1 = {\bf 0}$. 
+    Den utvidede matrisen for dette systemet er 
+\[
+  \left(
+  \begin{array}{rrr}
+    -1 & -1 & 0 \\
+    -1 & -1 & 0
+  \end{array}
+  \right)
+  \sim
+ \left(
+  \begin{array}{rrr}
+     1 &  1 & 0 \\
+     0 &  0 & 0
+  \end{array}
+  \right)
+\]
+    Likningen for den første raden sier at $x=-y$, slik at ${\bf v}_1 = \left( \begin{array}{r} -1 \\ 1 \end{array} \right)$ er en egenvektor for $\lambda_1=1$.
+  \item  Egenvektoren ${\bf v}_2$ for $\lambda_2=3$: Vi må løse $A{\bf v}_2=3{\bf v}_2$, eller $(3I_2-A){\bf v}_2 = {\bf 0}$. 
+    Den utvidede matrisen for dette systemet er 
+\[
+  \left(
+  \begin{array}{rrr}
+     1 & -1 & 0 \\
+    -1 &  1 & 0
+  \end{array}
+  \right)
+  \sim
+ \left(
+  \begin{array}{rrr}
+     1 & -1 & 0 \\
+     0 &  0 & 0
+  \end{array}
+  \right)
+\]
+    Likningen for den første raden sier at $x=y$, slik at ${\bf v}_2 = \left( \begin{array}{r} 1 \\ 1 \end{array} \right)$ er en egenvektor for $\lambda_2=3$.
+\end{itemize}
+
+\subsubsection{b)}
+\[
+  \det(\lambda I_2 - A) 
+  = 
+  \left| 
+  \begin{array}{rr}
+    \lambda - 1 & -4 \\
+    -1          & \lambda - 1
+  \end{array}
+  \right|
+  = 
+  (\lambda-1)^2-4 = \lambda^2 - 2\lambda - 3 = 0.
+\]
+Bruker vi andregradsformelen får vi at $\lambda = \frac{2\pm\sqrt{4+12}}{2} = \frac{2\pm 4}{2} = 1\pm 2$.
+Egenverdiene er derfor $\lambda_1 = -1$, $\lambda_2=3$.
+
+\begin{itemize}
+  \item Egenvektoren ${\bf v}_1$ for $\lambda_1=-1$: Vi må løse $A{\bf v}_1=-{\bf v}_1$, eller 
+\begin{eqnarray*}
+x + 4y &=& -x \\
+x + y  &=& -y.
+\end{eqnarray*}
+    Dette kan også skrives 
+\begin{eqnarray*}
+2x + 4y &=& 0 \\
+x + 2y  &=& 0.
+\end{eqnarray*}
+    Vi ser at vi kan velge $y$ fritt, og at $x=-2y$. Velger vi $y=1$ får vi egenvektoren 
+    ${\bf v}_1 = \left( \begin{array}{r} x \\ y \end{array} \right) = \left( \begin{array}{r} -2 \\ 1 \end{array} \right).$
+  \item Egenvektoren ${\bf v}_2$ for $\lambda_2=3$: Vi må løse $A{\bf v}_2=3{\bf v}_2$, eller 
+\begin{eqnarray*}
+x + 4y &=& 3x \\
+x + y  &=& 3y.
+\end{eqnarray*}
+    Dette kan også skrives 
+\begin{eqnarray*}
+-2x + 4y &=& 0 \\
+x   -2y  &=& 0.
+\end{eqnarray*}
+    Vi ser at vi kan velge $y$ fritt, og at $x=2y$. Velger vi $y=1$ får vi egenvektoren 
+    ${\bf v}_2 = \left( \begin{array}{r} x \\ y \end{array} \right) = \left( \begin{array}{r} 2 \\ 1 \end{array} \right).$
+\end{itemize}
+
+
+
+\subsubsection{c)}
+\[
+  \det(\lambda I_2 - A) 
+  = 
+  \left| 
+  \begin{array}{rr}
+    \lambda - 4 & -3 \\
+    -1          & \lambda - 2
+  \end{array}
+  \right|
+  = 
+  (\lambda-4)(\lambda-2)-3 = \lambda^2 - 6\lambda + 5 = 0.
+\]
+Bruker vi andregradsformelen får vi at $\lambda = \frac{6\pm\sqrt{36-20}}{2} = \frac{6\pm 4}{2} = 3\pm 2$.
+Egenverdiene er derfor $\lambda_1 = 1$, $\lambda_2=5$.
+\begin{itemize}
+  \item Egenvektoren ${\bf v}_1$ for $\lambda_1=1$: Matrisen til $I_2-A$ blir
+    \[ \left(\begin{array}{rr} -3 & -3 \\ -1 & -1 \end{array} \right) \sim \left(\begin{array}{rr} 1 & 1 \\ 0 & 0 \end{array} \right) \]
+    Vi ser at vi kan velge $y$ fritt, og at $x=-y$. Velger vi $y=1$ får vi egenvektoren 
+    ${\bf v}_1 = \left( \begin{array}{r} x \\ y \end{array} \right) = \left( \begin{array}{r} -1 \\ 1 \end{array} \right)$.
+  \item Egenvektoren ${\bf v}_2$ for $\lambda_2=5$: Matrisen til $5I_2-A$ blir
+    \[ \left(\begin{array}{rr} 1 & -3 \\ -1 & 3 \end{array} \right) \sim \left(\begin{array}{rr} 1 & -3 \\ 0 & 0 \end{array} \right) \]
+    Vi ser at vi kan velge $y$ fritt, og at $x=3y$. Velger vi $y=1$ får vi egenvektoren 
+    ${\bf v}_2 = \left( \begin{array}{r} x \\ y \end{array} \right) = \left( \begin{array}{r} 3 \\ 1 \end{array} \right)$.
+\end{itemize}

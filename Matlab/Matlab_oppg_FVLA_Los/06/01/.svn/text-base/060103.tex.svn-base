@@ -1,0 +1,48 @@
+\subsection{Oppgave 6.1.3}
+Det er dessverre ganske omstendelig å løse denne oppgaven, da vi først må definere delepunkter, rektangler, maksimum, og minimum for 
+hele tre forskjellige partisjoner. 
+\begin{itemize}
+  \item La $\Pi_1$ ha delepunkter $(x_{1i},y_{1j})$ ($0\leq i\leq n_1$, $0\leq j\leq m_1$) der $a=x_{10}\leq \cdots \leq x_{1n_1} =b$, $c=y_{10}\leq \cdots \leq y_{1m_1} =d$,
+  \item kall de tilsvarende rektanglene for $R_{1ij}$,
+  \item sett $m_{1ij} = \inf \{ f(x,y) | (x,y)\in R_{1ij}\}$, $M_{1ij} = \sup \{ f(x,y) | (x,y)\in R_{1ij}\}$.
+\end{itemize}
+Videre,
+\begin{itemize}
+  \item la $\Pi_2$ ha delepunkter $(x_{2i},y_{2j})$ ($0\leq i\leq n_2$, $0\leq j\leq m_2$) der $a=x_{20}\leq \cdots \leq x_{2n_2} =b$, og $c=y_{20}\leq \cdots \leq y_{2m_2} =d$,
+  \item kall de tilsvarende rektanglene for $R_{2ij}$,
+  \item sett $m_{2ij} = \inf \{ f(x,y) | (x,y)\in R_{2ij} \}$, $M_{2ij} = \sup \{ f(x,y) | (x,y)\in R_{2ij}\}$.
+\end{itemize}
+La og $\Pi$ være partisjonen som inneholder alle delepunktene til $\Pi_1$ og $\Pi_2$, og 
+\begin{itemize}
+  \item la $\Pi$ ha delepunkter $(x_{i},y_{j})$ ($0\leq i\leq n$, $0\leq j\leq m$) der $a=x_{0}\leq \cdots \leq x_{n} =b$, og $c=y_{0}\leq \cdots \leq y_{m} =d$,
+  \item kall de tilsvarende rektanglene for $R_{ij}$,
+  \item sett $m_{ij} = \inf \{ f(x,y) | (x,y)\in R_{ij} \}$, $M_{ij} = \sup \{ f(x,y) | (x,y)\in R_{ij}\}$.
+\end{itemize}
+Det er klart at hvert rektangel $R_{1ij}$ kan skrives som en union av endelig mange $R_{ij}$, det vil si 
+\[
+  R_{1ij} = R_{i_1j_1}\cup\cdots\cup R_{i_kj_k}.
+\]
+Da er $R_{1ij} = |R_{i_1j_1}| + \cdots + |R_{i_kj_k}|$, og siden $m_{1ij} \leq m_{i_rj_r}$ for alle $r$, så har vi 
+\[
+  m_{1ij}|R_{1ij}| = \sum_{r=1}^k m_{1ij} |R_{i_kj_k}| \leq \sum_{r=1}^k m_{i_rj_r} |R_{i_kj_k}|.
+\]
+Summerer vi over alle $i,j$ ovenfor får vi 
+\[
+  N(\Pi_1) = \sum_{ij} m_{1ij}|R_{1ij}| \leq \sum m_{ij}|R_{ij|}| = N(\Pi). 
+\]
+Dette er den første ulikheten vi skulle vise. 
+Den andre, $N(\Pi)\leq \mbox{\O}(\Pi)$, vet vi allerede, siden minimum $m_{ij}$ alltid er mindre enn maksimum $M_{ij}$. 
+
+Den siste ulikheten følger på en helt tilsvarende måte: Hvert rektangel $R_{2ij}$ kan skrives som en union av endelig mange $R_{ij}$, det vil si 
+\[
+  R_{2ij} = R_{i_1j_1}\cup\cdots\cup R_{i_kj_k}.
+\]
+Da er $R_{2ij} = |R_{i_1j_1}| + \cdots + |R_{i_kj_k}|$, og siden $M_{2ij} \geq M_{i_rj_r}$ for alle $r$, så har vi 
+\[
+  M_{2ij}|R_{2ij}| = \sum_{r=1}^k M_{2ij} |R_{i_kj_k}| \geq \sum_{r=1}^k M_{i_rj_r} |R_{i_kj_k}|.
+\]
+Summerer vi over alle $i,j$ ovenfor får vi 
+\[
+  \mbox{\O}(\Pi_2) = \sum_{ij} M_{2ij}|R_{2ij}| \geq \sum M_{ij}|R_{ij|}| = \mbox{\O}(\Pi), 
+\]
+som er det vi skulle vise.

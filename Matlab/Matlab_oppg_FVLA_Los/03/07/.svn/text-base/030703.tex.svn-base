@@ -1,0 +1,32 @@
+\subsection{Oppgave 3.7.3}
+
+\subsubsection{a)}
+\[
+  f(x,y) = \frac{1}{\sqrt{x^2+y^2}} = \frac{1}{r}.
+\]
+\lstinputlisting[frame=single]{03/07/o030703a.m}
+
+\subsubsection{b)} 
+Vi kan skrive 
+\[f(x,y) = \frac{x}{x^2+y^2} = \frac{r\cos\theta}{r^2} = \frac{1}{r}\cos\theta.\]
+\begin{itemize}
+  \item Holder vi $\theta$ konstant, ser vi at vi får hyperbelen $z=\frac{\cos\theta}{r}$. 
+    Dette hjelper oss til å kunne tegne opp flaten. 
+  \item Nivåkurvene er her sirkler: Setter vi $c=\frac{x}{x^2+y^2}$ får vi at $x^2+y^2=\frac{x}{c}$. 
+    Det er her greit at vi fullfører kvadratet i $x$ for å se at vi får sirkler som er nivåkurver.
+\end{itemize}
+\lstinputlisting[frame=single]{03/07/o030703b.m}
+\lstinputlisting[frame=single]{03/07/o030703c.m}
+
+\subsubsection{d)}
+\begin{eqnarray*}
+  f(x,y) &=& x^2-4y^2 = r^2\cos^2\theta - 4r^2\sin^2\theta \\
+         &=& r^2(\cos^2\theta-4\sin^2\theta) = r^2 (1-5\sin^2\theta) \\
+         &=& r^2(-\frac{3}{2}+\frac{5}{2}\cos 2\theta).
+\end{eqnarray*}
+\begin{itemize}
+  \item Holder vi $\theta$ konstant, ser vi at vi får parabelen $z=r^2(-\frac{3}{2}+\frac{5}{2}\cos 2\theta)$.
+  \item Nivåkurvene er her hyperbler. 
+\end{itemize}
+\lstinputlisting[frame=single]{03/07/o030703d.m}
+\lstinputlisting[frame=single]{03/07/o030703e.m}

@@ -1,0 +1,10 @@
+\subsection{Oppgave 6.5.4}
+Vi setter $P(x,y)=0,Q(x,y)=x$ i Greens teorem og får
+\begin{eqnarray*}
+  A &=& \int_{\cal C} Pdx+Qdy = \int_{\cal C} xdy \\
+    &=& \int_0^{2\pi} a\cos^3 t b3\sin^2 t\cos t dt = \int_0^{2\pi} 3ab \cos^4 t \sin^2 tdt \\
+    &=& \frac{3}{4}ab \int_0^{2\pi} \cos^2 t 4\sin^2 t \cos^2 t dt = \frac{3}{4}ab \int_0^{2\pi} \frac{1}{2}(\cos(2t)+1)\sin^2(2t) dt \\
+    &=& \frac{3}{8}ab \left( \int_0^{2\pi} \sin^2(2t) dt + \int_0^{2\pi} \sin^2(2t)\cos(2t) dt \right) \\
+    &=& \frac{3}{8}ab \left( \int_0^{2\pi} \frac{1}{2}(1-\cos(4t)) dt + \left[ \frac{1}{6}\sin^3(2t) \right]_0^{2\pi} \right) \\
+    &=& \frac{3}{16}ab \left[ t-\frac{1}{4}\sin(4t) \right]_0^{2\pi} = \frac{3}{16}ab2\pi = \frac{3\pi ab}{8}.
+\end{eqnarray*}

@@ -1,0 +1,92 @@
+\subsection{Oppgave 4.5.6}
+Vi kan faktisk løse a) og b) samtidig slik:
+\[
+\left(
+\begin{array}{rrrrrrr}
+  1 & 2 & 0 & 1 & 0 & 0 & 5 \\ 
+  0 & 1 & 1 & 0 & 1 & 0 & 3 \\
+  0 &-2 & 1 & 0 & 0 & 1 & 3
+\end{array}
+\right)
+\stackrel{III+2II}{\sim}
+\left(
+\begin{array}{rrrrrrr}
+  1 & 2 & 0 & 1 & 0 & 0 & 5 \\ 
+  0 & 1 & 1 & 0 & 1 & 0 & 3 \\
+  0 & 0 & 3 & 0 & 2 & 1 & 9
+\end{array}
+\right)
+\]
+\[
+\stackrel{\frac{1}{3}III}{\sim}
+\left(
+\begin{array}{rrrrrrr}
+  1 & 2 & 0 & 1 & 0 & 0 & 5 \\ 
+  0 & 1 & 1 & 0 & 1 & 0 & 3 \\
+  0 & 0 & 1 & 0 & \frac{2}{3} & \frac{1}{3} & 3
+\end{array}
+\right)
+\stackrel{II-III}{\sim}
+\left(
+\begin{array}{rrrrrrr}
+  1 & 2 & 0 & 1 & 0 & 0 & 5 \\ 
+  0 & 1 & 0 & 0 & \frac{1}{3} & -\frac{1}{3} & 0 \\
+  0 & 0 & 1 & 0 & \frac{2}{3} & \frac{1}{3} & 3
+\end{array}
+\right)
+\]
+\[
+\stackrel{I-2II}{\sim}
+\left(
+\begin{array}{rrrrrrr}
+  1 & 0 & 0 & 1 &-\frac{2}{3} & \frac{2}{3} & 5 \\ 
+  0 & 1 & 0 & 0 & \frac{1}{3} & -\frac{1}{3}& 0 \\
+  0 & 0 & 1 & 0 & \frac{2}{3} & \frac{1}{3} & 3
+\end{array}
+\right).
+\]
+Vi ser at 
+\[
+B^{-1}
+=
+\left(
+\begin{array}{rrr}
+  1 &-\frac{2}{3} & \frac{2}{3} \\ 
+  0 & \frac{1}{3} &-\frac{1}{3}\\
+  0 & \frac{2}{3} & \frac{1}{3}
+\end{array}
+\right),
+\]
+og at løsningen på likningssystemet er $x=5$, $y=0$, $z=3$. 
+
+\subsubsection{c)}
+\[
+\left(
+\begin{array}{rrrr}
+  1 & 2 & 0   & 5 \\ 
+  0 & 1 & 1   & 3 \\
+  0 &-2 & a+1 & b^2-10
+\end{array}
+\right)
+\stackrel{III+2II}{\sim}
+\left(
+\begin{array}{rrrr}
+  1 & 2 & 0   & 5 \\ 
+  0 & 1 & 1   & 3 \\
+  0 & 0 & a+3 & b^2-4
+\end{array}
+\right).
+\]
+Vi ser nå at likningssystemet har nøyaktig en løsning når $a\neq -3$. 
+Hvis $a=-3$ får vi matrisen
+\[
+\left(
+\begin{array}{rrrr}
+  1 & 2 & 0   & 5 \\ 
+  0 & 1 & 1   & 3 \\
+  0 & 0 & 0 & b^2-4
+\end{array}
+\right).
+\]
+Hvis $b=2$ eller $b=-2$ har vi uendelig mange løsninger, siden siste søyle nå ikke er en pivotsøyle, og siden tredje søyle ikke er en pivotsøyle. 
+Hvis $b\neq 2$ og $b\neq -2$ blir siste søyle en pivotsøyle, og vi har derfor ingen løsninger. 

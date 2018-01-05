@@ -1,0 +1,23 @@
+\subsection{Oppgave 3.5.7}
+Vi har vektorfeltet ${\bf F}(x,y) = (2xy,x^2)$, og kurven ${\cal C}$ parametrisert ved 
+\[
+  {\bf r}(t) = (2t\cos t,\sin t) \mbox{, } 0\leq t\leq \frac{\pi}{2}.
+\]
+Det er tungvint å regne ut $\int_{\cal C} {\bf F}\cdot d{\bf r}$ direkte. I stedet forsøker vi å finne en potensialfunksjon. Vi regner ut
+\[ \frac{\partial F_2}{\partial x} = 2x \text{, } \frac{\partial F_1}{\partial y} = 2x .\]
+Felter er derfor konservativt, og har en potensialfunksjon  . Vi må løse likningene
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y) = 2xy \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y) = x^2.
+\end{eqnarray*} 
+Integrasjon gir oss at 
+\begin{eqnarray*}
+  \phi(x,y) &=& x^2y + C(y) \\ 
+  \phi(x,y) &=& x^2y + D(x).
+\end{eqnarray*}
+$\phi(x,y) = x^2y$ er derfor en potensialfunksjon for ${\bf F}$. 
+Vi har derfor
+\[
+  \int_{\cal C} {\bf F}\cdot dr = \int_{\cal C} \bigtriangledown\phi dr = \phi({\bf b}) - \phi({\bf a}) = \phi(0,1)-\phi(0,0) = 0,
+\]
+hvor vi har brukt Setning 3.5.1.

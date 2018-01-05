@@ -1,0 +1,6 @@
+\subsection{Oppgave 3.1.3}
+\begin{eqnarray*}
+  {\bf r}(t) &=& (t,e^{-t},\sin t) \\
+  {\bf v}(t) &=& {\bf r}'(t) = (1,-e^{-t},\cos t) \\ 
+  {\bf a}(t) &=& {\bf v}'(t) = (0,e^{-t},-\sin t).
+\end{eqnarray*}

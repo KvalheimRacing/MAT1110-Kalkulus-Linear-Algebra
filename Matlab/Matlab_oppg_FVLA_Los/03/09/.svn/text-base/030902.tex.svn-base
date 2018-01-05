@@ -1,0 +1,6 @@
+\subsection{Oppgave 3.9.2}
+Området i første oktant som ligger på kuleflaten kan beskrives i kulekoordinater ved $0\leq\theta\leq\frac{\pi}{2}$, $0\leq\phi\leq\frac{\pi}{2}$, $\rho=2$.
+En parametrisering ved kulekoordinater blir derfor 
+\[
+  {\bf r}(\phi,\theta)= (2\cos\theta\sin\phi,2\sin\theta\sin\phi,2\cos\phi) \mbox{, } 0\leq\theta\leq\frac{\pi}{2} \mbox{, } 0\leq\phi\leq\frac{\pi}{2}.
+\]

@@ -1,0 +1,7 @@
+\subsection{Oppgave 5.5.3}
+Funksjonen $g(x)=f(x)-x$ er også kontinuerlig, og 
+\begin{eqnarray*}
+  g(0) &=& f(0)\geq 0 \\
+  g(1) &=& f(1)-1\leq 0.
+\end{eqnarray*}
+Fra skjæringssetningen vet vi da at det finnes et punkt $x$ der $g(x)=0$. Men $g(x)=0$ hvis og bare hvis $f(x)=x$, slik at $x$ er et fikspunkt. 

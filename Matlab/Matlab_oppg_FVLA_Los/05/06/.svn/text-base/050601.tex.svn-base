@@ -1,0 +1,15 @@
+\subsection{Oppgave 5.6.1}
+
+\subsubsection{a)}
+Vi kan skrive $f(x)=x^3-x=x(x^2-1)=x(x-1)(x+1)$, slik at $f$ har de tre nullpunktene $0,1,-1$. 
+
+\subsubsection{b)}
+Det er best å bruke en eksisterende implementasjon av Newtons metode som har følgende signatur:
+\begin{lstlisting}[frame=single]
+function x=newton(x0,f,df)
+\end{lstlisting}
+der {\tt x0} er startpunktet for Newtons metode, og {\tt f}, {\tt df} er anonyme funksjoner som representerer $f$ og den deriverte til $f$. 
+Eksempel på en slik funksjon, som terminerer etter passende antall iterasjoner, finnes på bokas hjemmeside.
+Vi kan nå bruke funksjonen {\tt newton} til å løse c) slik:
+\lstinputlisting[frame=single]{05/06/o050601.m}
+

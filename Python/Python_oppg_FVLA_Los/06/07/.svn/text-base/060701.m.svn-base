@@ -1,0 +1,30 @@
+x1=linspace(-0.5,0,100);
+x2=linspace(0.5,1,100);
+x3=linspace(-0.5,0.5,100);
+x4=linspace(0,1,100);
+
+plot(x1,-x1,'k-');
+hold on
+plot(x2,-x2+2,'k-');
+plot(x3,x3+1,'k-');
+plot(x4,x4,'k-');
+
+plot( linspace(-1,1.5,100) , zeros(1,100) , 'k-' );
+plot( zeros(1,100) , linspace(-0.5,2,100) , 'k-' );
+axis([-1 1.5 -0.5 2])
+axis equal
+
+for xs=-0.4:0.1:0
+  plot(xs*ones(1,100),linspace(-xs,xs+1,100),'k-')
+end
+
+for xs=0.1:0.1:0.5
+  plot(xs*ones(1,100),linspace(xs,xs+1,100),'k-')
+end
+
+for xs=0.6:0.1:0.9
+  plot(xs*ones(1,100),linspace(xs,-xs+2,100),'k-')
+end
+
+set(gca,'FontSize',24);
+print -deps 060701.eps

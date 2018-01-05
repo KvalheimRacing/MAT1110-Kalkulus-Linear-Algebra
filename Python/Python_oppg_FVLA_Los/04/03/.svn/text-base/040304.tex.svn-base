@@ -1,0 +1,3 @@
+\subsection{Oppgave 4.3.4}
+Den reduserte trappeformen til koeffisientmatrisen til likningssystemet er identitetsmatrisen i dette tilfellet, som lett kan sjekkes ved hjelp av Matlab. 
+Derfor har systemet en unik løsning for alle valg av $b_1,b_2,b_3$. 

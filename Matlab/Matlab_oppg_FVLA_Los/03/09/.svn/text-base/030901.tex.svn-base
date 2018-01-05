@@ -1,0 +1,13 @@
+\subsection{Oppgave 3.9.1}
+Vi ser på paraboloiden $z=x^2+y^2$. Parametrisering med vanlige koordinater er 
+\[
+{\bf r}(x,y) = x{\bf i} +y{\bf j} + (x^2+y^2){\bf k}
+\]
+for $x,y\in\R$. 
+Siden $x=r\cos\theta$, $y=r\sin\theta$, og $x^2+y^2=r^2$, så blir en
+parametrisering med polarkoordinater 
+\begin{eqnarray*}
+  {\bf r}(r,\theta) &=& r\cos\theta{\bf i} + r\sin\theta{\bf j} +  (r^2\cos^2\theta + r^2\sin^2\theta){\bf k} \\
+                    &=& r\cos\theta{\bf i} + r\sin\theta{\bf j} + r^2{\bf k}
+\end{eqnarray*}
+med $0\leq\theta\leq 2\pi$, $r\geq 0$.

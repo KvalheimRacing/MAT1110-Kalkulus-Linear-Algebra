@@ -1,0 +1,1349 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/oyvindry/anaconda/envs/matinf2360/lib/python2.7/site-packages/matplotlib/font_manager.py:273: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.\n",
+      "  warnings.warn('Matplotlib is building the font cache using fc-list. This may take a moment.')\n"
+     ]
+    }
+   ],
+   "source": [
+    "%matplotlib inline\n",
+    "\n",
+    "from numpy import *\n",
+    "import matplotlib.pyplot as plt"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Summere tall"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "3 + 4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Potens"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2**4"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Divisjon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.75"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "3/4."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## $\\sin(x)$ og tallet $\\pi$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1.0"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sin(pi/2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## $e^x$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "7.3890560989306504"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "exp(2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kvadratrot"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4.0"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sqrt(16)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Regne ut logaritmer og verifisere regnereglene for disse"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.0"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "log(exp(2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Sinus i grader\n",
+    "\n",
+    "Sinus regnes ut i radianer. Følgende regner ut i grader i stedet."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.027412133592044294"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sin(radians(pi/2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Presisjon\n",
+    "Bruke 16 siffers presisjon i stedet"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.0274121335920443\n"
+     ]
+    }
+   ],
+   "source": [
+    "print '%.16f' % sin(radians(pi/2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Bruke 4 siffers presisjon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0.0274\n"
+     ]
+    }
+   ],
+   "source": [
+    "print '%.4f' % sin(radians(pi/2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Definere variable"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-2\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 1\n",
+    "b = -2\n",
+    "c = a*b\n",
+    "print c"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Funksjoner for avrunding"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2.0\n",
+      "3.0\n",
+      "3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print floor(2.5)\n",
+    "print ceil(2.5)\n",
+    "print round(2.5)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Generere tilfeldige tall"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 0.01254148  0.42412233  0.8505296 ]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print random.random(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Definere matriser"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2 -3  1]\n",
+      " [ 0  1  3]\n",
+      " [-4  2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "A = array([[2, -3, 1], [0, 1, 3], [-4, 2, 1]])\n",
+    "print A"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2  3 -1]\n",
+      " [ 0  1 -3]\n",
+      " [ 4 -2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "B = array([[2, 3, -1], [0, 1, -3], [4, -2, 1]])\n",
+    "print B"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Enkle matriseoperasjoner"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[4 0 0]\n",
+      " [0 2 0]\n",
+      " [0 0 2]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (A + B)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 0 -6  2]\n",
+      " [ 0  0  6]\n",
+      " [-8  4  0]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print (A - B)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[  6  -9   3]\n",
+      " [  0   3   9]\n",
+      " [-12   6   3]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print 3*A"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 12864 -14419  -8727]\n",
+      " [-19488  23215  12795]\n",
+      " [-23556  28018  16719]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print matrix(A)**7"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Komponentvis potens"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 12864 -14419  -8727]\n",
+      " [-19488  23215  12795]\n",
+      " [-23556  28018  16719]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print matrix(A)**7"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Transponere en matrise"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2 -3  1]\n",
+      " [ 0  1  3]\n",
+      " [-4  2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print A"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2  0 -4]\n",
+      " [-3  1  2]\n",
+      " [ 1  3  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print A.T"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Invertere en matrise"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[-0.16666667  0.16666667 -0.33333333]\n",
+      " [-0.4         0.2        -0.2       ]\n",
+      " [ 0.13333333  0.26666667  0.06666667]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print linalg.inv(A)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Determinant"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "29.999999999999989"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "linalg.det(A)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Multiplisere matriser"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([[  8,   1,   8],\n",
+       "       [ 12,  -5,   0],\n",
+       "       [ -4, -12,  -1]])"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "dot(A, B)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Radvektorer og søylevektorer"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "b = array([-2, 5, 6])\n",
+    "c = array([7, -3, 2])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Skalarprodukt og vektorprodukt"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-17\n",
+      "[ 28  46 -29]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print dot(b, c)\n",
+    "print cross(b, c)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Diverse måter å lage nye matriser på"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 0.71761106  0.37271347  0.58188343]\n",
+      " [ 0.06514564  0.90212592  0.13985048]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print random.random((2, 3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 0.  0.  0.]\n",
+      " [ 0.  0.  0.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print zeros((2, 3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1.  1.  1.]\n",
+      " [ 1.  1.  1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print ones((2, 3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1.  0.  0.]\n",
+      " [ 0.  1.  0.]\n",
+      " [ 0.  0.  1.]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print eye(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Komponentvise operasjoner"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[  4  -9  -1]\n",
+      " [  0   1  -9]\n",
+      " [-16  -4   1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print A*B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 1 -1 -1]\n",
+      " [ 0  1 -1]\n",
+      " [-1 -1  1]]\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "/Users/oyvindry/anaconda/envs/matinf2360/lib/python2.7/site-packages/ipykernel/__main__.py:1: RuntimeWarning: divide by zero encountered in divide\n",
+      "  if __name__ == '__main__':\n"
+     ]
+    }
+   ],
+   "source": [
+    "print A/B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 0.90929743 -0.14112001  0.84147098]\n",
+      " [ 0.          0.84147098  0.14112001]\n",
+      " [ 0.7568025   0.90929743  0.84147098]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print sin(A)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[  2.98095799e+03   1.87952882e-12   2.71828183e+00]\n",
+      " [  1.00000000e+00   2.71828183e+00   5.32048241e+11]\n",
+      " [  1.60381089e-28   2.98095799e+03   2.71828183e+00]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print exp(A*(B**2))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Regne ut maksimum i matriser"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print max([1, 2, 3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print max([[1, 2, 3], [4, 5, 6]])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 5, 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print max([[1, 7, 3], [4, 5, 6]])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Generere lister og regne ut sum"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 1  2  3  4  5  6  7  8  9 10]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = arange(1, 11)\n",
+    "print a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "print sum(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "385\n"
+     ]
+    }
+   ],
+   "source": [
+    "print sum(a**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 3 5 7 9]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = arange(1,11,2)\n",
+    "print a"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Enkel plotting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[<matplotlib.lines.Line2D at 0x107c3e710>]"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    },
+    {
+     "data": {
+      "image/png": "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\nP/9p2GTpbtaGAAAAAElFTkSuQmCC\n",
+      "text/plain": [
+       "<matplotlib.figure.Figure at 0x107b8bc10>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "t = linspace(0, 2, 100)\n",
+    "plt.plot(t,t**2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kombinere matriser"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2 -3  1]\n",
+      " [ 0  1  3]\n",
+      " [-4  2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print A"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2  3 -1]\n",
+      " [ 0  1 -3]\n",
+      " [ 4 -2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print B"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2 -3  1  2  3 -1]\n",
+      " [ 0  1  3  0  1 -3]\n",
+      " [-4  2  1  4 -2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "C = hstack([A, B])\n",
+    "print C"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2 -3  1]\n",
+      " [ 0  1  3]\n",
+      " [-4  2  1]\n",
+      " [ 2  3 -1]\n",
+      " [ 0  1 -3]\n",
+      " [ 4 -2  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "C=vstack([A, B])\n",
+    "print C"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Trekke ut deler av en matrise"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print C[0,1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 2 -3  1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print C[0,:]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[ 2  0 -4  2  0  4]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print C[:,0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-3  1  2]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print C[0:3,1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[ 2  1]\n",
+      " [-4  1]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print C[ix_([0,2],[0,2])]"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 2",
+   "language": "python",
+   "name": "python2"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

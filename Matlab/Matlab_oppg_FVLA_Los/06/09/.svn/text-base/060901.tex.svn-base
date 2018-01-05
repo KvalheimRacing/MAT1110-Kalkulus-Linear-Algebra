@@ -1,0 +1,17 @@
+\subsection{Oppgave 6.9.1}
+
+\subsubsection{a)}
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A xyz dxdydz} \\
+  &=& \int_0^1 \left[ \int_0^1 \left[ \int_0^1 xyz dx \right] dy \right] dz = \int_0^1 \left[ \int_0^1 \left[\frac{1}{2}x^2yz\right]_0^1dy \right] dz \\
+  &=& \int_0^1 \left[ \int_0^1 \frac{1}{2}yz dy \right] dz = \int_0^1 \left[\frac{1}{4}y^2z\right]_0^1 dz = \int_0^1 \frac{1}{4}zdz = \left[\frac{1}{8}z^2\right]_0^1 = \frac{1}{8}. 
+\end{eqnarray*}
+
+\subsubsection{b)}
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A (x+ye^z)dxdydz} \\
+  &=& \int_{-1}^1 \left[ \int_0^1 \left[ \int_1^2 (x+ye^z) dz \right] dy \right] dx = \int_{-1}^1 \left[ \int_0^1 \left[ xz+ye^z \right]_1^2 dy \right] dx \\
+  &=& \int_{-1}^1 \left[ \int_0^1 \left( x+y(e^2-e) \right) dy \right] dx = \int_{-1}^1 \left[ xy + \frac{1}{2}(e^2-e)y^2 \right]_0^1 dx \\
+  &=& \int_{-1}^1 \left( x + \frac{1}{2}(e^2-e) \right) dx = \left[ \frac{1}{2}x^2 + \frac{1}{2}(e^2-e)x \right]_{-1}^1 \\
+  &=& \frac{1}{2} + \frac{1}{2}(e^2-e) - \frac{1}{2} + \frac{1}{2}(e^2-e) = e^2-e.
+\end{eqnarray*}

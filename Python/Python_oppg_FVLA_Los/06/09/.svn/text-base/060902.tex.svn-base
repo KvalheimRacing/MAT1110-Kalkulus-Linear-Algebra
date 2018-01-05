@@ -1,0 +1,41 @@
+\subsection{Oppgave 6.9.2}
+
+\subsubsection{a)}
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A (xy+z)dxdydz} \\
+  &=& \int_0^1 \left[ \int_0^2 \left[ \int_0^{x^2y} (xy+z) dz \right] dy \right] dx = \int_0^1 \left[ \int_0^2 \left[ xyz + \frac{1}{2}z^2 \right]_0^{x^2y} dy \right] dx \\
+  &=& \int_0^1 \left[ \int_0^2 \left( x^3y^2 + \frac{1}{2} x^4y^2 \right) dy \right] dx = \int_0^1 \left[ \frac{1}{3} \left( x^3+\frac{1}{2}x^4 \right) y^3 \right]_0^2 dx \\
+  &=& \int_0^1 \left( \frac{8}{3} x^3 + \frac{4}{3} x^4 \right) dx = \left[ \frac{2}{3} x^4 + \frac{4}{15}x^5 \right]_0^1 \\
+  &=& \frac{2}{3} + \frac{4}{15} = \frac{10+4}{15} = \frac{14}{15}.
+\end{eqnarray*}
+
+\subsubsection{b)}
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A zdxdydz} \\
+  &=& \int_0^2 \left[ \int_0^{\sqrt{x}} \left[ \int_{-y^2}^{xy} z dz \right] dy \right] dx = \int_0^2 \left[ \int_0^{\sqrt{x}} \left[ \frac{1}{2}z^2 \right]_{-y^2}^{xy} dy \right] dx \\
+  &=& \int_0^2 \left[ \int_0^{\sqrt{x}} \left( \frac{1}{2}x^2y^2 - \frac{1}{2}y^4 \right) dy \right] dx = \int_0^2 \left[ \frac{1}{6}x^2y^3 - \frac{1}{10}y^5 \right]_0^{\sqrt{x}} dx \\
+  &=& \int_0^2 \left( \frac{1}{6}x^{7/2} - \frac{1}{10}x^{5/2} \right) dx = \left[ \frac{1}{27}x^{9/2} - \frac{1}{35} x^{7/2} \right]_0^2 \\
+  &=& \frac{1}{27}2^{9/2} - \frac{1}{35}2^{7/2} = \frac{16\sqrt{2}}{27} - \frac{8\sqrt{2}}{35} = 8\sqrt{2}\left( \frac{2}{27} - \frac{1}{35} \right) = \frac{344\sqrt{2}}{945}.
+\end{eqnarray*}
+
+\subsubsection{c)}
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A (x+y)zdxdydz} \\
+  &=& \int_0^4 \left[ \int_0^{\sqrt{y}} \left[ \int_0^4 (x+y)z dz \right] dx \right] dy = \int_0^4 \left[ \int_0^{\sqrt{y}} \left[ \frac{1}{2}(x+y)z^2 \right]_0^4 dx \right] dy \\
+  &=& \int_0^4 \left[ \int_0^{\sqrt{y}} 8(x+y) dx \right] dy = \int_0^4 \left[ 4x^2 + 8xy \right]_0^{\sqrt{y}} dy \\
+  &=& \int_0^4 \left( 4y + 8y^{3/2} \right) dy = \left[ 2y^2 + \frac{16}{5} y^{5/2} \right]_0^4 \\
+  &=& 32 + \frac{16}{5}32 = 32\frac{21}{5} = \frac{672}{5}.
+\end{eqnarray*}
+
+\subsubsection{e)}
+Pyramiden kan beskrives ved $0\leq x\leq 1$, $0\leq y\leq 1-x$, $0\leq z\leq 1-x-y$. Vi får
+\begin{eqnarray*}
+  \lefteqn{\int\int\int_A xydxdydz} \\
+  &=& \int_0^1 \left[ \int_0^{1-x} \left[ \int_0^{1-x-y} xy dz \right] dy \right] dx = \int_0^1 \left[ \int_0^{1-x} \left[ xyz \right]_0^{1-x-y} dy \right] dx \\
+  &=& \int_0^1 \left[ \int_0^{1-x} xy(1-x-y) dy \right] dx = \int_0^1 \left[ \int_0^{1-x} (xy - x^2y - xy^2) dy \right] dx \\
+  &=& \int_0^1 \left[ \frac{1}{2}xy^2 - \frac{1}{2}x^2y^2 - \frac{1}{3}xy^3 \right]_0^{1-x} dx \\
+  &=& \int_0^1 \left( \frac{1}{2}x(1-x)^2 - \frac{1}{2}x^2(1-x)^2 - \frac{1}{3}x(1-x)^3 \right) dx \\
+  &=& \int_0^1 \left( \frac{1}{2}x(1-x)^3 - \frac{1}{3}x(1-x)^3 \right) dx = \int_0^1 \frac{1}{6}x(1-x)^3 dx \\
+  &=& \frac{1}{6} \int_0^1 (x - 3x^2 + 3x^3 - x^4)dx = \frac{1}{6} \left[ \frac{1}{2}x^2 - x^3 + \frac{3}{4}x^4 - \frac{1}{5}x^5 \right]_0^1 \\
+  &=& \frac{1}{6} \left( \frac{1}{2} - 1 + \frac{3}{4}  - \frac{1}{5} \right) = \frac{1}{6} \frac{10-20+15-4}{20} = \frac{1}{120}.
+\end{eqnarray*}

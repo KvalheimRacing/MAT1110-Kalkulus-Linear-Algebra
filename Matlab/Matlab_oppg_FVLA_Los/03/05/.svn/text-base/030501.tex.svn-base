@@ -1,0 +1,14 @@
+\subsection{Oppgave 3.5.1}
+Vi ser på ${\bf F}(x,y) = (2xy+2x,x^2)$, og regner ut
+at $\frac{\partial F_2}{\partial x} = 2x$, $\frac{\partial F_1}{\partial y} = 2x$.
+Feltet er derfor konservativt, og vi finner en potensialfunksjon ved å løse 
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y) = 2xy+2x \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y) = x^2.
+\end{eqnarray*}
+Disse to likningene gir 
+\begin{eqnarray*}
+  \phi(x,y) &=& x^2y+x^2+C(y) \\
+  \phi(x,y) &=& x^2y+D(x).
+\end{eqnarray*}
+det er da klart at $\phi(x,y) = x^2y+x^2$ er en potensialfunksjon. 

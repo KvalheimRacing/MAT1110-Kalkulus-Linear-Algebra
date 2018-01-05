@@ -1,0 +1,11 @@
+\subsection{Oppgave 3.1.2}
+\begin{eqnarray*}
+  {\bf r(t)} &=& (\cos t,t\sin t) \\
+  {\bf v}(t) &=& {\bf r}'(t) = (-\sin t,\sin t + t\cos t) \\
+  v(t)       &=& |{\bf v}(t)| = \sqrt{\sin^2 t + \sin^2 t + 2t\sin t\cos t +t^2\cos^2 t} \\
+             &=& \sqrt{2\sin^2 t + t\sin(2t) +t^2\cos^2 t}\\
+  {\bf a}(t) &=& {\bf v}'(t) = (-\cos t,2\cos t -t\sin t) \\
+  a(t)       &=& v'(t) = \frac{4\sin t\cos t +2t\cos(2t) + \sin(2t) + 2t\cos^2 t -2t^2\sin t\cos t}{2\sqrt{2\sin^2 t + t\sin(2t) +t^2\cos^2 t}} \\
+             &=& \frac{2\sin(2t) + 2t\cos(2t) + \sin(2t) + 2t\cos^2 t -t^2\sin(2t)}{2\sqrt{2\sin^2 t + t\sin(2t) +t^2\cos^2 t}} \\
+             &=& \frac{ \frac{1}{2}(3-t^2)\sin(2t) + t(\cos(2t) + \cos^2 t)}{\sqrt{2\sin^2 t + t\sin(2t) +t^2\cos^2 t}}.
+\end{eqnarray*}

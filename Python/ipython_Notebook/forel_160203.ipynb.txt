@@ -1,0 +1,131 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "%matplotlib inline\n",
+    "\n",
+    "import os\n",
+    "from math import *\n",
+    "import numpy as np\n",
+    "\n",
+    "import matplotlib.pyplot as plt\n",
+    "from mpl_toolkits.mplot3d import Axes3D\n",
+    "from matplotlib import cm"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "x = y = np.linspace(-10., 10., 30)\n",
+    "xv, yv = np.meshgrid(x, y, indexing='ij', sparse=False)\n",
+    "zv = np.sqrt(xv**2+yv**2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kjeglesnitt som er en sirkel"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "fig = plt.figure(1)\n",
+    "pv = 0*xv + 2\n",
+    "ax = fig.gca(projection='3d')\n",
+    "ax.plot_surface(xv, yv, zv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "ax.plot_surface(xv, yv, pv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "plt.axis('equal')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kjeglesnitt som er en ellipse"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "fig = plt.figure(2)\n",
+    "pv = 0.5*xv + 2\n",
+    "ax = fig.gca(projection='3d')\n",
+    "ax.plot_surface(xv, yv, zv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "ax.plot_surface(xv, yv, pv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "plt.axis('equal')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kjeglesnitt som er en parabel"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "fig = plt.figure(3)\n",
+    "pv = xv + 2\n",
+    "ax = fig.gca(projection='3d')\n",
+    "ax.plot_surface(xv, yv, zv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "ax.plot_surface(xv, yv, pv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "plt.axis('equal')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "## Kjeglesnitt som er en hyperbel"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "fig = plt.figure(4)\n",
+    "pv = 1.5*xv + 2\n",
+    "ax = fig.gca(projection='3d')\n",
+    "ax.plot_surface(xv, yv, zv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "ax.plot_surface(xv, yv, pv, cmap=cm.coolwarm, rstride=1, cstride=1)\n",
+    "plt.axis('equal')"
+   ]
+  }
+ ],
+ "metadata": {},
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

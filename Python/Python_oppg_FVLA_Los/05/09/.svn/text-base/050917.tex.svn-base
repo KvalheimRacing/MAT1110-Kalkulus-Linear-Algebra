@@ -1,0 +1,32 @@
+\subsection{Oppgave 5.9.17}
+Fortjenesten for standardmodellen og luksusmodellen er, respektive
+\begin{eqnarray*}
+  f_1(x,y)) &=& 500(y-x)x - 500(y-x)400 \\
+            &=& 500xy - 500x^2 - 200000y + 200000x \\
+  f_2(x,y)) &=& (450000 + 500(x-2y))y - (450000 + 500(x-2y))600 \\
+            &=& -27\times 10^7 + 1050000y + 500xy - 1000y^2 -300000x,
+\end{eqnarray*}
+slik at den totale fortjenesten blir 
+\begin{eqnarray*}
+  f(x,y) &=& f_1(x,y) + f_2(x,y) \\
+         &=& 500xy - 500x^2 - 200000y + 200000x \\
+         & & - 27\times 10^7 + 1050000y + 500xy - 1000y^2 -300000x \\
+         &=& 1000xy-500x^2+850000y - 100000x-27\times 10^7- 1000y^2.
+\end{eqnarray*}
+De partielle deriverte blir 
+\begin{eqnarray*}
+  \frac{\partial f}{\partial x} &=& 1000y - 1000x - 100000 \\
+  \frac{\partial f}{\partial y} &=& 1000x - 2000y + 850000.
+\end{eqnarray*}
+Setter vi disse lik $0$ får vi likningene
+\begin{eqnarray*}
+  - 1000x + 1000y &=& 100000 \\
+  1000x - 2000y &=& -850000.
+\end{eqnarray*}
+På redusert trappeform blir dette
+\begin{eqnarray*}
+\left( \begin{array}{rrr} -1000 & 1000 & 100000 \\ 1000 & -2000 & -850000 \end{array} \right) 
+&\sim& \left( \begin{array}{rrr} 1 & -1 & -100 \\ 0 & -1000 & -750000 \end{array} \right) \\
+&\sim& \left( \begin{array}{rrr} 1 & 0 & 650 \\ 0 & 1 & 750 \end{array} \right),
+\end{eqnarray*}
+slik at vi må velge $x=650,y=750$ for å maksimere fortjenesten. 

@@ -1,0 +1,26 @@
+\subsection{4.11.11}
+
+\subsubsection{a)}
+Antall sykler i stativ $X$ rett før påfyllingen i måned $n+1$
+er lik 
+\begin{itemize}
+  \item $40$\% av antall sykler i $X$ måneden før, 
+  \item pluss $10$\% av antall sykler i $Y$ måneden før, 
+  \item pluss $10$\% av antall sykler i $Z$ måneden før, 
+  \item pluss $30$\% av antall sykler i $U$ måneden før, 
+\end{itemize}
+dvs. $0.4x_n+0.1y_n+0.1z_n+0.3u_n$. Ganger vi dette med $1.15$ for å fange opp påfyllet, får vi
+\[ x_{n+1} = 0.46x_n + 0.115y_n + 0.115z_n + 0.345u_n.\]
+De andre likningene fremkommer på tilsvarende måte.
+
+\subsubsection{b)}
+Vi kaller funksjone vi skal lage for {\tt bysykler}. Denne kan programmeres slik:
+\lstinputlisting[frame=single]{04/11/bysykler.m}
+Vi bruker deretter denne funksjonen i resten av oppgaven:
+\lstinputlisting[frame=single]{04/11/o041111cde.m}
+
+\subsubsection{f)}
+Det er klart at hver rad i matrisen $A$ svarer til koeffisientene i en av likningene vi fant i a). 
+Men da er det klart at ${\bf w}_{n+1}=A{\bf w}_n$ når vi setter ${\bf w}_n=\left(\begin{array}{r} x_n \\ y_n \\ z_n \\ w_n \end{array} \right)$.
+
+\lstinputlisting[frame=single]{04/11/o041111ghi.m}

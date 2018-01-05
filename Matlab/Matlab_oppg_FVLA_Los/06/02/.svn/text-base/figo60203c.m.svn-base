@@ -1,0 +1,19 @@
+% Oppgave 6.2.3c)
+hold off
+y=0:0.01:1;
+plot(y.^2,y,'k-')
+hold on
+plot(y,zeros(1,length(y)),'k-')
+plot(zeros(1,length(y)),y,'k-')
+plot(y,ones(1,length(y)),'k-')
+for yval=0.25:0.25:0.75
+  xvals=0:0.01:yval^2;
+  plot(xvals,yval*ones(1,length(xvals)),'k-')
+end
+axis([-0.2 1.2 -0.2 1.2])
+set(gca,'FontSize',24);
+set(gca,'XTick',0:1)
+set(gca,'YTick',0:1)
+xlabel('x')
+ylabel('y')
+print -deps 060203c.eps

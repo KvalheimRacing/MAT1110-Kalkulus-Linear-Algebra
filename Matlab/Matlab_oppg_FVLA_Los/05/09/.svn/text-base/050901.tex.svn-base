@@ -1,0 +1,15 @@
+\subsection{Oppgave 5.9.1}
+
+\subsubsection{a)}
+De partielle deriverte blir $\frac{\partial f}{\partial x}=2x-4$, og $\frac{\partial f}{\partial x}=4y+4$. 
+De stasjonære punktene er derfor løsningen av
+\begin{eqnarray*}
+  2x-4 &=& 0 \\
+  4y+4 &=& 0,
+\end{eqnarray*}
+som gir $(x,y)=(2,-1)$ som eneste stasjonære punkt.
+
+\subsubsection{d)}
+De partielle deriverte blir $\frac{\partial f}{\partial x}=(x+1)e^{y^2+x}$, og $\frac{\partial f}{\partial y}=2xye^{y^2+x}$. 
+Det er klart at $\frac{\partial f}{\partial x}=0$ hvis og bare hvis $x=-1$. Men hvis $x=-1$ så er eneste mulighet for $\frac{\partial f}{\partial y}=0$ at $y=0$. 
+Eneste stasjonære punkt blir derfor $(x,y)=(-1,0)$.

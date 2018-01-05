@@ -1,0 +1,2 @@
+t=linspace(0,6*pi,100);
+plot3(cos(t),sin(t),t)

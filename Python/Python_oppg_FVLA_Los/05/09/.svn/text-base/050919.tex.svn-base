@@ -1,0 +1,36 @@
+\subsection{Oppgave 5.9.19}
+
+\subsubsection{a)}
+Vi har at 
+\[
+  \frac{\partial f}{\partial x} = 4x^3 \mbox{, } \frac{\partial f}{\partial y} = 4y^3.
+\]
+Det er derfor klart at $(0,0)$ er et stasjonært punkt. Vi har og at
+\[
+  Hf(x,y) 
+  =
+  \left(
+  \begin{array}{rr}
+  12x^2 & 0 \\
+  0 & 12y^2
+  \end{array}
+  \right)
+  \mbox{, }
+  Hf(0,0) 
+  =
+  \left(
+  \begin{array}{rr}
+  0 & 0 \\
+  0 & 0
+  \end{array}
+  \right).
+\]
+dermed er også Hesse-determinanten lik $0$. 
+Siden $x^4+y^4$ aldri er $<0$, så er det klart at $(0,0)$ er et minimumspunkt.
+
+\subsubsection{b)} 
+Her kan vi velge $f_2(x,y)=-f(x,y)$.
+
+\subsubsection{c)}
+Her kan vi velge $f_3(x,y)=x^4-y^4$. $(0,0)$ er da et stasjonært punkt også her, og Hesse-determinanten er $0$ også her.
+$(0,0)$ er nå hverken minimum eller maksimum. Dette kan for eksempel sees ved å nærme seg origo langs med de to linjene $(t,0)$ og $(0,t)$. 

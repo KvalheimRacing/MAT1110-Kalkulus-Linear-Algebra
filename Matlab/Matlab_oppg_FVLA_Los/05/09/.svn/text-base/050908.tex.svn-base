@@ -1,0 +1,37 @@
+\subsection{Oppgave 5.9.8}
+Vi ser at $\bigtriangledown f = (4xy+4y,2x^2+4x-2y)$.
+Hvis $y=0$ må også $2x^2+4x=0$. Dette gir de to stasjonære punktene $(0,0)$, $(-2,0)$.
+Hvis $y\neq 0$ sier den første komponenten at $x=-1$. Den andre komponenten sier da $2-4=2y$, så $y=-1$. Dermed er også $(-1,-1)$ et stasjonært punkt. 
+De stasjonære punktene blir altså $(0,0),(-2,0),(-1,-1)$. Hesse-matrisen blir 
+\begin{eqnarray*}
+  Hf(x,y) &=& 
+  \left(
+  \begin{array}{rr}
+  4y   & 4x+4 \\
+  4x+4 & -2
+  \end{array}
+  \right) \\
+  Hf(0,0) &=& 
+  \left(
+  \begin{array}{rr}
+  0 & 4 \\
+  4 & -2
+  \end{array}
+  \right) \\
+  Hf(-2,0) &=& 
+  \left(
+  \begin{array}{rr}
+  0  & -4 \\
+  -4 & -2
+  \end{array}
+  \right) \\
+  Hf(-1,-1) &=& 
+  \left(
+  \begin{array}{rr}
+  -4 & 0 \\
+  0 & -2
+  \end{array}
+  \right).
+\end{eqnarray*}
+Vi ser umiddelbart at $(-1,-1)$ er et maksimumspunkt.
+Determinantene til $Hf(0,0)$ og $Hf(-2,0)$ blir begge negative, så disse er sadelpunkter.

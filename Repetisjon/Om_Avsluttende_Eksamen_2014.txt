@@ -1,0 +1,128 @@
+Avsluttende eksamen er en tradisjonell eksamen uten flervalgsoppgaver. (Ta en titt på gamle eksamenssett.  Men husk at
+
+kapitlene 12.5-12.8 ikke er eksamensrelevant, så for rekkestoff kan du heller konsentrere deg om ukeoppgaver fra 12.1-12.4).  
+
+ 
+
+Formelsamlingen (se nøye på den på forhånd så du vet hva som står der og hva som ikke står der!) vil bli delt ut sammen med oppgavesettet, og det er lov å ha med godkjent lommeregner (se listen her), men ingen andre hjelpemidler. Det neppe nødvendig å ha med lommeregner på eksamen!
+
+Husk at *-merket stoff ikke er pensum. Det vil ikke bli gitt oppgaver der du må reprodusere bevis fra læreboken (men du kan få nye setninger å bevise!)
+
+Nedenfor følger en liten oversikt over pensum og typiske oppgavetyper fra hver seksjon. Denne oversikten erstatter ikke pensumoversikten, men antyder hvordan stoffet tradisjonelt vektes på avsluttende eksamen.
+
+ 
+
+Seksjon 1.9 Lineæravbildninger: Finne matrisen til en lineæravbildning.
+
+Seksjon 1.10 Affinavbildninger: Finne matrisen og konstantleddet til en affinavbildning.
+
+Seksjon 2.7 Kjerneregelen: Kunne bruke kjerneregelen både på matrise- og komponentform. Det kommer neppe egne oppgaver om dette, men kjerneregelen dukker ofte opp som ingrediens i et argument.
+
+Seksjon 2.8 Linearisering: Finne lineariseringen av en funksjon fra Rn til Rm. Linearisering er et viktig begrep i forbindelse med skifte av variable og Newtons metode, men er ikke spesielt eksamensrelevant i seg selv.
+
+Seksjon 3.1 Parametriserte kurver: Kunne finne hastighet, fart, akselerasjon, baneakselerasjon og buelengde. Vite hvordan man tegner en kurve i MATLAB
+
+Seksjon 3.2 Kjerneregelen for parametriserte kurver: Kunne bruke kjerneregelen for parametriserte kurver.
+
+Seksjon 3.3 Linjeintegraler for skalarfelt: Kunne regne ut slike linjeintegraler.
+
+Seksjon 3.4 Linjeintegraler for vektorfelt: Kunne regne ut slike linjeintegraler. De dukker ofte opp på eksamen i forbindelse med Greens teorem (se seksjon 6.5).
+
+Seksjon 3.5 Gradienter og konservative felt: Vite hvordan man enkelt regner ut linjeintegralet til en gradient. Kunne avgjøre om et vektorfelt er konservativt og finne potensialfunksjoner. Dette dukker opp på eksamen innimellom i greie oppgaver, men folk har en tendens til å ha glemt stoffet!
+
+Seksjon 3.6 Kjeglesnitt: Kjenne igjen et kjeglesnitt fra en ligning og kunne finne sentrum, brennpunkt, halvakser, asymptoter osv. Kunne bruke de geometriske definisjonene og refleksjonsegenskapene i geometriske resonnementer. Dukker ofte opp på eksamen i ganske "snille" oppgaver.
+
+Seksjon 3.7 Grafisk fremstilling av skalarfelt: Kunne finne normalvektor og tangentplan til en flate og vite hvordan man tegner en funksjonsgraf i MATLAB.  Andre koordinatsystemer (polar-, sylinder og kulekoordinater) er bare relevant gjennom bruken i kapittel 6. I noen oppgaver med dobbelt- og trippelintegraler er det nyttig å kunne skissere grafer, men dette vil ikke bli testet som selvstendige oppgaver.
+
+Seksjon 3.8 Grafisk fremstilling av vektorfelt: Greit å vite om, men ikke typisk eksamensstoff.
+
+Seksjon 3.9 Parametriserte flater: Greit å vite om, men ikke typisk eksamensstoff. Vil kun bli testet gjennom oppgaver om flateintegraler (seksjon 6.4).
+
+Seksjon 4.1 Noen eksempler på Gauss-eliminasjon: Kunne løse lineære ligningssystemer ved Gauss-eliminasjon.
+
+Seksjon 4.2 Trappeform: Kunne redusere en matrise til trappeform og bruke dette til å løse ligningssystemer. Kunne bruke kriteriene for når et ligningssystem har null, én eller uendelig mange løsninger, og når det har (entydige) løsninger for "alle høyresider". Stoffet i 4.2-4.6 dukker ofte opp på eksamen i form av "enkle" oppgaver man bør få til.
+
+Seksjon 4.3 Redusert trappeform: Kunne omforme en matrise til redusert trappeform og vite hvordan man gjør dette i MATLAB. 
+
+Seksjon 4.4 Matriseligninger: Kunne løse matriseligninger og systemer av matriseligninger med samme høyreside. Kjenne "matriseligningformuleringene" av resultatene i 4.2.
+
+Seksjon 4.5 Inverse matriser: Kunne finne den inverse til en matrise, og kjenne forskjellige kriterier på når en matrise er inverterbar (oppsummert i teorem 4.9.10).
+
+Seksjon 4.6 Lineær uavhengighet og basiser: Kunne avgjøre om en vektor er en lineærkombinasjon av andre vektorer. Kunne avgjøre om en samling vektorer er lineært uavhengige og om de danner en basis. Kunne plukke ut en lineært uavhengig delmengde av en gitt samling vektorer. Det vil ikke bli gitt oppgaver fra avsnittet "Basiser og lineæravbildninger".
+
+Seksjon 4.7 Underrom: Ikke pensum.
+
+Seksjon 4.8 Elementære matriser: Bare relevant for å regne ut determinanter (se neste avsnitt).
+
+Seksjon 4.9 Determinanter: Kunne regne ut determinanter ved å utvikle etter rader og søyler og ved hjelp av radoperasjoner (Eksempel 4.9.2). Kunne bruke Teorem 4.9.10 og setningene 4,9.14 og 4.9.15. Ikke typisk eksamensstoff i seg selv, men man må kunne regne ut determinanter for å vise at matriser er inverterbare og for å finne egenverdier.
+
+Seksjon 4.10 Egenvektorer og egenverdier: Kunne finne egenverdier og egenvektorer, både komplekse og reelle. Bruke MATLAB til å finne egenverdier og egenvektorer. Kjenne spektralteoremet for symmetriske matriser. Det vil ikke bli gitt oppgaver fra avsnittet "Diagonalisering av matriser".
+
+Seksjon 4.11 Egenvektorer i praksis: Kunne løse oppgaver som i eksempel 1 og 2. Stoffet i dette avsnittet dukker ofte opp på eksamen i form av middels vanskelige til vanskelige oppgaver.
+
+Seksjon 4.12 Spektralteoremet: Ikke pensum
+
+Seksjon 5.1 Litt topologi i Rm: Ikke spesielt eksamensrelevant, men noen av begrepene kan man muligens få bruk for i en eksamensoppgave som virkelig skal skille i toppen.
+
+Seksjon 5.2 Kompletthet av Rm: Man bør vite hva kompletthet er, men ellers er dette avsnittet ikke spesielt eksamensrelevant, bortsett muligens fra oppgaver som virkelig skal skille i toppen.
+
+Seksjon 5.3 Noen konsekvenser av kompletthet: Ikke pensum.
+
+Seksjon 5.4 Iterasjon av funksjoner: Du bør kunne kjenne igjen og tolke enkle MATLAB-program knyttet til iterasjon. Ellers ikke spesielt eksamensrelevant.
+
+Seksjon 5.5: Konvergens mot et fikspunkt: Du bør vite hva et fikspunkt er og kjenne Banachs fikspunktteorem.
+
+Seksjon 5.6: Newtons metode i flere variable: Forstå ideen bak Newtons metode. Avsnittet "Konvergens av Newtons metode" er ikke pensum.
+
+Seksjon 5.7: Omvendte og implisitte funksjoner: Kjenne teoremene og kunne bruke dem på enkle oppgaver.  Det vil ikke bli gitt oppgaver om den vektorvaluerte utgaven av implisitt funksjonsteorem (5.7.4). Dette dukker ofte opp på eksamen, men som regel i enkel form. Billige poeng å plukke!
+ 
+Seksjon 5.8 Ekstremalverdisetningen: Greit å vite hva setningen sier, men dette er ikke sentralt eksamensstoff.
+ 
+Seksjon 5.9 Maksimums- og minimimspunkter: Sentralt eksamensstoff (men ofte greie oppgaver). Man bør kunne annenderiverttesten både i to og flere variable.
+ 
+Seksjon 5.10 Lagranges multiplikatormetode: Sentralt eksamensstoff (selv om flere bibetingelser ikke dukker opp så ofte). Viktig å regne en del oppgaver siden det er ligningsløsningen som ofte er problemet.
+ 
+Seksjon 5.11 Gradientmetoden: Det vil ikke bli gitt oppgaver herfra.
+Seksjon 6.1 Dobbeltintegraler over rektangler: Kunne regne ut slike integraler som itererte integraler i begge retninger. Vite hvordan man får MATLAB til å regne ut dobbeltintegraler.
+
+Seksjon 6.2 Dobbeltintegraler over begrensede områder: Kunne regne ut dobbeltintegraler over områder av type I og II. Vite hvordan MATLAB regner ut slike dobbeltintegraler.
+
+Seksjon 6.3 Dobbeltintegraler over polarintegraler: Kunne stille opp og regne ut dobbeltintegraler i polarkoordinater. Viktig eksamensstoff som ofte testes indirekte ved at man må skifte til polarkoordinater underveis i et langt regnestykke.
+
+Seksjon 6.4 Anvendelser av dobbeltintegraler: Kunne bruke dobbeltintegraler til å regne ut volumer, arealer i planet, arealet til flater og flateintegraler av skalarfelt. Det vil ikke bli gitt oppgaver om massemiddelpunkt. Sentralt oppgavestoff som ofte dukker opp i middels vanskelige oppgaver. Oppgaver om arealet til flater og flateintegraler må regnes som vanskelig og i ytterkant av pensum, og gis ikke så ofte.
+
+Seksjon 6.5 Greens teorem: Kunne bruke teormet begge veier, og kunne bruke det til å beregne arealet avgrenset av en lukket kurve. Sentralt oppgavestoff. Kan dukke opp i oppgaver av alle vanskelighetsgrader.
+
+Seksjon 6.6 Jordan-målbare mengder: Ikke eksamensrelevant.
+
+Seksjon 6.7 Skifte av variable i dobbeltintegraler: Kunne regne ut dobbeltintegraler ved å skifte variable. Regnes som vanskelig oppgavestoff, men dukker opp på eksamen nå og da.
+
+Seksjon 6.8 Uegentlige integraler i planet: Kunne regne ut dobbeltintegraler over ubegrensede områder. Ikke spesielt eksamensrelevant.
+
+Seksjon 6.9 Trippelintegraler: Kunne regne ut trippelintegraler over rektangulære bokser og over områder avgrenset av to flater. 
+
+Seksjon 6.10 Skifte av variable i trippelintegraler: Kunne regne ut trippelintegraler ved hjelp av sylinder- og kulekoordinater. Andre koordinatskifter i trippelintegraler er ikke aktuelle på eksamen. 
+
+Seksjon 6.11 Anvendelser av trippelintegraler: Kunne bruke trippelintegraler til å regne ut arealer, volumer og masse. Massemiddelpunkt er ikke aktuelt til eksamen. Dette og de to foregående avsnittene er svært aktuelt oppgavestoff. Oppgavene er ofte arbeidskrevende, men relativt standariserte (dvs. øv nok!)
+
+Seksjon 6.12-6.15: Ikke pensum.
+
+ 
+
+På grunn av tidsnød begrenser vi det eksamensrelevante stoffet fra Kalkulus til følgende: 
+
+ 
+
+ 
+
+Seksjon 12.1 Konvergens av rekker: Sum av geometrisk rekke, divergenstesten.    
+
+Seksjon 12.2 Rekker med positive ledd: Kunne bruke testene for å avgjøre om en rekke konvergerer.
+
+Seksjon 12.3 Alternerende rekker: Testen for alternerende rekker. Typisk eksamensstoff, ofte billige poeng å tjene.
+
+Seksjon 12.4 Absolutt og betinget konvergens: Vite at absolutt konvergente rekker konvergerer. Kunne bruke forholds- og rottesten for generelle rekker.
+
+ 
+
+MATLAB: Du vil ikke bli spurt om å produsere MATLAB-kode på eksamen, men du kan bli spurt om å gjenkjenne kode. Det er ingen grunn til å nipugge MATLAB-kommandoer; de som eventuelt dukker opp, vil være helt grunnleggende. Se for øvrig MATLAB-kommentarene i listen ovenfor.

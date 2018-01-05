@@ -1,0 +1,108 @@
+\section{Seksjon 4.1}
+Det er kun i noen av de første oppgavene nedenfor vi faktisk løser et sett likninger på likningsform. 
+I alle senere oppgaver vil vi sette opp likningssystemet på matriseform umiddelbart, og løse systemet ved å radredusere matrisen. 
+Det anbefales at du vender deg til slik radredusering med en gang, siden det er slik likningssystemer blir løst i praksis.
+\input{04/01/040101}
+\input{04/01/040103}
+\\\\I det meste av de følgende oppgavene vil vi droppe å skrive opp hvilke radoperasjoner vi faktisk gjør, da dette oftest går klart frem fra hvordan matrisen forandrer seg.
+\input{04/01/040104}
+\input{04/01/040106}
+
+\section{Seksjon 4.2}
+\input{04/02/040201}
+\input{04/02/040202}
+\input{04/02/040203}
+\input{04/02/040205}
+\input{04/02/040207}
+\input{04/02/040209}
+\input{04/02/040210}
+
+\section{Seksjon 4.3}
+\input{04/03/040301}
+\input{04/03/040302}
+\lstinputlisting[frame=single]{04/03/o040303.m}
+\input{04/03/040304}
+\lstinputlisting[frame=single]{04/03/o040305.m}
+\input{04/03/040306}
+\lstinputlisting[frame=single]{04/03/o040307.m}
+
+\section{Seksjon 4.4}
+\input{04/04/040401}
+\input{04/04/040402}
+\input{04/04/040403}
+\input{04/04/040404}
+\input{04/04/040405}
+
+\section{Seksjon 4.5}
+\input{04/05/040501}
+\input{04/05/040502}
+\lstinputlisting[frame=single]{04/05/o040503.m}
+\lstinputlisting[frame=single]{04/05/o040504.m}
+\lstinputlisting[frame=single]{04/05/o040505.m}
+\input{04/05/040506}
+\input{04/05/040509}
+
+\section{Seksjon 4.6}
+\input{04/06/040602}
+\input{04/06/040603}
+\lstinputlisting[frame=single]{04/06/o040604.m}
+\lstinputlisting[frame=single]{04/06/o040605.m}
+\lstinputlisting[frame=single]{04/06/o040606.m}
+\input{04/06/040607}
+\input{04/06/040608}
+\input{04/06/040609}
+\input{04/06/040611}
+\input{04/06/040612}
+
+\section{Seksjon 4.7}
+\lstinputlisting[frame=single]{04/07/o040703.m}
+\lstinputlisting[frame=single]{04/07/o040704.m}
+
+\section{Seksjon 4.8}
+Den vanlige feilen å gjøre når man faktoriserer en matrise i elementære matriser, er at man glemmer å reversere rekkefølgen på radoperasjonene man gjør 
+på den opprinnelige matrisen. Husk at de elementære matrisene fremkommer ved at man anvender samme radoperasjoner/inverser av disse 
+på identitetsmatrisen.
+\input{04/08/040801}
+\input{04/08/040802}
+\input{04/08/040803}
+
+\section{Seksjon 4.9}
+\input{04/09/040901}
+\input{04/09/040902}
+\input{04/09/040903}
+\lstinputlisting[frame=single]{04/09/o040904.m}
+\input{04/09/040907}
+\input{04/09/040908}
+\input{04/09/040909}
+\input{04/09/040910}
+\input{04/09/040911}
+
+\section{Seksjon 4.10}
+Legg merke til at egenvektorene til en matrise ikke er unike - du kan skalere dem med en hvilken som helst verdi, og resultatet er fremdeles en egenvektor. 
+Det kan derfor tenkes at de egenvektorene du finner skiller seg fra fasiten. Begge svar er uansett riktig. 
+Du står også fritt til å liste opp egenverdier og egenvektorer i vilkårlig rekkefølge 
+(så lenge du passer på å liste opp en egenvektor til tilhørende egenverdi), og det kan også gjøre sitt til at fasitsvaret er forskjellig fra ditt eget. 
+I oppgavene i Seksjon 4.10 har vi valgt konsekvent å liste opp egenverdiene i voksende rekkefølge.
+\input{04/10/041001}
+\input{04/10/041002}
+\lstinputlisting[frame=single]{04/10/o041003.m}
+\input{04/10/041004}
+\lstinputlisting[frame=single]{04/10/o041005.m}
+\input{04/10/041006}
+\input{04/10/041007}
+\input{04/10/041008}
+\input{04/10/041009}
+\input{04/10/041010}
+\input{04/10/041011}
+\input{04/10/041012}
+
+\section{Seksjon 4.11}
+\input{04/11/041101}
+\input{04/11/041102}
+\input{04/11/041103}
+\input{04/11/041104}
+\input{04/11/041105}
+\input{04/11/041107}
+\input{04/11/041108}
+\lstinputlisting[frame=single]{04/11/o041109.m}
+\input{04/11/041111}

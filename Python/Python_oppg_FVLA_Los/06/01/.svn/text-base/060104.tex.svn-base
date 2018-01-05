@@ -1,0 +1,36 @@
+\subsection{Oppgave 6.1.4}
+Anta $f$ er integrerbar over $R$. 
+Da finnes det to partisjoner $\Pi_1,\Pi_2$ slik at 
+\begin{eqnarray*}
+  N(\Pi_1) \geq \underline{\int\int_R} f(x,y)dxdy - \frac{\epsilon}{2}   &=& \int_R f(x,y)dxdy -\frac{\epsilon}{2} \\
+  \mbox{\O}(\Pi_2) \leq \overline{\int\int_R} f(x,y)dxdy + \frac{\epsilon}{2} &=& \int_R f(x,y)dxdy +\frac{\epsilon}{2}
+\end{eqnarray*}
+Fra Oppgave 6.1.3 vet vi at det finnes en partisjon $\Pi$ slik at $N(\Pi_1)\leq N(\Pi)\leq \mbox{\O}(\Pi)\leq \mbox{\O}(\Pi_2)$. Men da er 
+\begin{eqnarray*}
+  \mbox{\O}(\Pi)-N(\Pi) &\leq& \mbox{\O}(\Pi_2) - N(\Pi_1) \\
+                        &\leq& \int_R f(x,y)dxdy +\frac{\epsilon}{2} - (\int_R f(x,y)dxdy -\frac{\epsilon}{2}) \\
+                        &=& \frac{\epsilon}{2} + \frac{\epsilon}{2} = \epsilon,
+\end{eqnarray*}
+som var det vi skulle vise. 
+Den andre veien, hvis $\mbox{\O}(\Pi)-N(\Pi) \leq\epsilon$ så vil $\mbox{\O}(\Pi) \leq N(\Pi) + \epsilon$.
+Da vil også 
+\[
+  \overline{\int\int_R} f(x,y)dxdy \leq \mbox{\O}(\Pi) \leq N(\Pi) + \epsilon \leq \underline{\int\int_R} f(x,y)dxdy + \epsilon .
+\]
+Altså har vi at 
+\[
+  \overline{\int\int_R} f(x,y)dxdy \leq \underline{\int\int_R} f(x,y)dxdy + \epsilon . 
+\]
+Siden dette gjelder for alle $\epsilon$, så har vi at
+\[
+  \overline{\int\int_R} f(x,y)dxdy \leq \underline{\int\int_R} f(x,y)dxdy. 
+\]
+Siden også
+\[ 
+\underline{\int\int_R} f(x,y)dxdy \leq \overline{\int\int_R} f(x,y)dxdy,
+\]
+så har vi at 
+\[ 
+\underline{\int\int_R} f(x,y)dxdy = \overline{\int\int_R} f(x,y)dxdy,
+\]
+og derfor er $f$ integrerbar. 

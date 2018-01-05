@@ -1,0 +1,15 @@
+K 10
+svn:ignore
+V 60
+*.pdf
+*.idx
+*.nav
+*.dvi
+*.log
+*.out
+*.snm
+*.aux
+*.toc
+*.tmp
+
+END

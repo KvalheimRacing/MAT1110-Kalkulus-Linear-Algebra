@@ -1,0 +1,6 @@
+\subsection{Oppgave 4.10.9}
+Hvis ${\bf v}$ er en egenvektor for både $A$ og $B$ finnes det $\lambda_1,\lambda_2$ slik at $A{\bf v}=\lambda_1{\bf v}$, $B{\bf v}=\lambda_2{\bf v}$. Men da er 
+\[
+  AB{\bf v} = A\lambda_2{\bf v} = \lambda_2 A{\bf v} = \lambda_2\lambda_1{\bf v}.
+\]
+Dermed er ${\bf v}$ en egenvektor for $AB$ og, med tilhørende egenverdi $\lambda_1\lambda_2$. 

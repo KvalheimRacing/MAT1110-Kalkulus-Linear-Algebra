@@ -1,0 +1,14 @@
+\subsection{Oppgave 6.7.9}
+Området kan beskrives ved ulikhetene $1\leq \frac{y}{x}\leq 2$, $1\leq x+y\leq 3$. 
+Setter vi derfor $u=\frac{y}{x}$, $v=x+y$ får vi at 
+\begin{eqnarray*}
+  \frac{\partial(u,v)}{\partial(x,y)}                &=& \left( \begin{array}{rr} -\frac{y}{x^2} & \frac{1}{x} \\ 1 & 1 \end{array} \right) \\
+  \det\left( \frac{\partial(u,v)}{\partial(x,y)} \right) &=& -\frac{y}{x^2} - \frac{1}{x}.
+\end{eqnarray*}
+Vi får derfor 
+\begin{eqnarray*}
+  \int\int_R \frac{x+y}{x^2}dxdy &=& \int_1^3 \left[\int_1^2 \frac{x+y}{x^2}\left| \det\left(\frac{\partial(x,y)}{\partial(u,v)}\right) \right|du\right]dv \\
+                                 &=& \int_1^3 \left[\int_1^2 \frac{v}{x^2}\left| \frac{1}{-\frac{y}{x^2} - \frac{1}{x}} \right|du\right]dv
+                                     = \int_1^3 \left[\int_1^2 \frac{v}{\left| -y-x \right|}du\right]dv \\
+                                 &=& \int_1^3 \left[\int_1^2 \frac{v}{\left| v \right|} du\right]dv = \int_1^3 \left[\int_1^2 du\right]dv = 2.\\
+\end{eqnarray*}

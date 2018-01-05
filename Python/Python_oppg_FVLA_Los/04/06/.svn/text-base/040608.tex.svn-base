@@ -1,0 +1,59 @@
+\subsection{Oppgave 4.6.8}
+
+\subsubsection{a)}
+Vi radreduserer:
+\[
+  \left( \begin{array}{rrr} 2 & -4 & 1 \\ -1 & 2 & 3 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & -2 & -3 \\ 2 & -4 & 1 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & -2 & -3 \\ 0 & 0 & 7 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & -2 & 0 \\ 0 & 0 & 1 \end{array} \right).
+\]
+Første og tredje søyle er pivotsøyler, og utgjør derfor en lineært uavhengig delmengde. 
+
+\subsubsection{b)}
+Vi radreduserer:
+\begin{eqnarray*}
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 2 & 2 \\
+ 3 & 2 & 8 & 3 \\
+-1 & 1 & 0 & 1
+\end{array}
+\right)
+&\sim&
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 2 & 2 \\
+ 0 & 2 & 2 &-3 \\
+ 0 & 1 & 2 & 3
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 2 & 2 \\
+ 0 & 1 & 2 & 3 \\
+ 0 & 2 & 2 &-3 
+\end{array}
+\right) \\
+&\sim&
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 2 & 2 \\
+ 0 & 1 & 2 & 3 \\
+ 0 & 0 &-2 &-9 
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrrr}
+ 1 & 0 & 2 & 2 \\
+ 0 & 1 & 2 & 3 \\
+ 0 & 0 & 1 & \frac{9}{2} 
+\end{array}
+\right)
+\end{eqnarray*}
+Alle søyler unntatt søyle $4$ er pivotsøyler. Derfor er de tre første vektorene lineært uavhengige. 

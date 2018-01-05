@@ -1,0 +1,50 @@
+\subsection{Oppgave 4.11.1}
+Systemet kan skrives på matriseform
+\[
+  \left( \begin{array}{r} x_{n+1} \\ y_{n+1} \end{array} \right) = \left( \begin{array}{rr} 1 & 3 \\ 2 & 2 \end{array} \right) \left( \begin{array}{r} x_n \\ y_n \end{array} \right) = A\left( \begin{array}{r} x_n \\ y_n \end{array} \right).
+\]
+Den karakteristiske likningen til $A$ blir
+\[
+  (\lambda-1)(\lambda-2)-6 = \lambda^2-3\lambda-4=(\lambda-4)(\lambda+1).
+\]
+Egenverdiene er derfor $\lambda_1=-1$ og $\lambda_2=4$. 
+
+\begin{itemize}
+  \item Egenvektor for $\lambda_1=-1$: Vi radreduserer
+\[
+ -I-A = \left( \begin{array}{rr} -2 & -3 \\ -2 & -3 \end{array} \right) \sim \left( \begin{array}{rr} 1 & \frac{3}{2} \\ 0 & 0 \end{array} \right).
+\]
+Vi ser derfor at en egenvektor blir ${\bf v}_1 = \left( \begin{array}{r} -3 \\ 2 \end{array} \right)$.
+  \item 
+Egenvektor for $\lambda_2=4$: Vi radreduserer
+\[
+ 4I-A = \left( \begin{array}{rr} 3 & -3 \\ -2 & 2 \end{array} \right) \sim \left( \begin{array}{rr} 1 & -1 \\ 0 & 0 \end{array} \right).
+\]
+Vi ser derfor at en egenvektor blir ${\bf v}_2 = \left( \begin{array}{r} 1 \\ 1 \end{array} \right)$. 
+\end{itemize}
+For å skrive $(x_0,y_0)=(5,-5)$ som en kombinasjon av egenvektorer må vi radredusere
+\begin{eqnarray*}
+  \left( \begin{array}{rrr} -3 & 1 & 5 \\ 2 & 1 & -5 \end{array} \right)
+  &\sim&
+  \left( \begin{array}{rrr} 1 & -\frac{1}{3} & -\frac{5}{3} \\ 2 & 1 & -5 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & -\frac{1}{3} & -\frac{5}{3} \\ 0 & \frac{5}{3} & -\frac{5}{3} \end{array} \right) \\
+  &\sim&
+  \left( \begin{array}{rrr} 1 & -\frac{1}{3} & -\frac{5}{3} \\ 0 & 1 & -1 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & 0 & -2 \\ 0 & 1 & -1 \end{array} \right)
+\end{eqnarray*}
+Vi ser derfor at 
+\[
+  \left( \begin{array}{r} 5 \\ -5 \end{array} \right) 
+  = 
+  -2 \left( \begin{array}{r} -3 \\ 2 \end{array} \right)
+  - \left( \begin{array}{r} 1 \\ 1 \end{array} \right).
+\]
+Dermed har vi at 
+\[
+  \left( \begin{array}{r} x_n \\ y_n \end{array} \right) = 
+  -2 (-1)^n \left( \begin{array}{r} -3 \\ 2 \end{array} \right)
+  - 4^n \left( \begin{array}{r} 1 \\ 1 \end{array} \right)
+  = \left( \begin{array}{r} 6(-1)^n - 4^n \\ -4(-1)^n - 4^n\end{array} \right).
+\]

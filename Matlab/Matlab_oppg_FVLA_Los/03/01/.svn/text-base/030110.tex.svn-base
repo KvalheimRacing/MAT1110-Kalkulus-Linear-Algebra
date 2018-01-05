@@ -1,0 +1,30 @@
+\subsection{Oppgave 3.1.10}
+Vi har at ${\bf r}(t) = (2\cos t,\sqrt{2}\sin t, \sqrt{2}\sin t)$.
+
+\subsubsection{a)}
+Vi regner ut 
+\begin{eqnarray*}
+  {\bf v}(t) &=& {\bf r}'(t) = (-2\sin t, \sqrt{2}\cos t, \sqrt{2}\cos t) \\
+  v(t)       &=& |{\bf v}(t)| = \sqrt{4\sin^2 t + 2\cos^2 t + 2\cos^2 t} = 2 \\
+  {\bf a}(t) &=& {\bf v}'(t) = (-2\cos t, -\sqrt{2}\sin t, -\sqrt{2}\sin t)
+\end{eqnarray*}
+
+\subsubsection{b)}
+\[ L(0,2\pi) = \int_0^{2\pi} v(t)dt = \int_0^{2\pi} 2dt = 4\pi. \]
+
+\subsubsection{c)}
+En kule med sentrum i origo er beskrevet ved at $x^2+y^2+z^2=r^2$, der $r$ er kuleradien. Vi har at 
+\[
+  x^2 + y^2 + z^2 = 4\cos^2 t + 2\sin2 t + 2\sin^2 t = 4\cos^2 t + 4\sin^2 t = 4 = 2^2,
+\]
+og derfor ligger kurven på en kule om origo med radius $2$. 
+
+\subsubsection{d)}
+Vi har at 
+\[ y-z = \sqrt{2}\sin t - \sqrt{2}\sin t = 0, \]
+og derfor ligger kurven i det gitte planet. 
+
+\subsubsection{e)}
+Kurven beskriver en sirkel med radius $2$, på grunn av c), d), 
+og det faktum at skjæringen mellom en kule med senter i origo og et plan gjennom origo er en sirkel med samme radius som kula.
+\lstinputlisting[frame=single]{03/01/o030110e.m}

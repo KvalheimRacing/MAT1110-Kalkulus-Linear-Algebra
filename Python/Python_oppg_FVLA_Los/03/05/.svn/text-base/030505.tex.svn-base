@@ -1,0 +1,28 @@
+\subsection{Oppgave 3.5.5}
+Vi har vektorfeltet ${\bf F}(x,y,z) = (y\sin z+2z,x\sin z+3,xy\cos z + 2x)$. Vi regner ut 
+\begin{eqnarray*}
+  \frac{\partial F_2}{\partial x} &=& \sin z \\
+  \frac{\partial F_1}{\partial y} &=& \sin z \\
+  \frac{\partial F_1}{\partial z} &=& y\cos z + 2\\
+  \frac{\partial F_3}{\partial x} &=& y\cos z + 2\\
+  \frac{\partial F_2}{\partial z} &=& x\cos z \\
+  \frac{\partial F_3}{\partial y} &=& x\cos z.
+\end{eqnarray*}
+Feltet er derfor konservativt, og vi må løse likningene 
+\begin{eqnarray*}
+  \frac{\partial \phi}{\partial x} &=& F_1(x,y) = y\sin z+2z \\
+  \frac{\partial \phi}{\partial y} &=& F_2(x,y) = x\sin z+3 \\
+  \frac{\partial \phi}{\partial z} &=& F_3(x,y) = xy\cos z + 2x.
+\end{eqnarray*}
+for å finne en potensialfunksjon.
+Løser vi disse tre finner vi at 
+\begin{eqnarray*}
+  \phi(x,y,z) &=& xy\sin z + 2xz + C(y,z) \\
+              &=& xy\sin z + 3y + D(x,z) \\
+              &=& xy\sin z + 2xz + E(x,y).
+\end{eqnarray*}
+Vi ser da at 
+\[
+  \phi(x,y,z) = xy\sin z + 2xz + 3y
+\]
+er en potensialfunksjon. 

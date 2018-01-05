@@ -1,0 +1,14 @@
+\subsection{Oppgave 5.9.16}
+Vi må maksimere $V=xyz$ gitt at $x+y+z=108$. 
+Dette svarer til å maksimere funksjonen $V(x,y)=xy(108-x-y)=108xy-x^2y-xy^2$. 
+De partielle deriverte blir 
+\begin{eqnarray*}
+  \frac{\partial V}{\partial x} &=& 108y-2xy-y^2 \\
+  \frac{\partial V}{\partial y} &=& 108x-2xy-x^2.
+\end{eqnarray*}
+Disse er $0$ bare når (vi kan anta $x>0,y>0$)
+\begin{eqnarray*}
+  2x+y &=& 108 \\
+  x+2y &=& 108.
+\end{eqnarray*}
+Vi ser fort her at løsningen på dette er $x=y=36$, slik at maksimum inntreffer når $x=y=z=36$. 

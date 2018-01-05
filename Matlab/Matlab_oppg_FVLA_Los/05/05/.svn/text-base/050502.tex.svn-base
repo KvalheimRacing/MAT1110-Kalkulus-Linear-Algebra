@@ -1,0 +1,10 @@
+\subsection{Oppgave 5.5.2}
+Anta $\{{\bf u}_n\}$ er slik at ${\bf u}_{n+1}={\bf F}({\bf u}_n)$, og at $\lim_{n\rightarrow\infty}{\bf u}_n={\bf u}$. 
+Da har vi at 
+\[ {\bf F}({\bf u}) = 
+{\bf F}(\lim_{n\rightarrow\infty}{\bf u}_n) = 
+\lim_{n\rightarrow\infty} {\bf F}({\bf u}_n) = 
+\lim_{n\rightarrow\infty} {\bf u}_{n+1} = 
+\lim_{n\rightarrow\infty} {\bf u}_n = 
+{\bf u}, \]
+hvor vi har brukt at ${\bf F}$ er kontinuerlig. Dermed er ${\bf u}$ et fikspunkt. 

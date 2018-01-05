@@ -1,0 +1,41 @@
+% Oppgave 3.7.2 a)
+r=-2:0.05:2;
+s=-2:0.05:2;
+[x,y]=meshgrid(r,s);
+z=2*x.^2+y.^2;
+mesh(x,y,z);
+title('Oppgave 3.7.2a')
+
+% Oppgave 3.7.2 b)
+z=y.^2-x;
+figure(2)
+mesh(x,y,z);
+title('Oppgave 3.7.2b')
+
+% Oppgave 3.7.2 c)
+r=-4:0.1:4;
+s=-4:0.1:4;
+[x,y]=meshgrid(r,s);
+z=sin(x.^2+y.^2);
+figure(3)
+mesh(x,y,z);
+title('Oppgave 3.7.2c')
+
+% Oppgave 3.7.2 d)
+r=-5:0.05:5;
+s=-5:0.05:5;
+[x,y]=meshgrid(r,s);
+z=x.^2 - 4*y.^2;
+figure(4);
+mesh(x,y,z);
+title('Oppgave 3.7.2d');
+
+% Oppgave 3.7.2 e)
+r=-5:0.05:5;
+s=-5:0.05:5;
+[x,y]=meshgrid(r,s);
+figure(5);
+z=log(x.*y);
+mesh(x,y,z);
+title('Oppgave 3.7.2e');
+

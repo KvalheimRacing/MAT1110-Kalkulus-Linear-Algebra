@@ -1,0 +1,21 @@
+\subsection{Oppgave 5.9.6}
+Vi ser at $\bigtriangledown f = ((x+y^2+1)e^x,2ye^x)$. 
+Vi ser at eneste stasjonære punkt er $x=-1,y=0$. 
+Hesse-matrisen er 
+\begin{eqnarray*}
+  Hf(x,y) &=& 
+  \left(
+  \begin{array}{rr}
+  (x+y^2+2)e^x & 2ye^x \\
+  2ye^x        & 2e^x
+  \end{array}
+  \right) \\
+  Hf(-1,0) &=& 
+  \left(
+  \begin{array}{rr}
+  e^{-1} & 0 \\
+  0      & 2e^{-1}
+  \end{array}
+  \right).
+\end{eqnarray*}
+Denne matrisen har bare positive egenverdier, så $(-1,0)$ er et minimumspunkt. 

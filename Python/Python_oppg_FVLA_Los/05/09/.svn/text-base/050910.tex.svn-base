@@ -1,0 +1,72 @@
+\subsection{Oppgave 5.9.10}
+Vi setter $f(x,y)=(x^2-y^2)e^{-\frac{x^2+y^2}{2}}$. 
+
+\subsubsection{a)}
+De partielle deriverte er 
+\begin{eqnarray*}
+  \frac{\partial f}{\partial x} &=& (2x-x^3+xy^2)e^{-\frac{x^2+y^2}{2}} \\
+  \frac{\partial f}{\partial y} &=& (-2y-x^2y+y^3)e^{-\frac{x^2+y^2}{2}}.
+\end{eqnarray*}
+De stasjonære punktene får vi ved å løse
+\begin{eqnarray*}
+  2x-x^3+xy^2  &=& 0 \\
+  -2y-x^2y+y^3 &=& 0.
+\end{eqnarray*}
+\begin{itemize}
+  \item Hvis $x=0$ ser vi at eneste mulighet for $y$ er at $y=0,y=\sqrt{2},y=-\sqrt{2}$. 
+  \item Hvis $y=0$ ser vi at eneste mulighet for $x$ er at $x=0,x=\sqrt{2},x=-\sqrt{2}$.
+  \item Hvis både $x$ og $y$ er forskjellige fra $0$ ser vi at 
+\begin{eqnarray*}
+  2 &=& x^2-y^2 \\
+  2 &=& y^2-x^2,
+\end{eqnarray*}
+    som jo ikke har noen løsninger. 
+\end{itemize}
+Vi ser derfor at de eneste stasjonære punktene er $(0,0),(0,\sqrt{2}),(0,-\sqrt{2}),(\sqrt{2},0),(-\sqrt{2},0)$. 
+Vi regner så ut andreordens partielle deriverte:
+\begin{eqnarray*}
+  \frac{\partial^2 f}{\partial x^2}         &=& (2-5x^2+y^2+x^4-x^2y^2)e^{-\frac{x^2+y^2}{2}} \\
+  \frac{\partial^2 f}{\partial x\partial y} &=& (x^3y-xy^3)e^{-\frac{x^2+y^2}{2}} \\
+  \frac{\partial^2 f}{\partial y^2}         &=& (-2-x^2+5y^2+x^2y^2-y^4)e^{-\frac{x^2+y^2}{2}}.
+\end{eqnarray*}
+Hesse-matrisene blir 
+\begin{eqnarray*}
+  Hf(0,0)         &=& \left( \begin{array}{rr} 2 & 0 \\ 0 & -2 \end{array} \right) \\
+  Hf(0,\sqrt{2})  &=& \left( \begin{array}{rr} 4e^{-1} & 0 \\ 0 & 4e^{-1} \end{array} \right) \\
+  Hf(0,-\sqrt{2}) &=& \left( \begin{array}{rr} 4e^{-1} & 0 \\ 0 & 4e^{-1} \end{array} \right) \\
+  Hf(\sqrt{2},0)  &=& \left( \begin{array}{rr} -4e^{-1} & 0 \\ 0 & -4e^{-1} \end{array} \right) \\
+  Hf(-\sqrt{2},0) &=& \left( \begin{array}{rr} -4e^{-1} & 0 \\ 0 & -4e^{-1} \end{array} \right).
+\end{eqnarray*}
+Alt her er diagonalmatriser, og da vet vi at egenverdiene står på diagonalen. Vi ser derfor at 
+\begin{itemize}
+  \item $(0,0,0)$ er sadelpunkt, 
+  \item $(0,\sqrt{2},-2e^{-1}),(0,-\sqrt{2},-2e^{-1})$ er minimumspunkter, 
+  \item $(\sqrt{2},0,2e^{-1}),(-\sqrt{2},0,2e^{-1})$ er maksimumspunkter. 
+\end{itemize}
+
+\subsubsection{b)}
+Legg først merke til at to av de stasjonære punktene ligger utenfor rektanglet vårt, slik at vi trenger bare ta med de to første kandidatene ovenfra videre.
+Vi må nå sjekke hvilke andre kandidater til maksimum og minimum vi får fra randen til området.
+\begin{itemize}
+  \item Hvis $|x|=1$ får vi funksjonen $f(y)=(1-y^2)e^{-\frac{1+y^2}{2}}$.
+    Av uttrykket for de partielle deriverte ser vi at denne er $0$ når $-2y-y+y^3=y^3-3y=0$, altså når $y=0$, eller når $y=\pm\sqrt{3}$
+    Dette gir oss nye kandidater
+    \begin{itemize}
+      \item $(\pm 1,0,e^{-1/2})$
+      \item $(\pm 1,\pm\sqrt{3},-2e^{-2})$
+      \item $(\pm 1,\mp\sqrt{3},-2e^{-2})$
+    \end{itemize}
+  \item Hvis $|y|=3$ får vi funksjonen $f(x)=(x^2-9)e^{-\frac{x^2+9}{2}}$. 
+    Av uttrykket for de partielle deriverte ser vi at denne er $0$ når $2x-x^3+9x=11x-x^3=0$, altså når $x=0$, eller når $x=\pm\sqrt{11}$. 
+    De siste punktene ligger utenfor rektanglet vårt, slik at det er bare 
+    \begin{itemize}
+      \item $(0,\pm 3,-9e^{-9/2})$
+    \end{itemize}
+    som blir ny kandidat.
+  \item Vi må også spesielt sjekke punktene der både $|x|=1,|y=3|$. Dette gir kandidatene
+    \begin{itemize}
+      \item $(\pm 1,\pm 3,-8e^{-5})$
+      \item $(\pm 1,\mp 3,-8e^{-5})$
+    \end{itemize}
+\end{itemize}
+Sammenligner vi verdiene til alle kandidatene ser vi at $(\pm 1,0,e^{-1/2})$ er globale maksimum, mens $(0,\pm\sqrt{2},-2e^{-1})$ er globale minimum.

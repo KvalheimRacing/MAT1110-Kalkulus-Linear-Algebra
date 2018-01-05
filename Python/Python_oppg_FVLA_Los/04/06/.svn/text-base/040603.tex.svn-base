@@ -1,0 +1,50 @@
+\subsection{Oppgave 4.6.3}
+
+\subsubsection{a)}
+De to vektorene ser vi fort at er lineært uavhengige. 
+Fra Setning 4.6.10 følger det da at vektorene er en basis for $\R^2$.
+
+\subsubsection{c)}
+Vi radreduserer:
+\begin{eqnarray*}
+\left(
+\begin{array}{rrr}
+ 2 & 1 & -6 \\
+-1 & 1 &  0 \\
+ 3 & 1 &  7
+\end{array}
+\right)
+&\sim&
+\left(
+\begin{array}{rrr}
+ 1 &-1 &  0 \\
+ 2 & 1 & -6 \\
+ 3 & 1 &  7
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+ 1 &-1 &  0 \\
+ 0 & 3 & -6 \\
+ 0 & 4 &  7
+\end{array}
+\right) \\
+&\sim&
+\left(
+\begin{array}{rrr}
+ 1 &-1 &  0 \\
+ 0 & 1 & -2 \\
+ 0 & 4 &  7
+\end{array}
+\right)
+\sim
+\left(
+\begin{array}{rrr}
+ 1 &-1 &  0 \\
+ 0 & 1 & -2 \\
+ 0 & 0 &  1
+\end{array}
+\right)
+\end{eqnarray*}
+Fra Setning 4.6.2 følger det da at de tre vektorene utspenner $\R^3$, siden alle radene inneholder pivotelementer.

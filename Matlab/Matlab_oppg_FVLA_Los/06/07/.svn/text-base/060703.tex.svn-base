@@ -1,0 +1,55 @@
+\subsection{Oppgave 6.7.3}
+
+\subsubsection{a)}
+Tegner vi opp området ser vi at det er beskrevet ved at $-1\leq x+2y\leq 3$, $y+1\leq x\leq y+4$, 
+der den siste ulikheten kan skrives om til $1\leq x-y\leq 4$, som gir at $-1\leq u\leq 3$, og $1\leq v\leq 4$ etter variabelskiftet 
+$u=x+2y$, $v=x-y$. Vi regner raskt ut at
+\[
+  \left|\frac{\partial(u,v)}{\partial(x,y)}\right| = \left| \begin{array}{rr} 1 & 2 \\ 1 & -1 \end{array} \right| = -3.
+\]
+Derfor blir $\left|\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\right|=\frac{1}{3}$.
+Integralet blir derfor
+\begin{eqnarray*}
+  \lefteqn{\int\int_R xy dxdy} \\
+  &=& \int_{-1}^3 \left[\int_1^4 xy  \left|\left|\frac{\partial(x,y)}{\partial(u,v)}\right|\right| dv\right]du
+      = \int_{-1}^3 \left[\int_1^4 \frac{1}{3}(u+2v)\frac{1}{3}(u-v) \frac{1}{3} dv\right]du \\
+  &=& \frac{1}{27} \int_{-1}^3 \left[\int_1^4 (u^2 + uv - 2v^2) dv\right]du
+      = \frac{1}{27} \int_{-1}^3 \left[ u^2v + \frac{1}{2}uv^2 - \frac{2}{3}v^3 \right]_1^4 du \\
+  &=& \frac{1}{27} \int_{-1}^3 \left( 3u^2 + \frac{15}{2}u - 42 \right) du
+      = \frac{1}{27} \left[ u^3 + \frac{15}{4}u^2 - 42u \right]_{-1}^3 \\
+  &=& \frac{1}{27} \left( 28 + 30 - 168 \right) = -\frac{110}{27}.
+\end{eqnarray*}
+Vi har her invertert likningene $u=x+2y$, $v=x-y$ til $y=\frac{u-v}{3}$, $x=\frac{u+2v}{3}$, og satt disse inn i integranden $xy$. 
+For å beregne integralet med Matlab kan vi først finne skjæringen mellom de fire linjene som definerer området:
+\begin{itemize}
+  \item Skjæring mellom $x+2y=-1$ og $x-y=1$: $(x,y)=(\frac{1}{3},-\frac{2}{3})$.
+  \item Skjæring mellom $x+2y=-1$ og $x-y=4$: $(x,y)=(\frac{7}{3},-\frac{5}{3})$.
+  \item Skjæring mellom $x+2y=3$ og $x-y=1$: $(x,y)=(\frac{5}{3},\frac{2}{3})$.
+  \item Skjæring mellom $x+2y=3$ og $x-y=4$: $(x,y)=(\frac{11}{3},-\frac{1}{3})$.
+\end{itemize}
+Integrasjonsområdet ligger derfor innenfor rektanglet $\frac{1}{3}\leq x\leq\frac{11}{3}$, $-\frac{5}{3}\leq y\leq \frac{2}{3}$, som 
+angir integralgrensene som er brukt i kallet på {\tt dblquad} i Matlab. 
+
+\subsubsection{c)}
+Området er beskrevet ved ulikhetene $\frac{1}{x}\leq y\leq \frac{2}{x}$, $x\leq y\leq 2x$, 
+og er tegnet opp i Figur~\ref{fig060703c}. 
+\begin{figure}
+  \begin{center}
+    \epsfig{figure=06/07/060703c.eps,width=0.5\columnwidth}
+  \end{center}
+  \caption{Området i Oppgave 6.7.3c)} \label{fig060703c}
+\end{figure}
+Ulikhetene kan skrives om til $1\leq xy\leq 2$, $1\leq\frac{y}{x}\leq 2$, som gir at $1\leq u\leq 2$, og $1\leq v\leq 2$ etter variabelskiftet 
+$u=xy$, $v=\frac{y}{x}$. Vi regner raskt ut at
+\[
+  \frac{\partial(u,v)}{\partial(x,y)} = \left| \begin{array}{rr} y & x \\ -\frac{y}{x^2} & \frac{1}{x} \end{array} \right| = \frac{y}{x} + \frac{y}{x} = \frac{2y}{x} = 2v.
+\]
+Derfor blir $\frac{\partial(x,y)}{\partial(u,v)}=\frac{1}{2v}$.
+Ved å gange sammen likningene for $u$ og $v$ ser vi raskt at $uv=y^2$, slik at integranden også kan skrives $y^2-yx=uv-u$. 
+Integralet blir derfor
+\begin{eqnarray*}
+  \lefteqn{\int\int_R(y^2-yx)dxdy} \\
+  &=& \int_1^2 \left[\int_1^2 (y^2-yx)\frac{1}{2v} dv\right]du = \int_1^2 \left[\int_1^2 \frac{uv-u}{2v}dv\right]du \\
+  &=& \int_1^2 \left[\int_1^2 \left( \frac{u}{2} - \frac{u}{2v} \right) dv\right]du = \int_1^2 \left[ \frac{u}{2} (v-\ln v) \right]_1^2 du \\
+  &=& \int_1^2 \frac{u}{2} (1-\ln 2) du = \left[ \frac{u^2}{4} (1-\ln 2)\right]_1^2 = \frac{3}{4}(1-\ln 2).
+\end{eqnarray*}

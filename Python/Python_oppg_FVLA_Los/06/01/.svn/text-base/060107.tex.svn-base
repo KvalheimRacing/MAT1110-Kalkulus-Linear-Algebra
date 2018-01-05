@@ -1,0 +1,13 @@
+\subsection{Oppgave 6.1.7}
+La $m=\min_{(x,y)\in R} f(x,y)$, $M=\max_{(x,y)\in R} f(x,y)$. 
+Det er da klart at 
+\begin{equation} \label{folgerfradenne}
+  m|R|\leq \int\int_R f(x,y)dxdy \leq M|R|.
+\end{equation}
+slik at $m\leq \frac{\int\int_R f(x,y)dxdy}{|R|} \leq M$. 
+Fra skjæringssetningen vet vi at en kontinuerlig funksjon antar alle verdier mellom maksimum og minimum. 
+Men fra (\ref{folgerfradenne}) følger det at $m\leq \frac{\int\int_R f(x,y)dxdy}{|R|} \leq M$, 
+og skjæringssetningen gir derfor at det finnes et punkt$(\bar{x},\bar{y})$ slik at 
+\[
+  f(\bar{x},\bar{y})= \frac{\int\int_R f(x,y)dxdy}{|R|}.
+\]

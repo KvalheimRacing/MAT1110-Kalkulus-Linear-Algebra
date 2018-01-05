@@ -1,0 +1,4 @@
+\subsection{Oppgave 4.9.7}
+$rA$ får vi ved å gange hver rad med $r$. 
+Ved å gange en rad med $r$ blir determinanten også ganget med $r$. 
+Siden vi gjør dette $n$ ganger er $\det(rA)$ det samme som $r^n$ ganger $\det A$. 

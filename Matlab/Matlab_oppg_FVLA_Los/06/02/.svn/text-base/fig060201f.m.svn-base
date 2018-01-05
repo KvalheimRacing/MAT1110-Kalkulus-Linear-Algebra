@@ -1,0 +1,17 @@
+% Oppgave 6.2.1f)
+xs=linspace(0,1.2,100);
+plot(xs,xs.^2,'k-');
+hold on
+plot(xs,sqrt(xs),'k-');
+plot(xs,zeros(1,length(xs)),'k-');
+plot(zeros(1,length(xs)),xs,'k-');
+
+for xval=0.1:0.1:0.9
+  plot([xval xval],[xval^2 sqrt(xval)],'k-');
+end
+axis equal
+set(gca,'FontSize',24);
+xlabel('x')
+ylabel('y')
+print -deps 060201f.eps
+hold off

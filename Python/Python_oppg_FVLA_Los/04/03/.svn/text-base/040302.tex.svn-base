@@ -1,0 +1,41 @@
+\subsection{Oppgave 4.3.2}
+
+\subsubsection{a)}
+
+\[
+\left(
+\begin{array}{rr}
+  1 & 2 \\
+  3 & 5
+\end{array}
+\right)
+\stackrel{II-3I}{\sim}
+\left(
+\begin{array}{rr}
+  1 & 2 \\
+  0 & -1
+\end{array}
+\right)
+\stackrel{(-1)II}{\sim}
+\left(
+\begin{array}{rr}
+  1 & 2 \\
+  0 & 1
+\end{array}
+\right)
+\stackrel{I-2II}{\sim}
+\left(
+\begin{array}{rr}
+  1 & 0 \\
+  0 & 1
+\end{array}
+\right).
+\]
+
+\subsubsection{c)}
+\begin{eqnarray*}
+\left( \begin{array}{rrrr} 1 & 1 & 1 & 2 \\ -1 & 2 & -1 & 3 \\ 2 & 2 & 1 & 1 \end{array} \right)
+  &\sim& \left( \begin{array}{rrrr} 1 & 1 & 1 & 2 \\ 0 & 3 & 0 & 5 \\ 0 & 0 & -1 & -3 \end{array} \right) \\
+  &\sim& \left( \begin{array}{rrrr} 1 & 1 & 1 & 2 \\ 0 & 1 & 0 & \frac{5}{3} \\ 0 & 0 & 1 & 3 \end{array} \right) \\
+  &\sim& \left( \begin{array}{rrrr} 1 & 0 & 0 & -\frac{8}{3} \\ 0 & 1 & 0 & \frac{5}{3} \\ 0 & 0 & 1 & 3 \end{array} \right).
+\end{eqnarray*}

@@ -1,0 +1,30 @@
+\subsection{Oppgave 6.7.5}
+
+\subsubsection{a)}
+Området er beskrevet ved at $x\leq y\leq x+5$, $-x+2\leq y\leq -x+4$, som også kan skrives 
+$0\leq y-x\leq 5$, $2\leq y+x\leq 4$, eller $0\leq u\leq 5$, $2\leq v\leq 4$ etter variabelskiftet $u=y-x$, $v=y+x$. 
+Vi får så at 
+\[
+  \frac{\partial(u,v)}{\partial(x,y)} = \left| \begin{array}{rr} -1 & 1 \\ 1 & 1 \end{array} \right| = -2.
+\]
+Derfor blir $\left|\frac{\partial(x,y)}{\partial(u,v)}\right|=\frac{1}{2}$. 
+Integralet blir derfor
+\begin{eqnarray*}
+  \int\int_A \frac{e^{x-y}}{x+y} dxdy &=& \int_0^5 \left[\int_2^4 \frac{e^{-u}}{2v} dv\right]du = \int_0^5 \left[ \frac{1}{2}e^{-u}\ln v \right]_2^4 du \\
+                                      &=& \int_0^5 \frac{1}{2}e^{-u} (\ln 4 - \ln 2)du = \int_0^5 \frac{1}{2}e^{-u}\ln 2du\\
+                                      &=& \left[ -\frac{1}{2}e^{-u}\ln 2 \right]_0^5 = -\frac{1}{2}e^{-5}\ln 2 + \frac{1}{2} \ln 2 = \frac{1}{2}\ln 2(1-e^{-5}).
+\end{eqnarray*}
+
+\subsubsection{b)}
+Området er beskrevet ved at $x\leq y\leq 2x$, $\frac{1}{x}\leq y\leq\frac{3}{x}$, som også kan skrives 
+$1\leq\frac{y}{x}\leq 2$, $1\leq xy\leq 3$, eller $1\leq u\leq 2$, $1\leq v\leq 3$ etter variabelskiftet $u=\frac{y}{x}$, $v=xy$. 
+Vi får så at
+\[
+  \frac{\partial(u,v)}{\partial(x,y)} = \left| \begin{array}{rr} -\frac{y}{x^2} & \frac{1}{x} \\ y & x \end{array} \right| = -\frac{y}{x}-\frac{y}{x} = -\frac{2y}{x} = -2u.
+\]
+Derfor blir $\left|\frac{\partial(x,y)}{\partial(u,v)}\right|=\frac{1}{2u}$. 
+Integralet blir derfor
+\begin{eqnarray*}
+  \int\int_A xy dxdy &=& \int_1^2 \left[\int_1^3 \frac{v}{2u} dv\right]du \\
+                     &=& \int_1^2 \left[ \frac{1}{4u}v^2 \right]_1^3 du = \int_1^2 \frac{2}{u} du = \left[ 2\ln u \right]_1^2 = 2\ln 2.
+\end{eqnarray*}

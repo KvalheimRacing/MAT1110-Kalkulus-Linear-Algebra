@@ -1,0 +1,9 @@
+\subsection{Oppgave 5.6.2}
+
+\subsubsection{c)}
+For at førstekomponenten skal bli $0$ må $y=x^2$. 
+Setter vi dette inn i andrekomponenten får vi at $y^2+y-1=0$. 
+Formelen for andregradslikningen gir da at $y=\frac{-1\pm\sqrt{1+4}}{2}$, eller $y=\frac{-1\pm\sqrt{5}}{2}$. 
+Siden $y=x^2$ må $y$ være positiv, slik at $y=\frac{-1+\sqrt{5}}{2}$ er eneste mulighet. 
+Vi må ha at $x=\pm\sqrt{\frac{-1+\sqrt{5}}{2}}$, slik at nullpunktene er 
+$(x,y)=(\sqrt{\frac{-1+\sqrt{5}}{2}},\frac{-1+\sqrt{5}}{2})$ og $(x,y)=(-\sqrt{\frac{-1+\sqrt{5}}{2}},\frac{-1+\sqrt{5}}{2})$. 

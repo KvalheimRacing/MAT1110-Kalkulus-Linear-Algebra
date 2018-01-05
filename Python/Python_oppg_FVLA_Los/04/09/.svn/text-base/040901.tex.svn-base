@@ -1,0 +1,38 @@
+\subsection{Oppgave 4.9.1}
+
+\subsubsection{a)}
+\begin{eqnarray*}
+\left|
+\begin{array}{rrr}
+1 & -2 & -1 \\
+3 &  1 & -2 \\
+1 &  0 &  1 
+\end{array}
+\right|
+&=&
+1\times
+\left|
+\begin{array}{rr}
+1 & -2 \\
+0 &  1 
+\end{array}
+\right|
+-
+(-2)\times
+\left|
+\begin{array}{rr}
+3 & -2 \\
+1 &  1 
+\end{array}
+\right|
++
+(-1)\times
+\left|
+\begin{array}{rr}
+3 & 1 \\
+1 & 0 
+\end{array}
+\right| \\
+&=& 1\times 1 + 2\times(3+2) -(-1) = 1 +10 + 1 = 12.
+\end{eqnarray*}
+

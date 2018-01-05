@@ -1,0 +1,46 @@
+\subsection{Oppgave 4.5.2}
+
+\subsubsection{a)}
+Vi radreduserer
+\begin{eqnarray*}
+\left( \begin{array}{rrrrrr} 1 & 1 & 2 & 1 & 0 & 0 \\ -1 & 1 & 1 & 0 & 1 & 0 \\ 2 & 3 & 3 & 0 & 0 & 1 \end{array} \right) 
+&\sim& \left( \begin{array}{rrrrrr} 1 & 1 & 2 & 1 & 0 & 0 \\ 0 & 2 & 3 & 1 & 1 & 0 \\ 0 & 1 & -1 & -2 & 0 & 1 \end{array} \right) \\
+&\sim& \left( \begin{array}{rrrrrr} 1 & 1 & 2 & 1 & 0 & 0 \\ 0 & 1 & -1 & -2 & 0 & 1 \\ 0 & 0 & 5 & 5 & 1 & -2 \end{array} \right) \\
+&\sim& \left( \begin{array}{rrrrrr} 1 & 1 & 2 & 1 & 0 & 0 \\ 0 & 1 & -1 & -2 & 0 & 1 \\ 0 & 0 & 1 & 1 & \frac{1}{5} & -\frac{2}{5} \end{array} \right) \\
+&\sim& \left( \begin{array}{rrrrrr} 1 & 1 & 0 & -1 & -\frac{2}{5} & \frac{4}{5} \\ 0 & 1 & 0 & -1 & \frac{1}{5} & \frac{3}{5} \\ 0 & 0 & 1 & 1 & \frac{1}{5} & -\frac{2}{5} \end{array} \right) \\
+&\sim& \left( \begin{array}{rrrrrr} 1 & 0 & 0 & 0 & -\frac{3}{5} & \frac{1}{5} \\ 0 & 1 & 0 & -1 & \frac{1}{5} & \frac{3}{5} \\ 0 & 0 & 1 & 1 & \frac{1}{5} & -\frac{2}{5} \end{array} \right).
+\end{eqnarray*}
+Vi ser derfor at
+\[
+  \left( \begin{array}{rrr} 1 & 1 & 2 \\ -1 & 1 & 1 \\ 2 & 3 & 3 \end{array} \right)^{-1} 
+  =
+  \left( \begin{array}{rrr} 0 & -\frac{3}{5} & \frac{1}{5} \\ -1 & \frac{1}{5} & \frac{3}{5} \\ 1 & \frac{1}{5} & -\frac{2}{5} \end{array} \right).
+\]
+
+\subsubsection{b)}
+\begin{eqnarray*}
+\left(
+\begin{array}{rrrrrr}
+  1 & -2 & 3 & 1 & 0 & 0 \\
+  2 &  4 & 0 & 0 & 1 & 0 \\
+  4 & 16 &-6 & 0 & 0 & 1 
+\end{array}
+\right)
+&\stackrel{II-2I,III-4I}{\sim}&
+\left(
+\begin{array}{rrrrrr}
+  1 & -2 & 3 & 1 & 0 & 0 \\
+  0 &  8 &-6 &-2 & 1 & 0 \\
+  0 & 24 &-18&-4 & 0 & 1 
+\end{array}
+\right) \\
+&\stackrel{III-3II}{\sim}&
+\left(
+\begin{array}{rrrrrr}
+  1 & -2 & 3 & 1 & 0 & 0 \\
+  0 &  8 &-6 &-2 & 1 & 0 \\
+  0 &  0 & 0 & 2 &-3 & 1 
+\end{array}
+\right).
+\end{eqnarray*}
+Vi ser at denne matrisen ikke kan radreduseres til identitetsmatrisen. Fra Setning 4.5.4 følger det da at matrisen ikke er inverterbar. 

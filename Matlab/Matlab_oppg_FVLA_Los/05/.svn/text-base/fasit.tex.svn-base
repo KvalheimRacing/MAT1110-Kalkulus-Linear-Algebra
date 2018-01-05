@@ -1,0 +1,104 @@
+\section{Seksjon 5.1}
+\input{05/01/050101}
+\input{05/01/050102}
+\input{05/01/050104}
+\input{05/01/050107}
+\input{05/01/050109}
+
+\section{Seksjon 5.2}
+\input{05/02/050202}
+\input{05/02/050203}
+\input{05/02/050204}
+
+\section{Seksjon 5.4}
+\lstinputlisting[frame=single]{05/04/o050401.m}
+\lstinputlisting[frame=single]{05/04/o050402.m}
+\lstinputlisting[frame=single]{05/04/o050403.m}
+\lstinputlisting[frame=single]{05/04/o050404.m}
+\lstinputlisting[frame=single]{05/04/o050405.m}
+\lstinputlisting[frame=single]{05/04/o050406.m}
+\lstinputlisting[frame=single]{05/04/o050407.m}
+\lstinputlisting[frame=single]{05/04/o050408.m}
+
+\section{Seksjon 5.5}
+\lstinputlisting[frame=single]{05/05/oppg050501.m}
+\lstinputlisting[frame=single]{05/05/o050501.m}
+\input{05/05/050502}
+\input{05/05/050503}
+\input{05/05/050504}
+\input{05/05/050505}
+
+\section{Seksjon 5.6}
+\input{05/06/050601}
+\input{05/06/050602}
+\lstinputlisting[frame=single]{05/06/o050603.m}
+\lstinputlisting[frame=single]{05/06/o050604.m}
+\lstinputlisting[frame=single]{05/06/o050605.m}
+\lstinputlisting[frame=single]{05/06/o050606.m}
+\lstinputlisting[frame=single]{05/06/o050607.m}
+\input{05/06/050609}
+\lstinputlisting[frame=single]{05/06/o050610.m}
+
+\section{Seksjon 5.7}
+\input{05/07/050701}
+\input{05/07/050703}
+\input{05/07/050704}
+\input{05/07/050705}
+\input{05/07/050706}
+\input{05/07/050710}
+\input{05/07/050711}
+\input{05/07/050712}
+\input{05/07/050713}
+\input{05/07/050714}
+
+\section{Seksjon 5.8}
+\input{05/08/050801}
+\input{05/08/050803}
+
+\section{Seksjon 5.9}
+\input{05/09/050901}
+\input{05/09/050902}
+\input{05/09/050906}
+\\\\
+Veldig ofte viser det seg at det finnes mange stasjonære punkter, 
+og det blir fort ganske regnekrevende å regne ut alle Hesse-matrisene når vi skal karakterisere hva slags stasjonære punkter de er. 
+Den neste oppgaven viser at man av og til kan spare en del regning ved å være smart - utregning av Hesse-matrisen i et stasjonært punkt 
+gjør at vi mye raskere kan se hva den blir i enkelte andre stasjonære punkter. 
+Slike forenklinger finner vi ofte i tilfeller der stasjonære punkter er like opp til et valg av fortegn.
+\input{05/09/050907}
+\input{05/09/050908}
+\\\\I enkelte oppgaver blir det, som vi nå skal se, fryktelig mange stasjonære punkter:
+\input{05/09/050910}
+\input{05/09/050911}
+\input{05/09/050912}
+\input{05/09/050914}
+\input{05/09/050916}
+\input{05/09/050917}
+\input{05/09/050918}
+\input{05/09/050919}
+\lstinputlisting[frame=single]{05/09/o050920.m}
+
+\section{Seksjon 5.10}
+Oppgaver der vi bruker Lagranges multiplikatormetode gir, som vi skal se, ofte mye regning. 
+En grunn til dette er at vi ofte må splitte opp problemet i mange spesialtilfeller. 
+For eksempel spesialbehandler vi ofte tilfeller der $x=0$ eller $y=0$, siden det kan være veldig forenklende å dele på $x$ eller $y$ på begge sider.
+Et annet tricks vi ofte bruker er å dele likningene på hverandre. Dette vil kunne hjelpe oss med å kvitte oss med $\lambda$ på høyresiden, 
+som vi egentlig ikke er interessert i. 
+Et siste tricks som vi skal bruke mye er å gange opp komponentlikningene i $\bigtriangledown f=\lambda\bigtriangledown g$ med forskjellige verdier
+(se feks. Oppgave 5.10.15 c) og d)), slik at 
+for eksempel uttrykkene på venstre side blir like. Vi kan da ofte erstatte likningene med enklere likninger.
+\input{05/10/051001}
+\input{05/10/051003}
+\input{05/10/051004}
+\input{05/10/051005}
+\input{05/10/051008}
+\input{05/10/051010}
+\input{05/10/051013}
+\\\\Når vi skal finne stasjonære punkter så kan det av og til lønne seg å endre på funksjonen vi jobber med på forhånd: 
+Eksempelvis er det det samme å finne maksimum og minimum for $x^2+y^2+z^2$ som for $\sqrt{x^2+y^2+z^2}$, men den førstnevnte er enklere å derivere. 
+Nøkkelen her er at det å kvadrere (som vi bruker for å endre funksjonen vi jobber med) er en monoton funksjon. 
+Nedenfor er enda et eksempel på dette, der vi bruker logaritmefunksjonen (som også er monoton) til å skrive om funksjonen.
+\input{05/10/051014}
+\input{05/10/051015}
+\input{05/10/051016}
+\input{05/10/051017}

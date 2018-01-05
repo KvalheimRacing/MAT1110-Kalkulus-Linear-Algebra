@@ -1,0 +1,25 @@
+\subsection{Oppgave 6.3.3}
+
+\subsubsection{a)}
+Sirkelskiven med sentrum i $(0,1)$ og radius $1$ svarer til at $x^2+(y-1)^2\leq 1$, 
+som i polarkoordinater blir 
+\begin{eqnarray*}
+  r^2\cos^2\theta+(r\sin\theta-1)^2 &\leq& 1 \\
+                                r^2 &\leq& 2r\sin\theta \\
+                                r   &\leq& 2\sin\theta.
+\end{eqnarray*}
+Vi ser ved opptegning at sirkelen er helt inneholdt i første og andre kvadrant, slik at $0\leq\theta\leq\pi$. 
+Fra tegningen ser vi at området er beskrevet i polarkoordinater ved $r\leq 2\sin\theta$, slik at det gitte integralet blir 
+\[
+  \int\int_R f(x,y)dxdy = \int_0^{\pi} \left[ \int_0^{2\sin\theta} f(r\cos\theta,r\sin\theta) rdr\right] d\theta.
+\]
+
+\subsubsection{b)}
+Vi får at 
+\begin{eqnarray*}
+  \lefteqn{\int\int_R \sqrt{x^2+y^2}dxdy} \\
+  &=& \int_0^{\pi} \left[ \int_0^{2\sin\theta} r^2dr\right] d\theta = \int_0^{\pi} \left[ \frac{1}{3}r^3 \right]_0^{2\sin\theta} d\theta
+      = \int_0^{\pi} \frac{8}{3} \sin^3\theta d\theta \\ 
+  &=& \frac{8}{3}\int_0^{\pi} (1-\cos^2\theta)\sin\theta d\theta = \frac{8}{3} \left[ -\left( \cos\theta -\frac{1}{3}\cos^3\theta\right) \right]_0^{\pi} \\
+  &=& \frac{8}{3} \left( 1-\frac{1}{3}+1-\frac{1}{3} \right) = \frac{8}{3}\frac{4}{3} = \frac{32}{9}.
+\end{eqnarray*}

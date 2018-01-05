@@ -1,0 +1,80 @@
+\subsection{Oppgave 4.11.5}
+
+\subsubsection{a)}
+Den karakteristiske likningen blir
+\[
+  \left( \lambda-\frac{1}{2} \right)^2 -\frac{25}{81} = \lambda^2-\lambda-\frac{19}{324}=\left(\lambda+\frac{1}{18}\right)\left(\lambda-\frac{19}{18}\right).
+\]
+
+\begin{itemize}
+  \item 
+Egenvektor for $\lambda_1=-\frac{1}{18}$: Vi radreduserer
+\[
+  -\frac{1}{18}I-A = \left( \begin{array}{rr} -\frac{5}{9} & -\frac{5}{9} \\ -\frac{5}{9} & -\frac{5}{9} \end{array} \right) 
+                   \sim \left( \begin{array}{rr} 1 & 1 \\ 0 & 0 \end{array} \right)
+\]
+Vi ser at ${\bf v}_1 = \left( \begin{array}{r} 1 \\ -1 \end{array} \right)$ er en tilhørende egenvektor. 
+  \item
+Egenvektor for $\lambda_2=\frac{19}{18}$: Vi radreduserer
+\[
+  \frac{19}{18}I-A = \left( \begin{array}{rr} \frac{5}{9} & -\frac{5}{9} \\ -\frac{5}{9} & \frac{5}{9} \end{array} \right) 
+                   \sim \left( \begin{array}{rr} 1 & -1 \\ 0 & 0 \end{array} \right)
+\]
+Vi ser at ${\bf v}_2 = \left( \begin{array}{r} 1 \\ 1 \end{array} \right)$ er en tilhørende egenvektor. 
+\end{itemize}
+
+\subsubsection{b)}
+Antall mottakelige etter $10(n+1)$ år, $x_{n+1}$, svarer til 
+\begin{itemize}
+  \item de som var immune etter $10n$ år og nå er blitt mottakelige ($\frac{4}{9}y_n$), 
+  \item pluss de som var mottakelige også etter $10n$ år ($\frac{7}{18}x_n$), 
+  \item pluss tilskuddet av mottakelige på grunn av fødsel og innvandring ($\frac{2}{3}\times\frac{1}{6}(x_n+y_n)=\frac{1}{9}x_n+\frac{1}{9}y_n$).
+\end{itemize}
+Derfor har vi at 
+\[
+  x_{n+1} = \frac{4}{9}y_n + \frac{7}{18}x_n + \frac{1}{9}x_n+\frac{1}{9}y_n = \frac{1}{2}x_n + \frac{5}{9}y_n.
+\]
+Antall immune etter $10(n+1)$ år, $y_{n+1}$, svarer til
+\begin{itemize}
+  \item de som var immune også etter $10n$ år ($\frac{4}{9}y_n$), 
+  \item pluss de som var mottakelige etter $10n$ år og nå er blitt immune ($\frac{1}{2}x_n$),
+  \item pluss tilskuddet av immune på grunn av fødsel og innvandring ($\frac{1}{3}\times\frac{1}{6}(x_n+y_n)=\frac{1}{18}x_n + \frac{1}{18}y_n$).
+\end{itemize}
+Derfor har vi at 
+\[
+  y_{n+1} = \frac{4}{9}y_n + \frac{1}{2}x_n+ \frac{1}{18}x_n + \frac{1}{18}y_n = \frac{5}{9}x_n + \frac{1}{2}y_n.
+\]
+Det er klart at de to likningene vi nå har kan skrives
+\[
+  \left( \begin{array}{r} x_{n+1} \\ y_{n+1} \end{array} \right) 
+  =
+  M \left( \begin{array}{r} x_n \\ y_n \end{array} \right).
+\]
+
+\subsubsection{c)}
+Vi skriver starttilstanden som en sum av egenvektorer ved å radredusere
+\[
+  \left( \begin{array}{rrr} 1 & 1 & 8 \\ -1 & 1 & 2 \end{array} \right)
+  \sim 
+  \left( \begin{array}{rrr} 1 & 1 & 8 \\ 0 & 2 & 10 \end{array} \right)
+  \sim
+  \left( \begin{array}{rrr} 1 & 0 & 3 \\ 0 & 1 & 5 \end{array} \right).
+\]
+Dermed kan vi skrive
+\[
+  \left( \begin{array}{r} x_n \\ y_n \end{array} \right)
+  =
+  3 \left(-\frac{1}{18}\right)^n \left( \begin{array}{r} 1 \\ -1 \end{array} \right)
+  +5 \left(\frac{19}{18}\right)^n \left( \begin{array}{r} 1 \\ 1 \end{array} \right)
+  =
+  \left( \begin{array}{r} 3 \left(-\frac{1}{18}\right)^n + 5 \left(\frac{19}{18}\right)^n \\ -3 \left(-\frac{1}{18}\right)^n + 5 \left(\frac{19}{18}\right)^n \end{array} \right).
+\]
+
+\subsubsection{d)}
+Prosentdelen av immune vil nærme seg 
+\[
+  \lim_{n\rightarrow\infty} \frac{y_n}{x_n+y_n} 
+  = \lim_{n\rightarrow\infty} \frac{-3 \left(-\frac{1}{18}\right)^n + 5 \left(\frac{19}{18}\right)^n}{10\left(\frac{19}{18}\right)^n}
+  = \lim_{n\rightarrow\infty} \frac{-3 \left(-\frac{1}{19}\right)^n + 5}{10}
+  = \frac{1}{2}.
+\]

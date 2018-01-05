@@ -1,0 +1,30 @@
+\subsection{Oppgave 3.7.2}
+
+\subsubsection{a)}
+Vi setter $f(x.y) = 2x^2+y^2$. 
+\begin{itemize}
+  \item $2x^2 + y^2 = c$ gir ellipse med store halvakse $\sqrt{c}$, lille halvakse $\sqrt{\frac{c}{2}}$.
+  \item Skjæring med $xz$-planet: $z=2x^2$. 
+  \item Skjæring med $yz$-planet: $z=y^2$.
+\end{itemize}
+
+\lstinputlisting[frame=single]{03/07/o030702a.m}
+
+\subsubsection{b)}
+$y^2-x=c$ gir en nivåkurve som er en ``liggende parabel''. Toppunktet blir i $(c,0)$.
+
+\lstinputlisting[frame=single]{03/07/o030702b.m}
+
+\subsubsection{c)}
+Vi setter $f(x,y) = \sin(x^2+y^2)$. 
+\begin{itemize}
+  \item $\sin(x^2+y^2) = c$ gir at $x^2+y^2=\arcsin c$. 
+  \item Når $0<c<1$ så er dette en sirkel med radius $\sqrt{\arcsin c}$. 
+  \item For $c=0$ er det bare punktet ${\bf 0}$. 
+  \item Nivåkurvene inneholder ingen punkter når $c>1$ eller $c<0$.
+  \item Skjæring med $xz$-planet: Setter vi $y=0$ får vi at $z=\sin(x^2)$. 
+\end{itemize}
+
+\lstinputlisting[frame=single]{03/07/o030702c.m}
+\lstinputlisting[frame=single]{03/07/o030702d.m}
+\lstinputlisting[frame=single]{03/07/o030702e.m}

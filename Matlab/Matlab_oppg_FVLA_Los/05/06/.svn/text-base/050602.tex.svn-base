@@ -1,0 +1,19 @@
+\subsection{Oppgave 5.6.2}
+
+\subsubsection{a)}
+Som i Oppgave 5.6.1 er det best å bruke en eksisterende implementasjon av Newtons metode i flere variable. Signaturen kan nå i stedet bli
+\begin{lstlisting}[frame=single]
+function x=newtonfler(x0,F,J)
+\end{lstlisting}
+der {\tt x0} er startpunktet, og {\tt F}, {\tt J} er anonyme funksjoner som representerer ${\bf F}$ og dens Jacobimatrise ${\bf F}'$. 
+Eksempel på en slik funksjon, som terminerer etter passende antall iterasjoner, finnes også på bokas hjemmeside.
+Vi kan nå bruke funksjonen {\tt newtonfler} til å løse b) slik:
+\lstinputlisting[frame=single]{05/06/o050602.m}
+
+\subsubsection{c)}
+For at førstekomponenten skal bli $0$ må $y=x^2$. 
+Setter vi dette inn i andrekomponenten får vi at $y^2+y-1=0$. 
+Formelen for andregradslikningen gir da at $y=\frac{-1\pm\sqrt{1+4}}{2}$, eller $y=\frac{-1\pm\sqrt{5}}{2}$. 
+Siden $y=x^2$ må $y$ være positiv, slik at $y=\frac{-1+\sqrt{5}}{2}$ er eneste mulighet. 
+Vi må ha at $x=\pm\sqrt{\frac{-1+\sqrt{5}}{2}}$, slik at nullpunktene er 
+$(x,y)=(\sqrt{\frac{-1+\sqrt{5}}{2}},\frac{-1+\sqrt{5}}{2})$ og $(x,y)=(-\sqrt{\frac{-1+\sqrt{5}}{2}},\frac{-1+\sqrt{5}}{2})$. 

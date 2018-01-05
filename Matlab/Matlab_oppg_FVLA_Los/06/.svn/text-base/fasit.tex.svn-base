@@ -1,0 +1,140 @@
+\section{Seksjon 6.1}
+\input{06/01/060101}
+\\\\
+I Oppgave 6.1.2 skulle dere regne ut integralene fra Oppgave 6.1.1 med Matlab. 
+Nedenfor er det vist hvordan dette kan gjøres ved hjelp av metoden fra læreboka. 
+Legg merke til at integralene også kan regnes ut ved hjelp av Symbolic Math Toolbox i Matlab. 
+Dette er gjort nedenfor for a). For a) er det også vist flere alternative uttrykk for å regne ut det samme integralet.
+\lstinputlisting[frame=single]{06/01/o060102.m}
+\input{06/01/060103}
+\input{06/01/060104}
+\input{06/01/060107}
+
+\section{Seksjon 6.2}
+\input{06/02/060201}
+\\\\
+Oppgavene ovenfor kan også verifiseres ved hjelp av Symbolic Math Toolbox i Matlab, selv om integralgrensene ikke er konstante i disse 
+oppgavene. Dette er gjort nedenfor for den første deloppgaven.
+\lstinputlisting[frame=single]{06/02/o060202.m}
+\input{06/02/060203}
+
+\section{Seksjon 6.3}
+\input{06/03/060301}
+\lstinputlisting[frame=single]{06/03/o060302.m}
+\input{06/03/060303}
+\input{06/03/060304}
+
+\section{Seksjon 6.4}
+\input{06/04/060401}
+\input{06/04/060402}
+\input{06/04/060405}
+\input{06/04/060407}
+\input{06/04/060410}
+\input{06/04/060411}
+\input{06/04/060416}
+\input{06/04/060418}
+
+\section{Seksjon 6.5}
+\input{06/05/060501}
+\input{06/05/060502}
+\input{06/05/060503}
+\input{06/05/060504}
+\\\\
+Det er ikke alltid så lett å si hvilken orientering en kurve har (positiv eller negativ?). 
+Den neste oppgaven er et eksempel på dette. Et tricks man kan bruke er å se på fortegnet til $\left| \begin{array}{r} {\bf v}(t) \\ {\bf a}(t) \end{array} \right|$, 
+der vi setter inn komponentene til ${\bf v}(t)$ og ${\bf a}(t)$ inn i første og andre rad, respektive. 
+Hvis denne er positiv for alle $t$, så er orienteringen positiv. Hvis den er negativ for alle $t$, så er orienteringen negativ
+(hvis fortegnet ikke er det samme for alle $t$, så kan vi ikke trekke noen slutning om orienteringen uten å tegne kurven). 
+Grunnen til dette er at den nevnte determinanten er lik $z$-komponenten til ${\bf v}(t)\times{\bf a}(t)$,
+når vi tenker på de som vektorer i rommet. Hvis vinkelen mellom ${\bf v}(t)$ og ${\bf a}(t)$ alltid er mindre enn $\pi$, 
+så dreier kurven alltid mot venstre for fartsretningen, og orienteringen blir positiv. 
+Hvis vinkelen alltid er større enn $\pi$, så dreier kurven alltid mot høyre for fartretningen, og orienteringen blir negativ. 
+Til slutt trenger vi bare legge merke til at fortegnet til ${\bf v}(t)\times{\bf a}(t)$ beskriver om den gitte vinkelen er større eller mindre enn $\pi$ 
+(siden $\sin$ til mellomliggende vinkel kommer inn i vektorproduktet). 
+I Oppgave 6.5.5 har vi
+\begin{eqnarray*}
+  {\bf v}(t) &=& {\bf r}'(t) = (1-2t,1-3t^2) \\
+  {\bf a}(t) &=& {\bf v}'(t) = (-2,-6t), 
+\end{eqnarray*}
+slik at 
+\begin{eqnarray*}
+  \left| \begin{array}{r} {\bf v}(t) \\ {\bf a}(t) \end{array} \right| = \left| \begin{array}{cc} 1-2t & 1-3t^2 \\ -2 & -6t \end{array} \right| 
+  &=& (1-2t)(-6t)+2(1-3t^2) \\
+  &=& 6t^2-6t+2=6\left(t-\frac{1}{2}\right)^2 +\frac{1}{2}>0,
+\end{eqnarray*}
+slik at orienteringen er positiv, slik at vi kan bruke Greens teorem direkte.
+
+\input{06/05/060505}
+\input{06/05/060507}
+\input{06/05/060508}
+\input{06/05/060512}
+
+\section{Seksjon 6.6}
+\input{06/06/060601}
+
+\section{Seksjon 6.7}
+Utregningen av flere av integralene nedenfor med Matlab krever at vi først regner ut et rektangel som hele integrasjonsområdet ligger innenfor, 
+siden {\tt dblquad} bare aksepterer rektangler som integrasjonsområder. Vi har demonstrert dette i flere oppgaver nedenfor hvordan dette avgrensende rektanglet regnes ut. 
+I praksis gjør det ikke noe om området man integrerer over er enda større, så lenge man setter funksjonen man integrerer over til å være $0$ 
+utenfor det faktiske integrasjonsområdet.
+\input{06/07/060701}
+\lstinputlisting[frame=single]{06/07/o060702.m}
+\input{06/07/060703}
+\lstinputlisting[frame=single]{06/07/o060704.m}
+\input{06/07/060705}
+\lstinputlisting[frame=single]{06/07/o060706.m}
+\input{06/07/060708}
+\input{06/07/060709}
+
+\section{Seksjon 6.8}
+\input{06/08/060801}
+\input{06/08/060802}
+\input{06/08/060804}
+\input{06/08/060805}
+\input{06/08/060806}
+
+\section{Seksjon 6.9}
+\input{06/09/060901}
+\input{06/09/060902}
+\lstinputlisting[frame=single]{06/09/o060903.m}
+\lstinputlisting[frame=single]{06/09/o060904.m}
+
+\section{Seksjon 6.10}
+\input{06/10/061001}
+\input{06/10/061002}
+\input{06/10/061003}
+\input{06/10/061005}
+
+\section{Seksjon 6.11}
+\input{06/11/061101}
+\input{06/11/061102}
+\input{06/11/061103}
+\input{06/11/061105}
+\input{06/11/061106}
+\input{06/11/061109}
+\input{06/11/061111}
+
+\section{Seksjon 6.12}
+\input{06/12/061201}
+\input{06/12/061204}
+\input{06/12/061205}
+\input{06/12/061212}
+\input{06/12/061215}
+
+\section{Seksjon 6.13}
+\input{06/13/061301}
+\input{06/13/061302}
+
+\section{Seksjon 6.14}
+\input{06/14/061402}
+\input{06/14/061405}
+\input{06/14/061407}
+\input{06/14/061409}
+\input{06/14/061412}
+
+\section{Seksjon 6.15}
+\input{06/15/061501}
+\input{06/15/061508}
+\input{06/15/061512}
+\input{06/15/061514}
+\input{06/15/061517}

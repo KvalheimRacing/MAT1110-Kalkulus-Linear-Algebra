@@ -1,0 +1,94 @@
+\subsection{Oppgave 4.9.11}
+
+\subsubsection{a)}
+Vi viser dette på to måter:
+\begin{enumerate}
+  \item Fra Korollar 4.9.16 vet vi at $\det(I_i({\bf x}))=\det(I_i({\bf x})^T)$. 
+    $I_i({\bf x})^T$ kan vi få fra identitetsmatrisen ved å legge til multiple av alle andre rader til rad $i$ etter at vi har ganget kolonne $i$ med $x_i$.
+    Denne siste operasjonen forandrer determinanten med $x_i$, mens ingen av de andre operasjonene forandrer determinanten. Siden $\det(I)=1$ så blir 
+    \[ \det(I_i({\bf x}))=\det(I_i({\bf x})^T) = x_i.\]
+  \item Ekspander determinanten langs søyle $i$. 
+    Det er lett å se at ``underdeterminant'' $j$ har søyle $j$ lik ${\bf 0}$ når $j\neq i$. Disse underdeterminantene blir derfor $0$. 
+    Underdeterminant $i$ tas av matrisen $I_{n-1}$, som gir $1$. Determinanten blir derfor 
+    \[
+      \begin{array}{l}
+        (-1)^{1+i} x_1 \times 0 + \cdots + (-1)^{i-1+i}x_{i-1}\times 0 \\
+        + (-1)^{i+i}x_i\times 1 \\
+        + (-1)^{i+1+i}x_{i+1}\times 0 + \cdots + (-1)^{n+i} x_n \times 0 \\
+        = x_i.
+      \end{array}
+    \]
+\end{enumerate}
+
+\subsubsection{b)}
+Vi viser at $AI_i({\bf x})=A_i({\bf b})$ ved å vise at hver søyle i de to matrisene er identiske.
+Vi splitter opp i to muligheter:
+\begin{enumerate}
+  \item Søyle $j$, med $j\neq i$: 
+    ved definisjonen av matrisemultiplikasjon svarer søyle $j$ i $AI_i({\bf x})$ til $A$ ganget med $j$'te søyle i $I_i({\bf x})$ 
+    (repeter definisjonen av matrisemultplikasjon, hvis du er usikker på hvorfor).
+    $j$'te søyle i $I_i({\bf x})$ er ${\bf e}_j$, slik at dette blir $A{\bf e}_j$, som blir $j$'te søyle i $A$. 
+    $j$'te søyle i $A_i({\bf b})$ er $j$'te søyle i $A$ per definisjon, slik at $j$'te søyle i de to matrisene er like når $j\neq i$. 
+  \item  Søyle $i$ i $AI_i({\bf x})$ er $A$ ganget med $i$'te søyle i $I_i({\bf x})$.
+    $i$'te søyle i $I_i({\bf x})$ er ${\bf x}$, slik at dette blir $A{\bf x}={\bf b}$. 
+    $i$'te søyle i $A_i({\bf b})$ er ${\bf b}$ per definisjon, slik at $i$'te søyle i de to matrisene er like. 
+\end{enumerate}
+Dermed har vi vist at de to matrisene er identiske, siden alle søylene er like. 
+
+\subsubsection{c)}
+Fra a) og b) har vi at 
+\[
+\det(A_i({\bf b})) = \det(AI_i({\bf x})) = \det(A)\det(I_i({\bf x})) = \det(A)x_i.
+\]
+Deler vi med $\det(A)$ på begge sider får vi at $x_i = \frac{\det(A_i({\bf b}))}{\det(A)}$.
+
+\subsubsection{d)}
+Vi har 
+\[
+A
+=
+\left(
+\begin{array}{rr}
+2 & -3 \\
+1 & -4
+\end{array}
+\right)
+\mbox{, }
+{\bf b}
+=
+\left(
+\begin{array}{r}
+4 \\
+-2
+\end{array}
+\right)
+\mbox{, }
+A_1({\bf b})
+=
+\left(
+\begin{array}{rr}
+4 & -3 \\
+-2 & -4
+\end{array}
+\right)
+\mbox{, }
+A_2({\bf b})
+=
+\left(
+\begin{array}{rr}
+2 &  4 \\
+1 & -2
+\end{array}
+\right).
+\]
+Vi ser at 
+\begin{eqnarray*}
+  \det(A)            &=& -8+3=-5 \\
+  \det(A_1({\bf b})) &=& -16-6=-22 \\
+  \det(A_1({\bf b})) &=& -4-4 = -8,
+\end{eqnarray*}
+slik at 
+\begin{eqnarray*}
+  x_1 &=& \frac{\det(A_1({\bf b}))}{\det(A)} = \frac{-22}{-5} = \frac{22}{5} \\
+  x_2 &=& \frac{\det(A_2({\bf b}))}{\det(A)} = \frac{-8}{-5} = \frac{8}{5}.
+\end{eqnarray*}

@@ -1,0 +1,7 @@
+\subsection{Oppgave 4.9.10}
+Anta $U^{-1} = U^T$. Da er $U^TU=I_n$. Tar vi determinanten på begge sider får vi 
+\[
+  1 = \det(I_n) = \det(U^TU) = \det(U^T)\det(U) = \det(U)\det(U) = \det(U)^2,
+\]
+hvor vi har brukt at $\det(U)=\det(U^T)$ (Korollar 4.9.16). 
+Vi ser da at $\det(U)=1$, eller $\det(U)=-1$.

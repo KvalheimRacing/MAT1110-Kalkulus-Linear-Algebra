@@ -1,0 +1,53 @@
+\subsection{Oppgave 4.11.3}
+
+\subsubsection{a)}
+Den karakteristiske likningen blir
+\[
+  (\lambda-1.1)(\lambda-0.8)+0.02 = \lambda^2-1.9\lambda+0.90=(\lambda-0.9)(\lambda-1).
+\]
+
+\begin{itemize}
+  \item
+Egenvektor for $\lambda_1=0.9$: Vi radreduserer
+\[
+  0.9I-A = \left( \begin{array}{rr} -0.2 & 0.2 \\ -0.1 &0.1 \end{array} \right) \sim \left( \begin{array}{rr} 1 & -1 \\ 0 & 0 \end{array} \right)
+\]
+Vi ser at ${\bf v}_1 = \left( \begin{array}{r} 1 \\ 1 \end{array} \right)$ er en tilhørende egenvektor. 
+  \item
+Egenvektor for $\lambda_2=1$: Vi radreduserer
+\[
+  0.9I-A = \left( \begin{array}{rr} -0.1 & 0.2 \\ -0.1 & 0.2 \end{array} \right) \sim \left( \begin{array}{rr} 1 & -2 \\ 0 & 0 \end{array} \right)
+\]
+Vi ser at ${\bf v}_2 = \left( \begin{array}{r} 2 \\ 1 \end{array} \right)$ er en tilhørende egenvektor. 
+\end{itemize}
+
+\subsubsection{b)}
+Vi ser at modellen for dyrebestandene kan skrives 
+\[
+  \left( \begin{array}{r} x_{n+1} \\ y_{n+1} \end{array} \right) = A \left( \begin{array}{r} x_n \\ y_n \end{array} \right).
+\]
+Vi skriver startbestanden $\left( \begin{array}{r} x_0 \\ y_0 \end{array} \right) = \left( \begin{array}{r} 3000 \\ 1000 \end{array} \right)$ 
+som en kombinasjon av egenvektorer ved først å radredusere
+\[
+  \left( \begin{array}{rrr} 1 & 2 & 3000 \\ 1 & 1 & 1000 \end{array} \right) 
+  \sim
+  \left( \begin{array}{rrr} 1 & 2 & 3000 \\ 0 & -1 & -2000 \end{array} \right) 
+  \sim 
+  \left( \begin{array}{rrr} 1 & 0 & -1000 \\ 0 & 1 & 2000 \end{array} \right).
+\]
+Vi ser derfor at 
+\[
+  \left( \begin{array}{r} x_0 \\ y_0 \end{array} \right) 
+  =
+  -1000{\bf v}_1 + 2000{\bf v}_2.
+\]
+Dermed blir 
+\[
+  \left( \begin{array}{r} x_n \\ y_n \end{array} \right)
+  = 
+  -1000\times 0.9^n\left( \begin{array}{r} 1 \\ 1 \end{array} \right)
+  +2000\left( \begin{array}{r} 2 \\ 1 \end{array} \right)
+  = 
+  \left( \begin{array}{r} 4000-1000\times 0.9^n \\ 2000-1000\times 0.9^n \end{array} \right).
+\]
+Når $n$ går mot uendelig ser vi at dyrebestandene nærmer seg $\left( \begin{array}{r} 4000 \\ 2000 \end{array} \right)$.

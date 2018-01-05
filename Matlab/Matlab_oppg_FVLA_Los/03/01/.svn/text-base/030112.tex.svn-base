@@ -1,0 +1,41 @@
+\subsection{Oppgave 3.1.12}
+
+\subsubsection{a)}
+Fra Eksempel 8 har vi at 
+\[
+  {\bf r}(t) = (rt-r\sin t,r-r\cos t).
+\]
+Derfor får vi 
+\begin{eqnarray*}
+  {\bf v}(t) &=& {\bf r}'(t) = (r-r\cos t,r\sin t) \\
+  v(t)       &=& |{\bf v}(t)| = \sqrt{r^2-2r^2\cos t + r^2\cos^2 t + r^2\sin^2 t} \\
+             &=& r\sqrt{2}\sqrt{1-\cos t} \\
+  {\bf a}(t) &=& {\bf v}'(t) = (r\sin t,r\cos t) \\
+  a(t)       &=& v'(t) = \frac{r\sqrt{2}\sin t}{2\sqrt{1-\cos t}}.
+\end{eqnarray*}
+
+\subsubsection{b)}
+Buelengden ved en omdreining av hjulet er
+\begin{eqnarray*}
+  s(2\pi) &=& \int_0^{2\pi} v(t) dt = \int_0^{2\pi} r\sqrt{2}\sqrt{1-\cos t} dt \\
+          &=& r\sqrt{2} \int_0^{2\pi} \sqrt{1-\cos t} dt.
+\end{eqnarray*}
+
+\subsubsection{c)}
+Vi har at 
+\begin{eqnarray*}
+  \sqrt{1-\cos t} &=& \sqrt{ \frac{(1-\cos t)(1+\cos t)}{1+\cos t} } = \sqrt{ \frac{1-\cos^2 t}{1+\cos t} } \\
+                  &=& \sqrt{ \frac{\sin^2 t}{1+\cos t} } = \frac{|\sin t|}{1+\cos t}.
+\end{eqnarray*}
+
+\subsubsection{d)}
+Siden $\sin t<0$ for $\pi < t < 2\pi$, blir integralet fra b) nå
+\begin{eqnarray*}
+  r\sqrt{2} \int_0^{2\pi} \sqrt{1-\cos t} dt &=& r\sqrt{2} \int_0^{2\pi} \frac{|\sin t|}{1+\cos t} dt \\
+                                             &=& r\sqrt{2} \int_0^{\pi} \frac{\sin t}{1+\cos t} dt - r\sqrt{2} \int_\pi^{2\pi} \frac{\sin t}{1+\cos t} dt.
+\end{eqnarray*}
+Bruker vi substitusjonen $u= 1+\cos t$ får vi $du = -\sin tdt$, og vi får dermed 
+\begin{eqnarray*}
+  \lefteqn{r\sqrt{2} \left( -\int_2^0 \frac{du}{\sqrt{u}} + \int_0^2 \frac{du}{\sqrt{u}} \right)} \\
+  &=& 2r\sqrt{2} \int_0^2 \frac{du}{\sqrt{u}} = 2r\sqrt{2} \left[ 2\sqrt{u} \right]_0^2 = 2r\sqrt{2}2\sqrt{2} = 8r.
+\end{eqnarray*}

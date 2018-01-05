@@ -1,0 +1,5 @@
+\subsection{Oppgave 5.6.1}
+
+\subsubsection{a)}
+Vi kan skrive $f(x)=x^3-x=x(x^2-1)=x(x-1)(x+1)$, slik at $f$ har de tre nullpunktene $0,1,-1$. 
+

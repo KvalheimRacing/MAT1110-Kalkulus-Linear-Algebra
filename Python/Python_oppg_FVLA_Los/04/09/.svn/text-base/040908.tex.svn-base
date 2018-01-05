@@ -1,0 +1,6 @@
+\subsection{Oppgave 4.9.8}
+Anta at vi ved induksjon har vist at $\det(A^n)=\det(A)^n$. Vi bruker Setning 4.9.14:
+\[
+  \det(A^{n+1}) = \det(A^nA) = \det(A^n)\det(A) = \det(A)^n\det(A) = \det(A)^{n+1}.
+\]
+Dermed holder også utsagnet for $n+1$. Induksjonsbeviset er fullført i og med at formelen er opplagt for $n=1$. 

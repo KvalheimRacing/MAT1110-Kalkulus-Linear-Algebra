@@ -1,0 +1,29 @@
+\subsection{Oppgave 3.1.21}
+Vi antar at ${\bf a}(t) = k(t){\bf r}(t)$. 
+
+\subsubsection{a)}
+Ved å bruke Setning 3.1.4 får vi at 
+\begin{eqnarray*}
+  \frac{d}{dt} ({\bf r}(t)\times {\bf v}(t)) &=& {\bf r}'(t)\times {\bf v}(t) + {\bf r}(t)\times {\bf v}'(t) \\
+                                             &=& {\bf v}(t)\times{\bf v}(t) + {\bf r}(t)\times {\bf a}(t) \\
+                                             &=& {\bf v}(t)\times{\bf v}(t) + {\bf r}(t)\times (k(t){\bf r}(t)) \\
+                                             &=& {\bf v}(t)\times{\bf v}(t) + k(t)({\bf r}(t)\times {\bf r}(t)) \\
+                                             &=& {\bf 0} + {\bf 0} = {\bf 0}.
+\end{eqnarray*}
+Her har vi brukt regnereglene for vektorproduktet fra Setning 1.4.1, 
+samt at vektorproduktet av to parallelle vektorer alltid er ${\bf 0}$.  
+
+\subsubsection{b)}
+På grunn av a) så må den deriverte av hver komponent i ${\bf r}(t)\times {\bf v}(t)$ også være $0$. 
+Men da er hver komponent i ${\bf r}(t)\times {\bf v}(t)$ en konstant. 
+Men da er også ${\bf r}(t)\times {\bf v}(t)$ konstant. 
+
+\subsubsection{c)}
+Planet som inneholder ${\bf 0}$, ${\bf r}(0)$, og ${\bf v}(0)$ er unikt identifisert ved at det har normalvektor ${\bf r}(0)\times {\bf v}(0)$, og går gjennom ${\bf 0}$. 
+Å vise at ${\bf r}(t)$ ligger i dette planet blir da det samme som å vise at ${\bf r}(t)\cdot({\bf r}(0)\times {\bf v}(0))=0$ 
+(siden planet består av alle punkter som står normalt på normalvektoren). 
+Dette er tilfellet siden
+\[
+  {\bf r}(t)\cdot({\bf r}(0)\times {\bf v}(0)) = {\bf r}(t)\cdot({\bf r}(t)\times {\bf v}(t)) = 0,
+\]
+hvor vi har brukt det vi viste i b), samt at vektorproduktet ${\bf r}(t)\times {\bf v}(t)$ står normalt på ${\bf r}(t)$. 

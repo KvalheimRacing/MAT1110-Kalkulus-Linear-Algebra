@@ -1,0 +1,9 @@
+\subsection{Oppgave 3.1.14}
+La oss først regne ut hvor lang tid vi bruker på en omdreining rundt sirkelen med fart $v$ når vi starter i $(r,0)$. Siden omkretsen til sirkelen er $2\pi r$ må 
+vi løse likningen $s=vt=2\pi r$, som gir at $t=\frac{2\pi r}{v}$. Vi vet også at kurven kan parametriseres ved ${\bf r}(t)=(r\cos(kt),r\sin(kt))$ for en $k$, 
+og $k$ kan vi finne ved å observere at argumentet $kt$ skal være $2\pi$ når $t=\frac{2\pi r}{v}$. Løser vi $k\frac{2\pi r}{v}=2\pi$ finner vi at $k=\frac{v}{r}$, slik 
+at vi kan skrive ${\bf r}(t)=\left(r\cos\left(\frac{v}{r}t\right),r\sin\left(\frac{v}{r}t\right)\right)$. Deriverer vi to ganger får vi 
+\begin{eqnarray*}
+  {\bf r}'(t)={\bf v}(t) &=& \frac{v}{r}\left(-r\sin\left(\frac{v}{r}t\right),r\cos\left(\frac{v}{r}t\right)\right) \\
+  {\bf v}'(t)={\bf a}(t) &=& \left(\frac{v}{r}\right)^2 \left(-r\cos\left(\frac{v}{r}t\right),-r\sin\left(\frac{v}{r}t\right)\right) = -\left(\frac{v}{r}\right)^2{\bf r}(t).
+\end{eqnarray*}

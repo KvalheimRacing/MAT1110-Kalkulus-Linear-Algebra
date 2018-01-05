@@ -1,0 +1,12 @@
+\subsection{Oppgave 3.7.1}
+
+\subsubsection{a)}
+$4x^2 + 3y^2 = c$ betyr at $\frac{x^2}{\frac{1}{4}c} + \frac{y^2}{\frac{1}{3}c} = 1$. 
+Dette er en ellipse med store halvakse $\sqrt{\frac{c}{3}}$, lille halvakse $\frac{1}{2}\sqrt{c}$. 
+Videre gjør vi som i Eksempel 1:
+\begin{itemize}
+  \item Skjæring med $xz$-planet: 
+    Setter vi $y=0$ får vi $z=4x^2$. De elliptiske ringene vokser altså slik at de passer med denne parabelen.
+  \item Skjæring med $yz$-planet: 
+    Setter vi $x=0$ får vi $z=3y^2$.
+\end{itemize}

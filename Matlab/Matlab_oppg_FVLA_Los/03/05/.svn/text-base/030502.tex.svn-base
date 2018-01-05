@@ -1,0 +1,7 @@
+\subsection{Oppgave 3.5.2}
+Vi ser på ${\bf F}(x,y) = (2xe^y,x^2e^y + x)$, og regner ut at 
+\begin{eqnarray*}
+  \frac{\partial F_2}{\partial x} &=& 2xe^y+1 \\ 
+  \frac{\partial F_1}{\partial y} &=& 2xe^y.
+\end{eqnarray*}
+Siden disse er forskjellige er ikke vektorfeltet konservativt, og $F$ har da ingen potensialfunksjon.

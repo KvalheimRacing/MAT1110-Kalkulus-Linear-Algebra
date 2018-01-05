@@ -1,0 +1,12 @@
+\subsection{Oppgave 3.9.8}
+Skjæringen mellom kjeglen og kulen kan vi finne ved å løse
+\[
+  z^2=3(x^2+y^2) = 3(4-z^2),
+\]
+som gir at $4z^2=12$, og at $z=\pm\sqrt{3}$. Siden vi er interessert i en del over $xy$-planet må vi ha at $z=\sqrt{3}$. Da er 
+$x^2+y^2+z^2=r^2+z^2=r^2+3=4$, slik at $r=1$. 
+Dette svarer til at vinkelen $\phi$ er gitt ved $\arcsin(r/2) = \arcsin(1/2)=\frac{\pi}{6}$. 
+Det er dermed klart at følgende er en parametrisering av området i kulekoordinater:
+\[
+  {\bf r}(\theta,\phi) = (2\cos\theta\sin\phi,2\sin\theta\sin\phi,2\cos\phi) \mbox{, } 0\leq\theta\leq 2\pi \mbox{, } 0\leq\phi\leq\frac{\pi}{6}.
+\]

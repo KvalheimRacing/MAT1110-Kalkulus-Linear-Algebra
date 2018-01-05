@@ -1,0 +1,92 @@
+\section{Seksjon 3.1}
+\input{03/01/030102}
+\input{03/01/030103}
+\lstinputlisting[frame=single]{03/01/o030105.m}
+\lstinputlisting[frame=single]{03/01/o030106.m}
+\input{03/01/030108}
+\input{03/01/030110}
+\lstinputlisting[frame=single]{03/01/o030111.m}
+\input{03/01/030112}
+\input{03/01/030114}
+\input{03/01/030117}
+\input{03/01/030121}
+
+\section{Seksjon 3.2}
+\input{03/02/030201}
+\input{03/02/030203}
+\input{03/02/030204}
+\input{03/02/030205}
+\input{03/02/030207}
+\input{03/02/030208}
+
+\section{Seksjon 3.3}
+\input{03/03/030301}
+\input{03/03/030302}
+\input{03/03/030303}
+\input{03/03/030304}
+\input{03/03/030306}
+\input{03/03/030309}
+\input{03/03/030310}
+\input{03/03/030311}
+
+\section{Seksjon 3.4}
+\input{03/04/030401}
+\input{03/04/030402}
+\input{03/04/030403}
+\input{03/04/030404}
+\input{03/04/030406}
+\input{03/04/030407}
+\input{03/04/030408}
+\input{03/04/030412}
+\input{03/04/030414}
+\input{03/04/030415}
+
+\section{Seksjon 3.5}
+\input{03/05/030501}
+\input{03/05/030502}
+\input{03/05/030504}
+\input{03/05/030505}
+\input{03/05/030507}
+\input{03/05/030508}
+\input{03/05/030510}
+\input{03/05/030511}
+\input{03/05/030512}
+
+\section{Seksjon 3.6}
+\input{03/06/030601}
+\input{03/06/030602}
+\input{03/06/030603}
+\input{03/06/030604}
+\input{03/06/030605}
+\input{03/06/030608}
+\input{03/06/030609}
+\input{03/06/030610}
+\input{03/06/030611}
+\input{03/06/030612}
+\input{03/06/030613}
+
+\section{Seksjon 3.7}
+\input{03/07/030701}
+\input{03/07/030702}
+\input{03/07/030703}
+\input{03/07/030704}
+\input{03/07/030705}
+\lstinputlisting[frame=single]{03/07/o030706.m}
+\lstinputlisting[frame=single]{03/07/o030707.m}
+
+\section{Seksjon 3.8}
+\lstinputlisting[frame=single]{03/08/o030801.m}
+\lstinputlisting[frame=single]{03/08/o030802.m}
+\lstinputlisting[frame=single]{03/08/o030803.m}
+
+\section{Seksjon 3.9}
+\input{03/09/030901}
+\input{03/09/030902}
+\input{03/09/030903}
+\input{03/09/030905}
+\input{03/09/030908}
+\lstinputlisting[frame=single]{03/09/o030909.m}
+\lstinputlisting[frame=single]{03/09/o030910.m}
+\lstinputlisting[frame=single]{03/09/o030911.m}
+\lstinputlisting[frame=single]{03/09/o030912.m}
+\lstinputlisting[frame=single]{03/09/o030913.m}
