@@ -1,6 +1,1 @@
-![](https://media.giphy.com/media/E5dJi6ZRvlZ8Q/giphy.gif)
-
-
-Innhold:
-- *repetisjonsforelesninger fra div år*
-- *noen forberedende eksamensoppgaver++ gitt på grublebruppene*
+![](https://media.giphy.com/media/HbIl8iQYcPl8k/giphy.gif)
