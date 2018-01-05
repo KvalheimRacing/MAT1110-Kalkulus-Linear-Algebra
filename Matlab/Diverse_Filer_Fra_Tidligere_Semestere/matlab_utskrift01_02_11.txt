@@ -1,0 +1,1011 @@
+% diary starter en dagbok/log
+
+% MATLAB regner hovedsaklig med tall, ikke formler
+2
+
+ans =
+
+     2
+
+% desimalpunktum, ikke desimalkomma
+3.14
+
+ans =
+
+    3.1400
+
+% de fire regnearter
+2+3
+
+ans =
+
+     5
+
+2-3
+
+ans =
+
+    -1
+
+% må huske gangetegn
+2*3
+
+ans =
+
+     6
+
+2/3
+
+ans =
+
+    0.6667
+
+% hva skjer når man deler på null?
+1/0
+
+ans =
+
+   Inf
+
+% * og / beregnes før + og -
+1+2*3
+
+ans =
+
+     7
+
+% bruk parenteser hvis du vil prioritere anderledes
+(1+2)*3
+
+ans =
+
+     9
+
+% potensregning
+2^3
+
+ans =
+
+     8
+% gir det samme som
+2*2*2
+
+ans =
+
+     8
+
+% innebygde funksjoner, med parentes om argumentet
+% sinus regner i radianer, ikke grader
+sin(1)
+
+ans =
+
+    0.8415
+
+cos(1)
+
+ans =
+
+    0.5403
+
+% den naturlige eksponentialfunksjonen
+exp(1)
+
+ans =
+
+    2.7183
+
+% grunntallet er e
+e = exp(1)
+
+e =
+
+    2.7183
+
+e^2
+
+ans =
+
+    7.3891
+
+exp(2)
+
+ans =
+
+    7.3891
+
+% kvadratot
+sqrt(4)
+
+ans =
+
+     2
+
+% MATLAB regner også med komplekse tall
+sqrt(-1)
+
+ans =
+
+        0 + 1.0000i
+
+% MATLAB velger den av de to kvadratrøttene som har ikkenegativ realdel
+sqrt(i)
+
+ans =
+
+   0.7071 + 0.7071i
+
+sqrt(-i)
+
+ans =
+
+   0.7071 - 0.7071i
+
+% forholdet mellom omkretsen og diameteren i en sirkel har navnet
+pi
+
+ans =
+
+    3.1416
+
+% for å vise flere desimaker
+format long
+pi
+
+ans =
+
+   3.141592653589793
+
+% for å vise færre desimaler
+format short
+pi
+
+ans =
+
+    3.1416
+
+% en googol er et ett-tall fulgt av 100 nuller
+% MATLAB bruker "engineering notation" m x 10^n, der 1 <= m < 10 og n
+% er et helt tall.
+googol = 10^100
+
+googol =
+
+  1.0000e+100
+
+% en googolplex er et ett-tall fulgt av en googol nuller
+% det blir for stort for MATLAB
+googolplex = 10^googol
+
+googolplex =
+
+   Inf
+
+% MATLAB regner numerisk, med ca 16 siffer.  Så 10^{-16} er omtrent 0.
+sin(pi)
+
+ans =
+
+  1.2246e-016
+
+% vi kan gi verdier til variable
+a = 2
+
+a =
+
+     2
+
+b = 3
+
+b =
+
+     3
+
+% variabelnavn begynner med en bokstav, og kan fortsette med bokstaver
+% eller siffer
+x1 = 3
+
+x1 =
+
+     3
+
+% så kan vi regne med variablene som navn for deres verdier
+a*b
+
+ans =
+
+     6
+
+% ans lagrer det siste svaret
+ans+1
+
+ans =
+
+     7
+
+% radvektorer mellom [ og ]
+x = [1 2 3]
+
+x =
+
+     1     2     3
+
+% eventuelt med komma mellom tallene
+y = [1, 2, 3]
+
+y =
+
+     1     2     3
+
+% bruk shift-enter for å begynne på ny rad
+A = [1 2 3 		% trykk på shift og enter etter 3-tallet
+        4 5 6		% trykk på shift og enter etter 6-tallet
+        7 8 9]		% trykk vanlig enter etter ]
+
+A =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+% alternativt: skill mellom radene med ;
+B = [1 2 3; 4 5 6; 7 8 9]
+
+B =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+% MATLAB kan regne med matriser
+A+B
+
+ans =
+
+     2     4     6
+     8    10    12
+    14    16    18
+
+A-B
+
+ans =
+
+     0     0     0
+     0     0     0
+     0     0     0
+
+% må huske gangetegn for matrisemultiplikasjon
+A*B
+
+ans =
+
+    30    36    42
+    66    81    96
+   102   126   150
+
+% det er ikke alltid mulig å dele på en matrise
+A/B
+{Warning: Matrix is singular to working precision.} 
+
+ans =
+
+   NaN   NaN   NaN
+   NaN   NaN   NaN
+   NaN   NaN   NaN
+
+% kan også gange en skalar med en matrise
+3*A
+
+ans =
+
+     3     6     9
+    12    15    18
+    21    24    27
+
+% gjentatt multiplikasjon ...
+A*A*A
+
+ans =
+
+         468         576         684
+        1062        1305        1548
+        1656        2034        2412
+
+% kan også oppfattes som å opphøye i en positiv potens
+A^3
+
+ans =
+
+         468         576         684
+        1062        1305        1548
+        1656        2034        2412
+
+% transponert matrise
+A'
+
+ans =
+
+     1     4     7
+     2     5     8
+     3     6     9
+
+% vi definerte x som en radvektor tidligere
+x
+
+x =
+
+     1     2     3
+
+% den transponerte er en søylevektor = kolonnevektor
+x'
+
+ans =
+
+     1
+     2
+     3
+
+% Noen kvadratiske matriser er invertible
+% Den inverse kan regnes ut med inv(-)
+
+inv(A)
+{Warning: Matrix is close to singular or badly scaled.
+         Results may be inaccurate. RCOND = 1.541976e-018.} 
+
+ans =
+
+  1.0e+016 *
+
+   -0.4504    0.9007   -0.4504
+    0.9007   -1.8014    0.9007
+   -0.4504    0.9007   -0.4504
+
+% Siden summen av første og tredje søyle i A er lik to ganger
+% andre søyle i A, så er søylene i A lineært avhengige, og
+% matrisen A er singulær.  Den er altså ikke invertibel.
+% MATLAB prøver så godt den kan, med numerisk nøyaktighet.
+
+% determinanten oppdager at A er singular
+det(A)
+
+ans =
+
+     0
+
+% prøver en ikkesingulær matrise i stedet
+C = [1 2; 2 1]
+
+C =
+
+     1     2
+     2     1
+
+inv(C)
+
+ans =
+
+   -0.3333    0.6667
+    0.6667   -0.3333
+
+% da er C ganger inv(C) lik identitetsmatrisen
+C*ans
+
+ans =
+
+     1     0
+     0     1
+
+det(C)
+
+ans =
+
+    -3
+
+% MATLAB kan bestemme egenvektorer og egenverdier for en matrise
+% Disse lagres i to matriser, her kalt V og lambda.  Søylene i V
+% er egenvektorer, normert til å ha lengde 1, mens lambda er en
+% diagonalmatrise med egenverdiene.
+
+[V,lambda] = eig(C)
+
+V =
+
+   -0.7071    0.7071
+    0.7071    0.7071
+
+
+lambda =
+
+    -1     0
+     0     3
+
+% Hvis vi ikke insisterer på at søylene i V skal være vektorer av
+% lengde 1 (enhetsvektorer), kan de noen ganger se enklere ut:
+sqrt(2)*V
+
+ans =
+
+    -1     1
+     1     1
+
+% For å plukke ut de enkelte egenvektorene fra matrisen V har
+% MATLAB en egen notasjon.  Vi ser på deler av den tidligere
+% definerte matrisen A først.
+
+A
+
+A =
+
+     1     2     3
+     4     5     6
+     7     8     9
+
+% elementet i 2. rad og 3. søyle:
+A(2,3)
+
+ans =
+
+     6
+
+% tilbake til matrisen med egenvektorer i søylene
+V
+
+V =
+
+   -0.7071    0.7071
+    0.7071    0.7071
+
+% delen av V der vi er i 1. eller 2. rad, og i 1. søyle
+V([1 2],1)
+
+ans =
+
+   -0.7071
+    0.7071
+
+% kan også si at dette er fra 1. til 2. rad, og i 1. søyle
+V(1:2,1)
+
+ans =
+
+   -0.7071
+    0.7071
+
+% eller bare "første til siste" rad, og 1. søyle
+V(:,1)
+
+ans =
+
+   -0.7071
+    0.7071
+% den første egenvektoren er altså
+v1 = V(:,1)
+
+v1 =
+
+   -0.7071
+    0.7071
+
+% den andre egenvektoren ligger i "første til siste" rad, og 2. søyle
+v2 = V(:,2)
+
+v2 =
+
+    0.7071
+    0.7071
+
+% At v1 er en egenvektor for C betyr at C*v1 er en skalar ganger v1
+C*v1
+
+ans =
+
+    0.7071
+   -0.7071
+
+% Dette er -v1, så skalaren er -1 (som vi ser i matrisen lambda).
+
+% skalarprodukt av to vektorer
+dot(v1,v2)
+
+ans =
+
+     0
+
+% fikk null i dette tilfellet, fordi to egenvektorer for en symmetrisk
+matrise, med forskjellige egenverdier, alltid står normalt på hverandre
+
+% kryssprodukt = vektorprodukt i R^2
+u = [1 0 0];
+v = [0 1 0];
+cross(u,v)
+
+ans =
+
+     0     0     1
+
+% Se A.6 for mer om matriser
+A = [2 -3 1; 0 1 -3; -4 2 1];
+B = [7 4; 2 5; -1 3];
+[A B]
+
+ans =
+
+     2    -3     1     7     4
+     0     1    -3     2     5
+    -4     2     1    -1     3
+
+C = ans;
+
+% plukker ut 1. rad (i første til siste søyle)
+C(1,:)
+
+ans =
+
+     2    -3     1     7     4
+
+y = ans;
+
+% plukker ut 1. til 4. element i denne listen av 5 tall
+y(1:4)
+
+ans =
+
+     2    -3     1     7
+
+% hva var C?
+C
+
+C =
+
+     2    -3     1     7     4
+     0     1    -3     2     5
+    -4     2     1    -1     3
+
+% lag en ny matrise med 2. rad, 1. rad og 3. rad fra C, i den
+% rekkefølgen
+C([2 1 3],:)
+
+ans =
+
+     0     1    -3     2     5
+     2    -3     1     7     4
+    -4     2     1    -1     3
+
+% vi har altså byttet om på 1. og 2. rad
+
+% for å lage en 10x10 matrise med bare nuller
+zeros(10,10)
+
+ans =
+
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0
+
+% eller en 5x7 matrise med bare enere
+ones(5,7)
+
+ans =
+
+     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1
+     1     1     1     1     1     1     1
+
+% identitetstransformasjonen T(x) = x er gitt ved multiplikasjon med
+% identitetsmatrisen, som har enere på diagonalen og nuller ellers.
+% 5x5 identitetsmatrisen skrives I eller I_5, der "I" uttales omtrent
+% som "eye" på engelsk.  MATLAB bruker dette lydhermende navnet
+eye(5)
+
+ans =
+
+     1     0     0     0     0
+     0     1     0     0     0
+     0     0     1     0     0
+     0     0     0     1     0
+     0     0     0     0     1
+
+% det går også an å lage ikke-kvadratiske matriser med enere på
+% diagonalen og nuller ellers, men disse representerer ikke egentlig
+% identitetstransformasjonen.
+eye(3,7)
+
+ans =
+
+     1     0     0     0     0     0     0
+     0     1     0     0     0     0     0
+     0     0     1     0     0     0     0
+
+% kan lage en tilfeldig (random) 1x10 matrise = radvektor av lengde 8,
+% med elementer mellom 0 og 1
+rand(1,8)
+
+ans =
+
+    0.4505    0.0838    0.2290    0.9133    0.1524    0.8258    0.5383    0.9961
+
+% bruk sum(-) på en liste for å beregne summen
+sum(rand(1,100))
+
+ans =
+
+   46.5765
+
+sum(rand(1,100))
+
+ans =
+
+   50.7995
+
+sum(rand(1,100))
+
+ans =
+
+   47.5362
+
+sum(rand(1,100))
+
+ans =
+
+   49.9858
+
+% forventet sum av 100 tilfeldige tall "jevnt fordelt" mellom 0 og 1 er 50.
+
+% For å behandle funksjoner og grafer oppfatter vi funksjonene som
+% gitt ved en tabell, med en liste av argumenter (x-verdier) og
+% en like lang liste av verdier (y-verdier).
+
+% Lister av tall, tabeller, funksjoner gitt ved tabeller
+
+% En rask måte å lage en liste av heltallene fra 1 til 6 
+1:6
+
+ans =
+
+     1     2     3     4     5     6
+
+% Hvis vi bare vil ha avstand 0.5 mellom tallene
+1:0.5:6
+
+ans =
+
+  Columns 1 through 8
+
+    1.0000    1.5000    2.0000    2.5000    3.0000    3.5000    4.0000    4.5000
+
+  Columns 9 through 11
+
+    5.0000    5.5000    6.0000
+
+% dersom ikke intervallene passer helt, stopper MATLAB før den øvre grensen
+1:0.5:5.8
+
+ans =
+
+  Columns 1 through 8
+
+    1.0000    1.5000    2.0000    2.5000    3.0000    3.5000    4.0000    4.5000
+
+  Columns 9 through 10
+
+    5.0000    5.5000
+
+% oddetallene mellom 1 og 20:
+1:2:20
+
+ans =
+
+     1     3     5     7     9    11    13    15    17    19
+
+% retningen har noe å si: oddetallene fra 19 og oppover, til man passerer 1,
+% utgjør en tom liste med 0 elementer
+19:2:1
+
+ans =
+
+   Empty matrix: 1-by-0
+
+% da må man heller telle nedover
+19:-2:1
+
+ans =
+
+    19    17    15    13    11     9     7     5     3     1
+
+% summen av listen av heltall fra 1 til 100
+sum(1:100)
+
+ans =
+
+        5050
+
+% la oss plotte y = sin(x) for x mellom -1 og 1
+% deler intervallet i mindre deler, si med avstand 0.1 mellom delepunktene
+x = -1:0.1:1
+
+x =
+
+  Columns 1 through 8
+
+   -1.0000   -0.9000   -0.8000   -0.7000   -0.6000   -0.5000   -0.4000   -0.3000
+
+  Columns 9 through 16
+
+   -0.2000   -0.1000         0    0.1000    0.2000    0.3000    0.4000    0.5000
+
+  Columns 17 through 21
+
+    0.6000    0.7000    0.8000    0.9000    1.0000
+
+% vanligvis ønsker vi ikke å se disse lange listene
+% avslutt kommandoen med semikolon ";" for å utelate output
+x = -1:0.1:1;
+
+% så lager vi en tabell over verdiene til sin for hver av disse x-verdiene
+y = sin(x)
+
+y =
+
+  Columns 1 through 8
+
+   -0.8415   -0.7833   -0.7174   -0.6442   -0.5646   -0.4794   -0.3894   -0.2955
+
+  Columns 9 through 16
+
+   -0.1987   -0.0998         0    0.0998    0.1987    0.2955    0.3894    0.4794
+
+  Columns 17 through 21
+
+    0.5646    0.6442    0.7174    0.7833    0.8415
+
+% den innebygde funksjonen sin forstår altså at når input (x) er en tabell,
+% så skal output være en like stor tabell, med i'te element gitt ved sinus
+% til den i-te input.
+
+% plot(x,y) åpner et grafisk vindu (ikke inkludert i "diary-filen"),
+% der det vises en stykkevis lineær kurve i et plan, som starter i
+% punktet med koordinater (x(1), y(1)), fortsetter i rett linje til
+% punktet (x(2), y(2)), osv. til det siste punktet ((x(n), y(n)), der
+% n står for antall elementer i listene x og y.
+
+plot(x,y)
+
+% når x = [x1, ..., xn] forekommer i voksende rekkefølge,
+% og y = [f(x1), ..., f(xn)], gir dette et
+% tilnærmet bilde av grafen til f i området fra x1 til xn.
+
+% man kan også plotte andre kurver i planet enn grafer
+x = [1 3 2];
+y = [5 6 7];
+plot(x, y)
+
+x = [0 1 2];
+y = [0 1 4];
+plot(x,y)
+
+% dersom man vil dele intervallet [a,b] i (n-1) like deler, med til sammen
+% n delepunkter, kan man bruke linspace(a,b,n)
+x = linspace(-1,1,21)
+
+x =
+
+  Columns 1 through 8
+
+   -1.0000   -0.9000   -0.8000   -0.7000   -0.6000   -0.5000   -0.4000   -0.3000
+
+  Columns 9 through 16
+
+   -0.2000   -0.1000         0    0.1000    0.2000    0.3000    0.4000    0.5000
+
+  Columns 17 through 21
+
+    0.6000    0.7000    0.8000    0.9000    1.0000
+
+% for å se grafen til f(x) = sin(1/x) lager vi en tabell med y-verdier
+% merk at vi må bruke den "punktvise" eller "komponentvise" regnearten
+% ./ for å dele på hvert av tallene i x i rekkefølge
+y = sin(1./x)
+
+y =
+
+  Columns 1 through 8
+
+   -0.8415   -0.8962   -0.9490   -0.9899   -0.9954   -0.9093   -0.5985    0.1906
+
+  Columns 9 through 16
+
+    0.9589    0.5440       NaN   -0.5440   -0.9589   -0.1906    0.5985    0.9093
+
+  Columns 17 through 21
+
+    0.9954    0.9899    0.9490    0.8962    0.8415
+
+plot(x,y)
+
+% samme med flere delepunkter
+x = linspace(-1,1,201);
+y = sin(1./x);
+plot(x, y)
+
+% og enda flere delepunkter
+x = linspace(-1,1,2001);
+y = sin(1./x);
+plot(x, y)
+
+% hva er disse punktvise operasjonene?
+% gitt en liste med tall
+n = [1:10]
+
+n =
+
+     1     2     3     4     5     6     7     8     9    10
+
+% kan vi lage en liste der hvert element fra den første listen
+% ganges med seg selv, ved å bruke .*:
+kvadrattall = n.*n
+
+kvadrattall =
+
+     1     4     9    16    25    36    49    64    81   100
+
+% summen
+sum(kvadrattall)
+
+ans =
+
+   385
+
+% er det samme som skalarproduktet
+dot(n,n)
+
+ans =
+
+   385
+
+% hvis vi vil lage en liste med i'te element gitt ved 1
+% delt på det i'te elementet i listen n, bruker vi ./:
+egypyiskebroeker = 1./n
+
+egypyiskebroeker =
+
+  Columns 1 through 8
+
+    1.0000    0.5000    0.3333    0.2500    0.2000    0.1667    0.1429    0.1250
+
+  Columns 9 through 10
+
+    0.1111    0.1000
+
+% det er også en punktvis potensoperasjon
+kubikktall = n.^3
+
+kubikktall =
+
+  Columns 1 through 7
+
+           1           8          27          64         125         216         343
+
+  Columns 8 through 10
+
+         512         729        1000
+
+% for å se grafen til f(x) = x * sin(x) lager vi først en tabell med
+% x-verdier
+x = linspace(-1,1,101);
+
+% så vil vi, for hver verdi xi i tabellen x, regne ut xi ganger sinus til xi.
+% sin(-) virker alltid punktvis på tabeller, med multiplikasjon (*) brukes
+% til så mangt, også matrisemultiplikasjon, så for å få den punktvise
+% eller komponentvise multiplikasjonen må vi bruke operatoren .* .
+y = x.*sin(x);
+plot(x,y)
+
+% for å tegne videre i samme grafiske vindu sier vi:
+hold on
+
+% lager samme figur med finere oppløsning
+x = linspace(-10,10,1001);
+y = x.*sin(x);
+plot(x,y)
+
+% plotter også linjene der y=x og y=-x
+plot(x,x)
+plot(x,-x)
+
+% den første kurven svinger mellom disse to linjene
+
+% når vi ikke vil fortsette i samme vindu sier vi:
+hold off
+
+% A5:Tredimensjonale grafer
+% MATLAB kan tegne nett og flater i tre dimensjoner
+% I tilfellet der flaten skal være grafen til en funksjon f(x,y)
+% av to variable, dvs. punktene (x,y,z) der z = f(x,y), velger vi nettet
+% slik at det ligger over et rektangulært nett i xy-planet.
+% Vi må først velge delepunktene i x-retningen og i y-retningen
+x = [1 2 3];
+y = [1 2];
+
+% meshgrid gir så to matriser, med x- og y-koordinatene til knutepunktene
+% i nettet:
+[a,b] = meshgrid(x,y)
+
+a =
+
+     1     2     3
+     1     2     3
+
+
+b =
+
+     1     1     1
+     2     2     2
+
+% For eksempel er a(1,1) = 1 og b(1,1) = 1, så ett av knutepunktene er
+% i (1,1)
+
+% kommandoen mesh(a,b,c) gir nettet i tre dimensjoner, med knutepunkter
+% listet opp i a, b og c.  Hvis c er matrisen med bare nuller får vi et
+% nett nede i xy-planet
+
+mesh(a,b,zeros(2,3))
+
+% her er et mer interessant eksempel, grafen z = f(x,y) der
+% f(x,y) = sin(x^2 + y^2) varierer periodisk med kvadratet av
+% avstanden til origo
+
+% starter med å spesifisere delepunktene i x- og y-retningen
+% bruker semikolon siden listene ikke er verdt å se
+xd = linspace(-1,1,21);
+yd = linspace(-1,1,21);
+
+% lager x- og y-koordinatene i knutepunktene i nettet
+[x,y] = meshgrid(xd,yd);
+
+% regner ut den tilsvarende tabellen (en matrise) av funksjonsverdier
+% må bruke punktvis multiplikasjon for å bestemme x^2+y^2 i hvert punkt
+% (x,y)
+
+f = sin(x.^2+y.^2);
+
+% lager et 3d-plott i et grafisk vindu
+mesh(x,y,f)
+
+% for å se en større del av grafen utvider vi området med delepunkter
+xd = linspace(-5,5,101);
+yd = linspace(-5,5,101);
+
+% og beregner knutepunktene og funksjonsverdiene på nytt
+[x,y] = meshgrid(xd,yd);
+f = sin(x.^2+y.^2);
+
+% så kan vi se på grafen som et nett i 3d
+mesh(x,y,f)
+
+% eller som en flate, der firkantene er fargelagt
+surf(x,y,f)
+
+% hvis vi vil ha mer i samme figur:
+hold on
+
+% for å plotte parametriserte kurver i 3d gir vi en tabell med
+% parameterverdier
+t = -5:0.1:5;
+
+% og kaller på plot3(-) med tre lister, som gir x-, y- og z-koordinatene
+% for de ulike t-verdiene
+
+plot3(t, t, t.^2+t.^2)
+
+% for å avslutte dagboken, slik at filen lagres:
+
+diary off
