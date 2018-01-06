@@ -8,7 +8,7 @@
  - En samling av alle (tilgjengelige) [_Eksamener_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Eksamener) med løsningsforslag siden 2004
  - Alle [_Obliger_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Obliger) med løsningsforslag som er gitt siden rundt 2004
  - Pensumboken "Flervariabel analyse med lineær algebra", i mappen [_Pensum_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Pensum)
- - Ressurser fra _Grublegruppene_
+ - Ressurser fra [_Grublegruppene_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Gruble)
  - En mappe med [_Repetisjon_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Repetisjon) av pensum og/eller eksamensøving
  - [_Formelsamling_](https://github.com/KvalheimRacing/MAT1110-Kalkulus-Linear-Algebra/tree/master/Formelsamlinger) fra UiO, UiA ++
  - Alle _Forelesningsnotater_ siden 2010
