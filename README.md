@@ -19,5 +19,5 @@ Man kan finne de orginale filene [her](http://www.uio.no/studier/emner/matnat/ma
 
  *Tags; Løsningsforslag Kalkulus og Lineær Algebra, Løsninger MAT1110 Kalkulus og Lineær Algebra, Samling av løsninger i MAT1110 Kalkulus og Lineær Algebra, Øvingsoppgaver MAT1110 Kalkulus og Lineær Algebra.*
 
- -Eirik Kvalheim
+ -[Eirik Kvalheim](https://www.linkedin.com/in/eirik-kvalheim-12157558/)
 
